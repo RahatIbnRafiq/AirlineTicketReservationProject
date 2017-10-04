@@ -1,0 +1,79 @@
+
+
+insert into flight values( 'ek031','Dhaka','Kualalampur',null,714,404,260,'international','0730', 50, 50, 50,'07-DEC-09');
+
+insert into flight values( 'ek032','Kualalampur','Dhaka',null,714,404,260,'international', '0730',40,40,40,'08-DEC-09');
+
+insert into flight values( 'ek041','Dhaka','Tehran',null,1214,610,870,'international', '2130',40,40,40,'08-DEC-09');
+
+insert into flight values( 'ek042','Tehran','Dhaka',null,1214,610,870,'international', '2130',20,10,30,'09-DEC-09');
+
+insert into flight values( 'ek043', 'Dubai','Dhaka','Delhi',1014,410,970,'international', '1730',20,20,10,'07-DEC-09');
+
+insert into flight values( 'ek051','Dhaka','Dubai','Delhi',1014,410,970,'international', '1730',30,30,30,'08-DEC-09');
+
+insert into flight values( 'ek052','Jeddah','Dhaka','Dubai',1014,410,970,'international', '1030',40,40,40,'08-DEC-09');
+
+insert into flight values( 'ek133','Dhaka','Dubai',null,2214,1210,1970,'international','0230',50,50,50,'25-JAN-10','Emirates');
+insert into flight values( 'ek134','Dhaka','Dubai',null,2214,1210,1970,'international','1230',50,50,50,'25-JAN-10','Emirates');
+insert into flight values( 'ek135','Dhaka','Dubai','Delhi',2214,1210,1970,'international','0630',50,50,50,'25-JAN-10','Emirates');
+insert into flight values( 'sq133','Dhaka','Dubai',null,2214,1210,1970,'international','0930',50,50,50,'25-JAN-10','Singapore Airlines');
+insert into flight values( 'sq134','Dhaka','Dubai',null,2214,1210,1970,'international','1130',50,50,50,'25-JAN-10','Singapore Airlines');
+
+
+
+insert into flight values( 'ek061','Dhaka','Jeddah','Dubai',1014,410,970,'international', '1030',100,100,100,'09-DEC-09');
+
+insert into flight values( 'ek062','Tokyo','Dhaka',null,1914,1410,1670,'international', '0030',30,30,40,'07-DEC-09');
+
+insert into flight values( 'ek072','Dhaka','London',null,2214,1210,1970,'international','0230',50,50,50,'08-DEC-09','Emirates');
+
+insert into flight values( 'ek091', 'Dhaka','Paris','Dubai',2014,1010,1870,'international', '0230',50,50,50,'07-DEC-09','Emirates');
+
+insert into flight values( 'ek121','Dhaka','Rome','Jeddah',2014,1010,1870,'international', '1230',50,50,50,'07-DEC-09','Emirates');
+
+insert into flight values( 'sq031','Dhaka','Kualalampur',null,714,404,260,'international', '1930',100,100,100,'09-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq032', 'Kualalampur','Dhaka',null,714,404,260,'international', '2030',100,200,100,'08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq041','Dhaka','Singapore',null,1214,610,870,'international', '1730',100,100,100,'08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq042','Singapore','Dhaka',null,1214,610,870,'international', '0330',100,100,100,'07-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq043','Dubai','Dhaka','Delhi',1014,410,970,'international', '0330',100,100,100,'07-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq051','Dhaka','Dubai','Delhi',1014,410,970,'international','0240',40,40,50, '07-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq061','Jeddah','Dhaka','Dubai',1014,410,970,'international', '0240',40,40,50, '07-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq071','Dhaka','Jeddah','Dubai',1014,410,970,'international', '1630',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq081','Tokyo','Dhaka',null,1914,1410,1670,'international', '1630',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq091', 'Dhaka','Tokyo',null,1014,1914,1410,1670,'international','1630',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq101', 'Dhaka','London',null,2214,1210,1970,'international','1630',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq111','Dhaka','Paris','Dubai',2014,1010,1870,'international','1630',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq121', 'Dhaka','Frankfurt','Brussels',2014,1010,1870,'international', '1020',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq131','Dhaka','Athens','Jeddah',2014,1010,1870,'international', '1020',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'sq141','Dhaka','Brisbane',null,2014,1010,1870,'international', '1020',100,100,100, '08-DEC-09','Singapore Airlines');
+
+insert into flight values( 'ba031','Dhaka','Kualalampur',null,1714,1404,1260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba041','Dhaka',':London','Karachi',2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba051', 'Dhaka','Dubai',null,2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba061','Dhaka','Rome',null,2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba071', 'Dhaka','Paris',null,2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba081','Dhaka','Brisbane','Kualampur',2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba091','Dhaka','Amsterdum',null,2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');
+
+insert into flight values( 'ba101','Dhaka','jeddah',null,2714,2404,2260,'international', '1020',100,100,100, '08-DEC-09','British Airways');

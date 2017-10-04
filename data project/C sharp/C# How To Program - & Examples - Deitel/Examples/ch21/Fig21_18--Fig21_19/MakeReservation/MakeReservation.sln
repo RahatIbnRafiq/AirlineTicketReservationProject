@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeReservation", "http://localhost/MakeReservation/MakeReservation.csproj", "{F18AD78A-5B42-48EB-BD8A-5F900F97386A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F18AD78A-5B42-48EB-BD8A-5F900F97386A}.Debug.ActiveCfg = Debug|.NET
+		{F18AD78A-5B42-48EB-BD8A-5F900F97386A}.Debug.Build.0 = Debug|.NET
+		{F18AD78A-5B42-48EB-BD8A-5F900F97386A}.Release.ActiveCfg = Release|.NET
+		{F18AD78A-5B42-48EB-BD8A-5F900F97386A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

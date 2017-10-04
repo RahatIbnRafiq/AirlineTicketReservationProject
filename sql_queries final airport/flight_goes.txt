@@ -1,0 +1,52 @@
+insert into   flight_goes values ('bg691',10);
+
+insert into   flight_goes values ('bg700',11);
+
+insert into   flight_goes values ('bg692',10);
+
+insert into   flight_goes values ('bg774',11);
+
+insert into   flight_goes values ('ek031',21);
+
+insert into   flight_goes values ('ek041',31);
+
+insert into   flight_goes values ('ek051',26);
+
+insert into  flight_goes values ('ek061',22);
+insert into  flight_goes values ('ek071',37);
+
+insert into  flight_goes values ('ek081',23);
+
+insert into flight_goes values ('ek091',33);
+
+insert into  flight_goes values ('sq041',32);
+
+insert into   flight_goes values ('sq051',33);
+
+insert into   flight_goes values ('sq061',34);
+
+insert into   flight_goes values ('sq071',35);
+
+insert into   flight_goes values ('sq081',26);
+
+insert into   flight_goes values ('sq091',27);
+
+insert into   flight_goes values ('sq101',28);
+
+]insert into   flight_goes values ('sq111',29);
+
+insert into   flight_goes values ('ba031',41);
+
+insert into   flight_goes values ('ba041',31);
+
+insert into   flight_goes values ('ba051',39);
+
+insert into   flight_goes values ('ba061',42);
+
+insert into   flight_goes values ('ba071',34);
+
+insert into   flight_goes values ('ba081',24);
+
+insert into   flight_goes values ('ba091',43);
+
+  

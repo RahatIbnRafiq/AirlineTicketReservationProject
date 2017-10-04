@@ -1,0 +1,776 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Running
+oracle stored procedures in
+C#������������������������������������������������������������������������������������������������������������</title><link rel="stylesheet" href="csharp_oracle_stored_procedures_files/default.css" type="text/css" media="screen"><meta name="description" content="Explains how to use Oracle stored procedures inside C#."><meta name="keywords" content="oracle stored procedures and c#"><meta name="language" content="en"><link href="csharp_oracle_stored_procedures_files/cs_styles.css" type="text/css" rel="stylesheet"></head><body leftmargin="0" topmargin="0" vlink="#ccccff" alink="#ccccff" bgcolor="#000000" link="#000099" marginheight="0" marginwidth="0" text="#000000"><span>
+</span>
+ 
+ 
+ <form name="Form1" method="post" action="csharp_oracle_stored_procedures.aspx" id="Form1">
+<input name="__VIEWSTATE" value="dDwyMDM5Nzg4MTI3Ozs+o+DOK2bWYx/FxDrq3uK3N+xeMQ8=" type="hidden">
+
+ 
+<center>
+	<table width="100%" border="0" cellpadding="3" cellspacing="1">
+		<tbody>
+			<tr valign="top" bgcolor="#646464">
+				<td width="100%" align="center">
+					<p>
+</p><table width="99%" bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="3">
+						<tbody>
+							<tr>
+								<td valign="top" width="17%" bgcolor="#ffb700">
+									<table>
+										<tbody>
+											<tr>
+												<td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-4333758194399401";
+/* 160x600, created 1/31/08 */
+google_ad_slot = "7271474921";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="csharp_oracle_stored_procedures_files/show_ads.js">
+</script><script src="csharp_oracle_stored_procedures_files/expansion_embed.js"></script><script src="csharp_oracle_stored_procedures_files/test_domain.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 600px; position: relative; visibility: visible; width: 160px;"><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 600px; position: relative; visibility: visible; width: 160px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame1" marginheight="0" marginwidth="0" name="google_ads_frame" src="csharp_oracle_stored_procedures_files/ads.htm" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="160" frameborder="0" height="600" scrolling="no"></iframe></ins></ins>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td valign="top" width="78%">
+									<table width="100%" border="0" cellpadding="3" cellspacing="1">
+										<tbody>
+											<tr>
+												<td valign="middle" width="18%" align="center" height="68"><a href="http://www.codersource.net/"><img src="csharp_oracle_stored_procedures_files/CoderSource_Logo.gif" width="98" border="0" height="67"></a>
+												</td>
+												<td valign="middle" width="77%" align="center"><b><font color="#800000" face="Arial" size="5">CoderSource.net</font></b>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="100%" border="0" cellpadding="3" cellspacing="1">
+										<tbody>
+											<tr bgcolor="#6c000e">
+												<td valign="top"><b><font color="#ffb700" face="arial" size="2"><titleofsheet>Running
+oracle stored procedures in
+C#������������������������������������������������������������������������������������������������������������
+- <a class="lnk4" href="http://www.codersource.net/codersource_user_details.aspx?username=edlukens"> Article</a> by <a class="lnk4" href="http://www.codersource.net/user/Profile.aspx?UserID=1102" title="Click to View Profile or Send Message">edlukens</a><table class="txt2Bold" style="border-collapse: collapse;" width="100%" bgcolor="#ffffff" border="1" bordercolor="#6c000e"><tbody><tr><td align="left">Rating:  </td></tr></tbody></table></titleofsheet></font></b><font color="#ffb700" face="arial" size="2"></font>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4333758194399401";
+/* 468x60, created 1/31/08 - page top */
+google_ad_slot = "7531215075";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript" src="csharp_oracle_stored_procedures_files/show_ads.js">
+</script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 60px; position: relative; visibility: visible; width: 468px;"><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 60px; position: relative; visibility: visible; width: 468px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame2" marginheight="0" marginwidth="0" name="google_ads_frame" src="csharp_oracle_stored_procedures_files/ads_002.htm" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="468" frameborder="0" height="60" scrolling="no"></iframe></ins></ins>												</td>
+											</tr>
+											<tr>
+												<td class="txt3" valign="top">
+													<span><div align="right"></div><div align="left"><p><b>Date:</b> 3/22/2005 7:44:58 PM</p></div></span><div class="KonaBody">
+
+<h1 align="center"><b><font face="Arial" size="2">Run Oracle Stored Procedures From C#</font></b></h1>
+<p><font face="Arial" size="2">Last Update: 18 February 2005</font></p>
+<p><font face="Arial" size="2">Note: This article assumes a basic knowledge of Oracle stored procedures and
+how to create and access them.</font></p>
+<p><font face="Arial" size="2">While a developer can write practically anything in C#, there
+are times when it would be nice to have the ability to alter a process without
+recompiling and redeploying an application. Let's say, for instance, that we are
+coding for an insurance <a id="KonaLink0" target="undefined" class="kLink" style="text-decoration: underline ! important; position: static;" href="#"><font style="color: blue ! important; font-family: Arial; font-weight: 400; font-size: 13px; position: static;" color="blue"><span class="kLink" style="color: blue ! important; font-family: Arial; font-weight: 400; font-size: 13px; position: static;">business</span></font></a> and an insured's premium is based upon certain
+classification codes. Of course, these classification codes are always changing
+from year to year and how we determine the premium classification is determined
+on these codes. The easiest way to solve this problem is implement the
+processing logic within the C# code. Another way is to build a cross-reference
+table within a database so that when we feed it certain parameters as keys, the
+query returns the cross-referenced value. One more way is to implement a stored
+procedure with the logic for a particular business rule. This article will
+explore the two ways that do not require altering C# code: a cross reference
+table and a stored procedure. This article will also show how it is much more
+advantageous to use a stored procedure for rules that could change regularly.</font></p>
+<h2><b><font face="Arial" size="2">A Business Rule</font></b></h2>
+<p><font face="Arial" size="2">What do we mean by a business rule? A business rule is a term
+to reference how input data gets processed based upon the way a company
+operates. In other words, for certain types of data there are specific rules
+that apply in their usage for intended outputs. Before there were such things as
+stored procedures and stored functions, we would program our rule logic right
+inside the application code. This means that when a business changes (as they do
+constantly), we have to make modifications to the source code, recompile, test,
+debug, and re-deploy. Not only that, modern enterprise information systems are so
+complex that we could make a programming change in one program without knowing
+the effects of that change on other programs. The appeal of stored procedures is
+that we can encapsulate a rules-based processing code-snippet into a single
+database object.</font></p>
+<p>
+                  <!-- Ad Link Place Holder here -->
+</p><div align="center"><p><adlinks></adlinks></p></div>
+<p></p>
+
+<p><font face="Arial" size="2">Lets say that we are working on an insurance claims processing
+application and we need to classify subscribers into certain divisions based
+upon some input criteria. Our rule logic in pseudocode is this:</font></p>
+<table width="100%" border="0">
+  <tbody><tr>
+    <td width="100%" bgcolor="#c0c0c0"><font face="Arial" size="2">If code1 = 17 Then<br>
+&nbsp;&nbsp;&nbsp; If code2 = 03 or (code2 &gt;= 1A and code2 &lt;= 1Z)<br>
+&nbsp;&nbsp;&nbsp; Then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; division = "Division 1"<br>
+&nbsp;&nbsp;&nbsp; Else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; division = "Division 2"<br>
+      &nbsp;&nbsp;&nbsp; End If<br>
+      Else<br>
+      &nbsp;&nbsp;&nbsp; If code1 = 47 Then<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If code2 = 03 or (code2 &gt;=
+      1A and code2 &lt;= 1Z)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      division = "Division 3"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Else<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      division = "Division 4"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End If<br>
+      &nbsp;&nbsp;&nbsp; Else<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If code2
+      = 03 or (code2 &gt;= 1A and code2 &lt;= 1Z)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      division = "Division 5"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Else<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      division = "Division 6"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End If<br>
+      &nbsp;&nbsp;&nbsp; End If<br>
+      End If</font></td>
+  </tr>
+</tbody></table>
+<p><font face="Arial" size="2">In the above pseudocode segment, the rule is this: You are given two codes
+named code1 and code2. By passing code1 and code2 through the logic above, you
+will be returned a division, "Division 1" through "Division
+6." Your task is to implement this business rule into program code and
+within a software application. Your choices are to use an "exploded
+table" model or implement via an Oracle stored procedure.</font></p>
+<h2><b><font face="Arial" size="2">The Exploded Table Model</font></b></h2>
+<p><font face="Arial" size="2">What do we mean by an "Exploded Table Model?" We basically mean
+rule implementation through a cross-reference table. For a minute, take a look
+at the above example and try to create a cross-reference table with a
+combination of code1 and code2 as the primary key. We will just take the case of
+code1 = 17 for example. Our "exploded" cross-reference table would
+look like the following:</font></p>
+<table width="34%" border="1">
+  <tbody><tr>
+    <td width="43%" bgcolor="#c0c0c0"><b><font face="Arial" size="2">Key</font></b></td>
+    <td width="57%" bgcolor="#c0c0c0"><b><font face="Arial" size="2">Division</font></b></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">Default</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 2</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">1703</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">171A</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">171B</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">171C</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">171D</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">...</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+  <tr>
+    <td width="43%"><font face="Arial" size="2">171Z</font></td>
+    <td width="57%"><font face="Arial" size="2">Division 1</font></td>
+  </tr>
+</tbody></table>
+<p><font face="Arial" size="2">For the sake of space, we only listed "..." in the first column for
+key values 171E through 171Y. However, we see that we would need 27 rows to
+handle the rule of code1 = 17. In order to use this table, we would build a key
+in our C# program of a concatenation of code1 plus code2 and pass it to our
+retrieval algorithm as a key in order
+to return the division name.<br>
+<br>
+Now this would work fine once you have it all set up. And remember that we must
+have a row for each individual case which would be simple mathematics to
+determine how many rows we need for all possible conditions. All is well until
+one day we have to make a change. Lets say that the policy totally changed on
+how to process input codes 1 and 2 or the division names changed. Someone would
+have to go into the table and change each row affected by the new rule. Wouldn't
+it be much easier to sort of "script" the rule by code and you now
+only have to change the logic in one place. This is where an Oracle stored
+procedure really comes in handy.</font></p>
+
+<h2><b><font face="Arial" size="2">The Oracle Stored Procedure</font></b></h2>
+
+<p><font face="Arial" size="2">The other alternative is to create an Oracle stored procedure. We could
+implement our stored procedure with the following syntax:</font></p>
+
+<table width="100%" border="0">
+  <tbody><tr>
+    <td width="100%" bgcolor="#c0c0c0"><font face="Arial" size="2">&nbsp; CREATE OR REPLACE PROCEDURE
+      ASSIGNDV(CODE1 IN VARCHAR, CODE2 IN VARCHAR, DIV OUT&nbsp; VARCHAR)<br>
+      &nbsp;&nbsp;&nbsp; IS<br>
+      &nbsp;&nbsp;&nbsp; BEGIN<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF CODE1 = '17' THEN<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      IF CODE2 = '03' OR (CODE2 &gt;= '1A' AND CODE2 &lt;= '1Z') <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      THEN<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DV := 'Division 1';<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ELSE<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DV := 'Division 2';<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      END IF;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ELSIF CODE1 = '47' THEN<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      IF CODE2 = '03' OR (CODE2 &gt;= '1A' AND CODE2 &lt;= '1Z')<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      THEN&nbsp; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DV := 'Division 3';<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ELSE<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DV := 'Division 4';<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      END IF:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ELSIF CODE2 = '03' OR (CODE2
+      &gt;= '1A' AND CODE2 &lt;= '1Z')<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      THEN<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DV := 'Division 5';<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ELSE<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DV := 'Division 6';<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; END IF;<br>
+      &nbsp;&nbsp;&nbsp; END;<br>
+      </font>
+    </td>
+  </tr>
+</tbody></table>
+<p><font face="Arial" size="2">Now, you actually have the business rule "scripted" as an object
+inside the Oracle database. There is no need to pre-build a result table and if
+there are any changes to the rule, we only have to change the logic inside the
+procedure. For the purposes of this example, we name the stored procedure <b>ASSIGNDV.</b></font></p>
+
+<h2><b><font face="Arial" size="2">C# Code Implementation</font></b></h2>
+
+<p><font face="Arial" size="2">Just how do we call an Oracle stored procedure from C#? First of all, you
+need a few prerequisites. For this example, we are running on an Oracle 9i
+database. There is an important download that you must install prior to
+implementation of C# code to call Oracle stored procedures. You need the Oracle
+Developer Tools suite which includes the Oracle Data Provider for .NET. This
+download can be found at:</font></p>
+
+<p><a href="http://www.oracle.com/technology/software/tech/dotnet/odt_index.html"><font face="Arial" size="2">http://www.oracle.com/technology/software/tech/dotnet/odt_index.html</font></a></p>
+
+<p><font face="Arial" size="2">Now to implement the code: The first thing we want to do is use the
+Oracle.DataAccess.Client dll:</font></p>
+
+<p><font face="Arial" size="2"><font color="#0000ff">using</font> 
+Oracle.DataAccess.Client;</font></p>
+<p><font face="Arial" size="2">Then, we create a connection object of type OracleConnection,
+open the connection, and declare an OracleCommand object using the stored
+procedure name as an input argument. One of the properties we want to set in the
+OracleCommand object cmd is the CommandType which will be
+CommandType.StoredProcedure.</font></p>
+<table width="100%" border="0">
+  <tbody><tr>
+    <td width="100%" bgcolor="#c0c0c0"><font face="Arial" size="2">OracleConnection conn = <font color="#0000ff">new</font>
+      OracleConnection(<br>
+      "Persist Security Info=False;User ID=SCOTT;Password=TIGER;Data
+      Source=MYSERVER;");<br>
+      conn.Open();<br>
+      OracleCommand cmd = <font color="#0000ff">new</font> OracleCommand("ASSIGNDV",conn);<br>
+      cmd.CommandType = CommandType.StoredProcedure;</font></td>
+  </tr>
+</tbody></table>
+<p><font face="Arial" size="2">Now we want to declare the input and output parameters to and from the stored
+procedure. We use a class of type OracleParameter to do this. The arguments to
+the constructor for OracleParameter are the parameter name and the Oracle
+database type (OracleDbType). As a property to our parameter objects, we give
+the direction of input or output (ParameterDirection.Input,
+ParameterDirection.Output). Finally, we execute the stored procedure through the
+ExecuteNonQuery method on the cmd object and close the connection. The return
+value from the stored procedure can be found in the "dv" parameter of
+the cmd object prm3 if all is successful.</font></p>
+
+<table width="100%" border="0">
+  <tbody><tr>
+    <td width="100%" bgcolor="#c0c0c0"><font face="Arial" size="2">OracleParameter prm1 = <font color="#0000ff">new</font>
+      OracleParameter("Code1",OracleDbType.Varchar2);<br>
+      prm1.Direction = ParameterDirection.Input;<br>
+      prm1.Value = sCode1;<br>
+      cmd.Parameters.Add(prm1);<br>
+      <br>
+      OracleParameter prm2 = <font color="#0000ff">new</font> OracleParameter("Code2",OracleDbType.Varchar2);<br>
+      prm2.Direction = ParameterDirection.Input;<br>
+      prm2.Value = sCode2;<br>
+      cmd.Parameters.Add(prm2);</font>
+      <p><font face="Arial" size="2">OracleParameter prm3 = <font color="#0000ff">new</font>
+      OracleParameter("dv",OracleDbType.Varchar2,10);<br>
+      prm3.Direction = ParameterDirection.Output;<br>
+      cmd.Parameters.Add(prm3);<br>
+      <br>
+      cmd.ExecuteNonQuery();<br>
+      conn.Close();<br>
+      Console.WriteLine("Division is: " +
+      cmd.Parameters["dv"].Value);</font></p></td>
+  </tr>
+</tbody></table>
+<h2><b><font face="Arial" size="2">Summary</font></b></h2>
+<p><font face="Arial" size="2">What is really nice about Oracle stored procedures is that
+they are compiled objects. Their code does not have to be recompiled at runtime
+for each call. Therefore they can be about as fast as compiled C# code. One must
+remember that the stored procedures are part of a database and their performance
+is subjective to it. Now, if the rule to determine DV in the above example
+changes, we only have to go into the stored procedure and change that. There is
+no need to check out code, make the change, and recompile. Our application
+programs can stay more in a fixed state.</font></p>
+<!-- End of text --> <p>
+</p></div></td></tr>
+<tr>
+<td valign="bottom" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4333758194399401";
+/* 250x250, created 1/31/08 */
+google_ad_slot = "5534717556";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="csharp_oracle_stored_procedures_files/show_ads.js">
+</script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 250px; position: relative; visibility: visible; width: 250px;"><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 250px; position: relative; visibility: visible; width: 250px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame3" marginheight="0" marginwidth="0" name="google_ads_frame" src="csharp_oracle_stored_procedures_files/ads_003.htm" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="250" frameborder="0" height="250" scrolling="no"></iframe></ins></ins></td>
+</tr>
+<tr>
+	<td>
+		<table width="100%" border="0" cellpadding="2" cellspacing="0">
+			<tbody><tr class="txt3" bgcolor="LightGrey">
+				<td width="50%">
+					<span id="Codersource_MoreLinks1_lblRatings"><b>You Can Rate this Article, if you are Logged In</b></span>
+				</td>
+				<td width="50%" align="right">
+					&nbsp;
+					&nbsp; 
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+			<td colspan="2">&nbsp;</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+
+<tr>
+	<td valign="center" align="left">
+		<h4 align="left"><font face="Arial, Helvetica, sans-serif" size="2"> More Links from 
+				CoderSource.net:</font></h4>
+		<font face="Arial, Helvetica, sans-serif" size="2">
+			<table id="Codersource_MoreLinks1_dlMoreLinks" border="0" cellspacing="0">
+	<tbody><tr>
+		<td><font face="Arial" size="2">
+					<a class="SideLinks" href="http://www.codersource.net/csharp_sqldmo_sqlserver.aspx">SQL
+DMO for automated Database Backup and
+Restore������������������������������������������������������������������������������������������������������������</a>
+				</font></td>
+	</tr>
+</tbody></table>
+			</font><p>
+<font face="Arial, Helvetica, sans-serif" size="2">		</font>
+	</p></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+	<td valign="center" align="center">
+	<table>
+	<tbody><tr><td left="" align="">
+		<font face="Arial, Helvetica, sans-serif" size="2"><b>Refer to a Friend:</b></font>
+		<p></p>
+		<p><font face="Arial, Helvetica, sans-serif" size="2"><b>Your Details:</b></font></p>
+		<p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Name: <input name="Codersource_MoreLinks1:FromName" id="Codersource_MoreLinks1_FromName" type="text">&nbsp;&nbsp;&nbsp; 
+				e-mail:<input name="Codersource_MoreLinks1:FromEMail" id="Codersource_MoreLinks1_FromEMail" size="25" type="text"></font>
+	</p></td></tr>				
+	<tr><td left="" align="">
+		<p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b>Friend Details:</b></font>
+		</p><p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Name:<input name="Codersource_MoreLinks1:ToName" id="Codersource_MoreLinks1_ToName" type="text">&nbsp;&nbsp;&nbsp; 
+				e-mail:<input name="Codersource_MoreLinks1:ToEMail" id="Codersource_MoreLinks1_ToEMail" size="25" type="text">&nbsp;&nbsp;&nbsp;&nbsp;</font>
+	</p></td></tr>				
+	<tr><td left="" align="">
+				
+		<p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><br>
+				<input name="Codersource_MoreLinks1:Submit1" id="Codersource_MoreLinks1_Submit1" size="15" value="Refer" type="submit">
+			</font>
+	</p></td></tr>				
+</tbody></table>		
+	</td>
+</tr>
+<tr>
+	<td valign="center" align="left"></td>
+</tr>
+
+</tbody></table>
+</td>
+ <td valign="top" width="6%" bgcolor="#ffb700">
+	<div align="left">
+		<table width="103%" border="0" cellpadding="3" cellspacing="0" height="99%">
+			<tbody>
+				<tr bgcolor="#6c000e">
+					<td width="100%" height="18"><font color="#ffb700" face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>MENU</b></font></td>
+				</tr>
+				<tr bgcolor="#ffb700">
+					<td width="100%" align="left" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/default.aspx">Home</a></font>
+					</td>
+				</tr>
+				<tr bgcolor="#ffb700">
+					<td width="100%" align="left" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/codersource_mfc_prog.html">MFC</a>&nbsp;</font>
+					</td>
+				</tr>
+				<tr bgcolor="#ffb700">
+					<td width="100%" align="left" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/codersource_cppprogramming.html">C++</a></font>
+					</td>
+				</tr>
+				<tr bgcolor="#ffb700">
+					<td width="100%" align="left" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/codersource_dot_net.html">.Net</a></font>
+					</td>
+				</tr>
+				<tr bgcolor="#ffb700">
+					<td width="100%" align="left" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/codersource_win32prog.html">WIN32</a></font>
+					</td>
+				</tr>
+				<tr bgcolor="#ffb700">
+					<td width="100%" align="left" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/codersource_programming.html">Programming</a></font>
+					</td>
+				</tr>
+
+
+<tr bgcolor="#ffb700">
+	<td width="100%" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/Forums/">Forum</a></font>
+	</td>
+</tr>
+<tr bgcolor="#ffb700">
+	<td width="100%" height="18"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a class="SideLinks" href="http://www.codersource.net/codersource_article_user_console.aspx">My 
+				Articles</a></font>
+	</td>
+</tr>
+<tr bgcolor="#ffb700">
+	<td width="100%" height="34"></td>
+</tr>
+<tr bgcolor="#ffb700">
+	<td width="100%" height="34">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4333758194399401";
+/* 180x90, created 1/31/08 */
+google_ad_slot = "2743162109";
+google_ad_width = 180;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="csharp_oracle_stored_procedures_files/show_ads.js">
+</script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 90px; position: relative; visibility: visible; width: 180px;"><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 90px; position: relative; visibility: visible; width: 180px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame4" marginheight="0" marginwidth="0" name="google_ads_frame" src="csharp_oracle_stored_procedures_files/ads_004.htm" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="180" frameborder="0" height="90" scrolling="no"></iframe></ins></ins>
+</td>
+</tr>
+<tr bgcolor="#ffb700">
+	<td width="100%" height="34">
+		<a href="http://fusion.google.com/add?feedurl=http%3A//www.codersource.net/rss-codersource.xml">
+			<img src="csharp_oracle_stored_procedures_files/add.gif" alt="Add to Google" width="104" border="0" height="17"></a>
+	</td>
+</tr>
+<tr bgcolor="#ffb700">
+	<td width="100%" height="34">
+		<a href="http://add.my.yahoo.com/content?.intl=us&amp;url=http%3A//www.codersource.net/rss-codersource.xml">
+			<img src="csharp_oracle_stored_procedures_files/addtomyyahoo4.gif" alt="Add to My Yahoo!" width="91" align="middle" border="0" height="17"></a>
+	</td>
+</tr>
+<tr bgcolor="#ffb700">
+	<td width="100%" height="34"></td>
+</tr>
+<tr>
+	<td valign="middle" align="center" height="34">
+		<font face="Arial" size="2">
+			
+  
+<div style="float: left;" class="bannerWelcome">
+	Welcome to Community Server <a href="http://www.codersource.net/login.aspx?ReturnUrl=/csharp_oracle_stored_procedures.aspx">Login</a> | <a href="http://www.codersource.net/user/CreateUser.aspx?ReturnUrl=/csharp_oracle_stored_procedures.aspx">Register</a> | <a href="http://www.codersource.net/languages/en-US/docs/faq.aspx">Faq</a> &nbsp;
+</div>
+<br>
+  
+		</font>
+	</td>
+</tr>
+
+<tr bgcolor="#6c000e">
+	<td width="100%" height="21"><font color="#ffb700" face="arial" size="2"><b>SEARCH</b></font>
+	</td>
+</tr><tr valign="top" bgcolor="#ffb700">
+	<td width="100%" height="79">
+		<font face="Arial" size="2">
+			<!-- SiteSearch Google -->
+<!-- SiteSearch Google -->
+</font><form method="get" action="http://www.google.com/custom" target="_top">
+<table bgcolor="#cccccc" border="0">
+<tbody><tr><td valign="top" align="left" height="32" nowrap="nowrap">
+<a href="http://www.google.com/">
+<img src="csharp_oracle_stored_procedures_files/Logo_25gry.gif" alt="Google" align="middle" border="0"></a>
+</td>
+<td nowrap="nowrap">
+<input name="domains" value="www.codersource.net" type="hidden">
+<label for="sbi" style="display: none;">Enter your search terms</label>
+<input name="q" size="15" maxlength="255" id="sbi" type="text">
+<label for="sbb" style="display: none;">Submit search form</label>
+<input name="sa" value="Search" id="sbb" type="submit">
+</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td nowrap="nowrap">
+<table>
+<tbody><tr>
+<td>
+<input name="sitesearch" value="" checked="checked" id="ss0" type="radio">
+<label for="ss0" title="Search the Web"><font color="#000000" size="-1">Web</font></label></td>
+<td>
+<input name="sitesearch" value="www.codersource.net" id="ss1" type="radio">
+<label for="ss1" title="Search www.codersource.net"><font color="#000000" size="-1">Codersource.net</font></label></td>
+</tr>
+</tbody></table>
+<input name="client" value="pub-4333758194399401" type="hidden">
+<input name="forid" value="1" type="hidden">
+<input name="ie" value="ISO-8859-1" type="hidden">
+<input name="oe" value="ISO-8859-1" type="hidden">
+<input name="safe" value="active" type="hidden">
+<input name="cof" value="GALT:#0000FF;GL:1;DIV:#6C000E;VLC:800000;AH:center;BGC:FFFFFF;LBGC:FFB700;ALC:00000F;LC:00000F;T:00000F;GFNT:0000FF;GIMP:0000FF;LH:67;LW:100;L:http://www.codersource.net/CoderSource_Logo.gif;S:http://www.codersource.net;LP:1;FORID:1" type="hidden">
+<input name="hl" value="en" type="hidden">
+</td></tr></tbody></table>
+</form>
+<!-- SiteSearch Google --><font face="Arial" size="2">		<!-- SiteSearch Google --></font></td>
+<!-- Start of Right Band ad place holder -->
+</tr><tr bgcolor="#ffb700">
+	<td width="100%" align="center" height="18">
+		<rightads><script type="text/javascript" language="javascript" src="csharp_oracle_stored_procedures_files/1e-bzug.htm"> </script><a href="http://www.jdoqocy.com/click-1872165-10313634" target="_blank">  <img src="csharp_oracle_stored_procedures_files/image-1872165-10313634.gif" alt="" width="125" border="0" height="125"></a></rightads>
+	</td>
+</tr>
+<!-- End of Right Band placeholder -->
+<tr>
+	<td width="100%" height="187">
+		<div align="left">
+			<p><font face="Arial, Helvetica, sans-serif" size="2">NOTES:</font></p>
+			<hr color="#800000" noshade="noshade">
+		</div>
+		<div align="left">
+			<p><font face="Arial, Helvetica, sans-serif" size="2">Thanks for visiting our <a class="SideLinks" href="http://www.codersource.net/default.aspx">
+						CoderSource.net</a>. This site will be improved with more articles. 
+					Interested visitors can also submit their articles through the <a class="SideLinks" href="http://www.codersource.net/codersource_submit_article.aspx">
+						Submit Article</a> link.Your article will also be published after due 
+					consideration by the editor.&nbsp;</font></p>
+		</div>
+	</td>
+</tr>
+</tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<div align="center">
+	<center>
+		<table width="95%" border="0" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td width="100%" align="center" height="25"><font color="white" face="arial" size="2">© 
+							Copyright 2003. All rights on content reserved by CoderSource.net. <a class="SideLinks" href="http://www.codersource.net/codersource_mail.html">
+								Contact</a> &nbsp;&nbsp; <a class="SideLinks" href="http://www.codersource.net/codersource_aboutme.html">
+								About Us</a> </font>
+						<center></center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<br>
+		<br>
+	</center>
+</div>
+<center></center>
+<!-- DynamiContext AdLinks  -->
+<script language="JavaScript">
+var dc_UnitID = 14;
+var dc_PublisherID = 2853;
+var dc_AdLinkColor = 'blue';
+var dc_adprod='ADL';
+</script>
+<script language="JavaScript" src="csharp_oracle_stored_procedures_files/KonaLibInline.js"></script><script language="JavaScript" src="csharp_oracle_stored_procedures_files/generatedPublisherConfig.js"></script><script language="JavaScript" src="csharp_oracle_stored_procedures_files/KonaBase.js"></script><style id="konaStyle" type="text/css">
+ span.kLink { border-top: 0px none !important;border-left: 0px none !important;border-right: 0px none !important;border-bottom:  1px solid  ;padding : 0px 0px 1px 0px !important;color:blue;background: transparent none;width: auto !important;float: none !important;display:inline !important; } 
+ a.kLink { color:blue !important ; border-bottom-style: none;text-decoration: underline;cursor: pointer;font-family: verdana;border: 0px none transparent !important;background: transparent none !important;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px !important;text-transform: none !important;display:inline !important;font-variant:normal;top:0px; right:0px;bottom:0px;left:0px; } 
+ a.kLink:link { color:blue !important ; border-bottom-style: none;text-decoration: underline;cursor: pointer;font-family: verdana;border: 0px none transparent !important;background: transparent none !important;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px !important;text-transform: none !important;display:inline !important;font-variant:normal;top:0px; right:0px;bottom:0px;left:0px; } 
+ a.kLink:hover { color:blue;text-decoration: underline;cursor: pointer;font-family: verdana;border: 0px none transparent !important;background: transparent none !important;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px !important;text-transform: none !important;display:inline !important;font-variant:normal;top:0px; right:0px;bottom:0px;left:0px; } 
+ a.kLink:visited { color:blue;text-decoration: underline;cursor: pointer; font-family: verdana;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px; } 
+ .sponsor { font-family: MS Sans Serif, Verdana; color: #AFAFAF;font-size: 9pt; cursor: default; } 
+ .konaLayers { azimuth:center;border-collapse:separate;border-spacing:0;caption-side:top;cursor:auto;direction:ltr;elevation:level;empty-cells:show;font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;list-style-image:none;list-style-position:outside;list-style-type:disc;orphans:2;page-break-inside:auto;pitch-range:50;pitch:medium;position:static;richness:50;right:auto;speak-header:once;speak-numeral:continuous;speak:normal;speech-rate:medium;stress:50;text-align:left;text-indent:0;text-transform:none;visibility:visible;volume:medium;white-space:normal;widows:2;word-spacing:normal; } 
+ .konaLayers * { background-attachment:scroll;background-color:transparent;background-image:none;background-position:0% 0%;background-repeat:repeat;border-style: none none none none;border-width: medium medium medium medium;clear:none;color:inherit;content:normal;counter-increment:none;counter-reset:none;cue-after:none;cue-before:none;float:none;left:auto;letter-spacing:normal;margin: 0px 0px 0px 0px;max-height:none;max-width:none;min-height:0;min-width:0;outline-color:invert;outline-style:none;outline-width:medium;overflow:visible;padding:0px 0px 0px 0px;page-break-after:auto;page-break-before:auto;pause-after:0;pause-before:0;position:static;table-layout:auto;text-decoration:none;top:auto;unicode-bidi:normal;width:auto;z-index:auto; } 
+ .konaLayers .konaLayer { position: absolute; top:0px; left:0px; width: 313px; padding: 0px; visibility: hidden; text-align:left; overflow: hidden; } 
+ .konaLayers .konaLayer a { font-weight: normal;text-decoration:none;border: 0px none transparent !important;background: transparent none !important;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px !important;text-transform: none !important;display:inline !important;font-variant:normal;top:0px; right:0px;bottom:0px;left:0px; } 
+ .konaLayers .konaLayer a:link { font-weight: normal;text-decoration:none;border: 0px none transparent !important;background: transparent none !important;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px !important;text-transform: none !important;display:inline !important;font-variant:normal;top:0px; right:0px;bottom:0px;left:0px; } 
+ .konaLayers .konaLayer a:hover { font-weight: normal;text-decoration:none;border: 0px none transparent !important;background: transparent none !important;margin: 0px 0px 0px 0px; padding:0px 0px 0px 0px !important;text-transform: none !important;display:inline !important;font-variant:normal;top:0px; right:0px;bottom:0px;left:0px; } 
+ .konaLayers .konaLayer b { font-size:inherit; } 
+ a.CBL { cursor:default; } 
+ a.CBL:link { cursor:default; } 
+ a.CBL:hover { cursor:default; } 
+ a.CBL:visited { cursor:default; } 
+ .konaLayers .CBL .handleTd div { cursor:default; } 
+ .konaLayers .konaPlate { cursor : pointer; } 
+ .konaLayers .konaPlate .konaBox { background: url(http://kona.kontera.com/javascript/lib/imgs/top_box.gif) left top no-repeat;width: 313px; } 
+ .konaLayers .konaPlate .konaBottomBox { width: 313px; height:45px; font-size: 3px; background: url(http://kona.kontera.com/javascript/lib/imgs/box_bottom.png) left top no-repeat; } 
+ .konaLayers .konaPlate .konaBottomBox_Right { width: 313px; height:45px; font-size: 3px; background: url(http://kona.kontera.com/javascript/lib/imgs/box_bottom_right.png) left top no-repeat; } 
+ .konaLayers .konaPlate .konaBottomBox_drag { width: 313px; height:20px; font-size: 3px; background: url(http://kona.kontera.com/javascript/lib/imgs/box_bottom_drag.png) top no-repeat; } 
+ .konaLayers .handleTd { vertical-align: top; width: 180px; } 
+ .konaLayers .handleTd div { cursor: move; padding: 0px 0px 0px 33px; font-size: 3px; } 
+ .konaLayers .handleTd img {  } 
+ .konaLayers .frameBarCell_left { width:88px; vertical-align: top; padding: 0px 0px 0px 0px; } 
+ .konaLayers .frameBarCell_right { width: 32px; vertical-align: top; padding-top: 0px; font-size: 5px; } 
+ .konaLayers .frameBar { margin-left: 7px; margin-right: 6px; cursor:auto; width:300px; } 
+ .konaLayers .konaDescDiv {  cursor: pointer; padding-top: 2px; } 
+ .konaLayers .table02 { margin-left: 9px; font: normal 13px arial; width: 305px; } 
+ .konaLayers .table03 { margin-left: 8px; font: normal 13px arial; width: 280px; table-layout: fixed; } 
+ .konaLayers .table03_flv02 { margin: 0px 0px 0px 32px; width: 242px; font: normal 13px arial; table-layout: fixed; } 
+ .konaLayers .konaLayerTitle { text-align:center; padding-right: 10px; } 
+ .konaLayers .konaLayerRMTitle { text-align:left; padding-right: 10px; padding-left: 6px; } 
+ .konaLayers .konaLayerTitleText  { font: bold 11px tahoma; color:#FFA200;; !important; text-decoration: underline;display:block; } 
+ .konaLayers .konaLayerTitleText b { font-size : 11px; color: #FFA200; } 
+ .konaLayers .konaLayerDesc { padding: 6px 7px 0px 0px; font: normal 11px verdana !important; color: BLACK; text-align: left; } 
+ .konaLayers .konaLayerDescDownlod { padding: 6px 7px 0px 0px; vertical-align:top; font: normal 11px verdana !important; color: BLACK; text-align: left; } 
+ .konaLayers .konaLayerDesc b { font-size : 11px; color: BLACK; } 
+ .konaLayers .konaLayerLinks td { padding-top: 8px; } 
+ .konaLayers .konaLayerShopLinks td { padding-top: 1px; font-size: 9px; } 
+ .konaLayers .site { padding-left: 8px; overflow:hidden; } 
+ .konaLayers .site a { color: #666666 !important; font: normal 11px arial !important; text-decoration: underline !important; overflow:hidden; } 
+ .konaLayers .site a:hover { color: #FFA200 !important; } 
+ .konaLayers .buyNow { text-align: right; width:105px; } 
+ .konaLayers .konaLayer img { border: 0px;display:inline; padding:0px; } 
+ .konaLayers .imgBanner { padding: 6px 13px 0px 6px; vertical-align: top; width:51px; text-align: center;padding-bottom: 4px; } 
+ .konaLayers .imgShoppingBanner { padding: 5px 4px 0px 3px; vertical-align: top; width: 51px; text-align: center; } 
+ .konaLayers .imgBanner_down { padding: 5px 13px 0px 13px; vertical-align: top; width:51px; text-align: center; } 
+ .konaLayers .top_curve { width: 313px; height: 10px; padding:0px; margin:0px;background: url(http://kona.kontera.com/javascript/lib/imgs/top_curve.png) left top no-repeat; } 
+ .konaLayers .drop_top_curve { width: 313px; height: 35px;font-size: 3px;background: url(http://kona.kontera.com/javascript/lib/imgs/drop_top_curve.png) top no-repeat; } 
+ .konaLayers .drop_top_curve_right { width: 313px; height: 35px; font-size: 3px;background: url(http://kona.kontera.com/javascript/lib/imgs/drop_top_curve_right.png) top no-repeat; } 
+ .konaLayers .konaSearchRow td { padding-top: 2px; } 
+ .konaLayers .konaSearchTable { margin-left: 5px; font: normal 13px arial; } 
+ .KonaBody { display:inline; } 
+ .konaLayers .table02_flv { margin-left: 10px; margin-top: 3px; margin-bottom: -4px; } 
+ .konaLayers .table02_flv02 { margin-left: 34px; width: 234px; margin-top: 3px; } 
+ .konaLayers .table02_flv03 { margin-left: 6px;margin-top: 3px; } 
+ .konaLayers .konaLayer_flvTD01 { padding: 6px 6px 0px 6px; } 
+ .konaLayers .konaLayer_flvTD02 { padding: 5px 6px 0px 6px; } 
+ .konaLayers .konaLayer_flvEmbed01 {  } 
+ .konaLayers .konaLayer_flvEmbed02 { margin-bottom: -3px; } 
+ .konaLayers .konaLayerDesc_nearFLV { font: normal 11px verdana !important; color: BLACK; text-align: left;vertical-align: top; padding: 11px 10px 0px 0px; } 
+ .konaLayers .konaLayerDesc_underFLV { font: normal 11px verdana !important; color: BLACK; text-align: left;font: normal 11px/14px verdana !important; vertical-align: top; padding: 4px 0px 0px 6px; } 
+ .konaLayers .konaLayerLearnMore { text-align:left; vertical-align: bottom; padding: 0px 0px 1px 6px; } 
+ .konaLayers .konaLayerLearnMore02 { vertical-align: top; text-align:right;width: auto !important; padding: 4px 0px 0px 0px !important; } 
+ .konaLayers .konaLayerDownload { vertical-align: top; text-align:right;width: 132px !important; padding: 4px 0px 0px 0px !important; } 
+ .konaLayers .konaLayerLinks_underFLV td { padding-top: 4px; padding-bottom: 4px; line-height: 14px; } 
+ .konaLayers .konaLayerLinks_underFLV02 td { padding-top: 4px; line-height: 14px; } 
+ .konaLayers .konaFlashWrap { width: 320px; height: 288px;  } 
+ .konaLayers .konaFlashDrag { position:absolute;width:198px;height:26px;background-color:#ffffff;opacity:0;filter:alpha(opacity=0);cursor:move; } 
+ .konaLayers .konaFlashContent { width: 320px; height: 288px; } 
+ .konaLayers #konaFlashBubble { width: 320px; height: 288px;  } 
+ .konaLayers .konaBigFlashWrap { position:absolute;width:470px;height:395px; } 
+ .konaLayers .konaBigFlashDrag { position:absolute;z-index:17;width:347px;height:24px;left:85px;top:5px;background-color:#ffffff;opacity:0;filter:alpha(opacity=0);cursor:move;  } 
+ .konaLayers .konaBigFlashContent { position:absolute;left:0;top:0;z-index:12;width:470px;height:395px;  } 
+ .konaLayers .konaInfocomSearchTD .konaLineInputTD { position:relative; } 
+ .konaInfocomTableContainer { margin-left:21px; } 
+ .konaInfocomSearchTD { background: url(http://kona.kontera.com/javascript/lib/imgs/konaInfocom_search_area_trans.gif); width: 270px; height:46px; } 
+ .konaInfocomSearchTable { margin-top: 10px; margin-left:13px; width:244px; } 
+ .konaInfocomSearchField { width:163px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; background-color:#FFF;color:#000; border:1px inset #ccc; padding: 1px 0px; } 
+ .konaInfocomInputContainer { position:relative; width: 163px; text-align: left; overflow: hidden; } 
+ .konaLayers .konaFlashWrap { position:relative; } 
+ .konaLayers .konaExpandFlashWrap { position:relative; } 
+ .konaLayers .konaFlashDrag { z-index:100;position:absolute;width:198px;height:26px;background-color:#ffffff;opacity:0;filter:alpha(opacity=0.0);cursor:move;top:0px; } 
+ .konaLayers .konaExpandFlashContent {  } 
+ .konaLayers .konaExpandFlashIframe { /*background:yellow;*/z-index:9999;position:absolute; } 
+ .konaLayers .konaWebnaryGradientTD .konaLineInputTD { position:relative; width: 200px } 
+ .konaWebnaryGradientTD { background:url(http://kona.kontera.com/javascript/lib/imgs/konaWebnaryGrad.gif) repeat-x; height:39px; width:300px; } 
+ .konaWebnaryTable { width: 300px; height:112px; margin-left:7px; margin-top:3px } 
+ .konaWebnaryHeadTD { width: 300px; height:51px; } 
+ .konaWebnarySubTD { width: 300px; height:22px; } 
+ .konaWebnarySearch { width:280px; height:23px; margin: 3px 0 0 10px; } 
+ .konaWebnaryInput { width: 200px; font: 12px Verdana, Arial, Helvetica, sans-serif; background-color:#FFF;color: black; border:1px inset #ccc; padding: 1px 0px; } 
+ .konaWebnarySubmit { margin-left:5px; } 
+ .konaWebnaryInputContainer { position:relative; width: 200px; text-align: left; overflow: hidden; } 
+ .konaLayers .konaFDGradientTD .konaLineInputTD { position:relative; width: 193px } 
+ .konaFDGradientTD { background:url(http://kona.kontera.com/javascript/lib/imgs/konaFDbottom.gif); height:39px; width:300px; } 
+ .konaFDTable { width: 300px; height:112px; } 
+ .konaFDHeadTD { width: 300px; height:55px; } 
+ .konaFDSubTD { width: 300px; height:20px; } 
+ .konaFDSearch { width:280px; height:23px; margin: 3px 0 0 10px; } 
+ .konaFDInput { width: 193px; font: 12px Verdana, Arial, Helvetica, sans-serif; background-color:#FFF;color: black;border:1px inset #ccc; padding: 1px 0px; } 
+ .konaFDSubmit { margin-left:5px; } 
+ .konaFDInputContainer { position:relative; width: 193px; text-align: left; overflow: hidden; } 
+ .konaYahooShoppingTable { width: 288px; height:125px; border: none; margin-left: 12px; margin-top: 5px; background-image:url(http://kona.kontera.com/javascript/lib/imgs/konaYahooSbgWhite.gif); } 
+ .konaYahooShoppingTable2 { width: 288px; border: none; margin-left: 12px; } 
+ .konaYahooShoppingHeader { height: 31px; font-family:Verdana, Arial, Helvetica, sans-serif; padding-bottom: 0px; vertical-align:middle; text-align:center; } 
+ .konaLayers .konaLayer a.konaYahooShoppingTitle { font-size:11px; font-weight:bold; color: #000000; text-decoration:underline; cursor:default; } 
+ .konaYahooShoppingContentTable { border: none; padding:0; } 
+ .konaYahooShoppingImageTd { padding-top:6px; padding-right:0px; padding-left:12px; padding-bottom:0px; vertical-align:top; } 
+ .konaLayers .konaLayer .konaYahooShoppingImg { border:solid 1px; border-color: #808080; } 
+ .konaYahooShoppingPrice { padding-bottom:5px; padding-right: 7px; } 
+ .konrYahooShoppingFont { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color: #000000; } 
+ .konaYahooShoppingText { width: 177px; padding-left: 5px } 
+ .konaYahooShoppingDescriptionTable { height: 80px; } 
+ .konaYahooShoppingDescriptionTd { vertical-align: top; } 
+ .konaYahooShoppingDescription { margin:0; padding: 3px 3px 7px 2px; text-align:left; vertical-align:top; line-height:1.5; } 
+ .konaYahooSecondTable { background-image:url(http://kona.kontera.com/javascript/lib/imgs/konaYahooSbgMiddle2.gif); width:100%; border: none; } 
+ .konaYahooSecondTableLinkTD { padding-left:15px; vertical-align:bottom; } 
+ .konaLayers .konaLayer a.konrYahooLink1 { color:#0170b3; font-size:10px; text-decoration: underline; font-family: verdana,sans-serif; } 
+ .konaYahooSecondTableButtonTD { float:right; vertical-align:bottom; } 
+ .konaYahooShoppingBuyNowImg { margin-right: 5px; float:right; border:none; } 
+ .konaYahooShoppingBottomTd { padding:0px; vertical-align:top; } 
+ .konaYahooShoppingBottomImg { padding:0; margin:0; } 
+ .konaYahooShoppingPoweredImg { margin:5px 0 0 0; padding:0; } 
+ .konaLayers .konaBox_bottom { background: url(http://kona.kontera.com/javascript/lib/imgs/box_separator.gif) left top no-repeat; width: 313px; height: 10px; font-size: 1px; } 
+ .konaLayers .konaBox02 { background: url(http://kona.kontera.com/javascript/lib/imgs/box.gif) left top no-repeat; width: 313px; padding-top: 7px; } 
+ .konaLayers .konaLayer .konatabs_Search { margin: 0px 0px 0px 16px; width: 280px; padding: 0px; text-align: left; background: url(http://kona.kontera.com/javascript/lib/imgs/tabs_bg.gif) bottom repeat-x; } 
+ .konaLayers .konaLayer .konatabs_Table td { padding-right: 4px; } 
+ .konaLayers .konaLayer .konatabs_Table div { height: 18px; padding: 0px ; text-align: center; background: url(http://kona.kontera.com/javascript/lib/imgs/tab_right.gif) bottom right no-repeat; } 
+ .konaLayers .konatabs_Table div span { display:block; height: 15px; padding: 3px 7px 0px 9px; text-align: center; background: url(http://kona.kontera.com/javascript/lib/imgs/tab_left.gif) bottom left no-repeat; color: #808080; font: normal 11px arial; cursor: pointer; } 
+ .konaLayers .konaLayer .konatabs_Table div.selected { background: url(http://kona.kontera.com/javascript/lib/imgs/tab_selected_right.gif) bottom right no-repeat; cursor: default; } 
+ .konaLayers .konatabs_Table div.selected span { background: url(http://kona.kontera.com/javascript/lib/imgs/tab_selected_left.gif) bottom left no-repeat; font: bold 11px arial; color: #96BF00; cursor: default; } 
+ .konaLayers .konaSearch_Form { margin: 6px 0px 0px 15px; } 
+ .konaLayers .konaSearch_Form input { font: normal 11px verdana; color: black; border: 1px solid #7F9DB9; margin-right: 3px;padding-left:2px; } 
+ .konaLayers .konaSearch_Form .konaSearchName { font: normal 11px verdana; color: #96BF00; padding-right: 6px; } 
+ .konaLayers .konaLayer .konaBox02 td.konaHover *  { color: #96BF00; } 
+ .searchTbContainer { width:295px; height:20px; border:0px solid red; padding:0 0 0 0; margin: 0 0 0 0; } 
+ .searchTransTb { width:10px; height:20px; border:0px solid blue; margin:0; padding: 0; vertical-align:middle; } 
+ .searchLogoTb { width:81px; height:20px ;vertical-align:middle;border:0px solid red; margin:0; padding: 0;  } 
+ .searchInputTb { width:140px;  height:20px; vertical-align:middle; margin:0; padding: 0;  } 
+ .searchButtonTb { width:63px;  height:20px; vertical-align:middle;border:0px solid red; margin:0; padding: 0;  } 
+ .searchInputFieldTbDiv { width:133px; height:16px; position:relative; background-color: #fff; border:1px solid #939aa0; padding-left: 2px; margin:0; vertical-align:middle;  } 
+ .searchInputFieldTb { font-size:12px; font-weight: normal; font-family:Tahoma, Arial, sans-serif; color:#000000;background-color: transparent;position:absolute; } 
+ .konaYahooSponsored_bckgr { background:url(http://kona.kontera.com/javascript/lib/imgs/konaYSponsored_fon_w_text.gif); height:113px; width:300px; margin-left:7px; margin-top:3px } 
+ .konaYahooSponsored_table { margin-top: 72px; margin-left: 17px; } 
+ .konaYahooSponsored_input { width: 182px; font: Verdana, Arial, Helvetica, sans-serif; margin-top: 0px; background-color:#FFF;color: black;border:1px inset #ccc; padding: 1px 0px; } 
+ .konaYahooSponsored_inputContainor { position:relative; width: 182px; text-align: left; overflow: hidden; } 
+ .konaYahooSponsored_td { padding:2px; } </style><span id="konasapn0"><script type="text/javascript" src="csharp_oracle_stored_procedures_files/KonaGet.txt"></script>
+
+<!-- DynamiContext AdLinks  -->
+
+<p></p> 
+
+</span></center></form><a id="AdLinkLayerClick" target="_top" href="#"></a><input id="KonaImpression" style="width: 1px; height: 1px; visibility: hidden; display: none; position: absolute; left: -500px;" type="image"><input id="KonaImpression1" style="width: 1px; height: 1px; visibility: hidden; display: none; position: absolute; left: -500px;" type="image"><iframe allowtransparency="true" src="" vspace="0" hspace="0" marginheight="0" marginwidth="0" style="width: 1px; height: 1px; background-color: transparent; position: absolute; left: -500px;" id="caterpilarID" name="caterpilarID" frameborder="0" scrolling="no"></iframe></body></html>

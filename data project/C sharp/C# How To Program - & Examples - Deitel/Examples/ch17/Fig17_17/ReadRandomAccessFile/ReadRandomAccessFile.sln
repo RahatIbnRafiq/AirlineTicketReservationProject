@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadRandomAccessFile", "ReadRandomAccessFile.csproj", "{0978D727-75C0-4962-A155-0BC4C947BCAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0978D727-75C0-4962-A155-0BC4C947BCAA}.Debug.ActiveCfg = Debug|.NET
+		{0978D727-75C0-4962-A155-0BC4C947BCAA}.Debug.Build.0 = Debug|.NET
+		{0978D727-75C0-4962-A155-0BC4C947BCAA}.Release.ActiveCfg = Release|.NET
+		{0978D727-75C0-4962-A155-0BC4C947BCAA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

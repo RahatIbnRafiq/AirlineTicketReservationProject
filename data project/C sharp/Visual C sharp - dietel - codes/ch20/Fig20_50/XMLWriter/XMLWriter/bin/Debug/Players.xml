@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<BaseballDataSet xmlns="http://www.deitel.com/baseball">
+  <Players>
+    <PlayerID>1</PlayerID>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <BattingAverage>0.375</BattingAverage>
+  </Players>
+  <Players>
+    <PlayerID>2</PlayerID>
+    <FirstName>Jack</FirstName>
+    <LastName>Smith</LastName>
+    <BattingAverage>0.223</BattingAverage>
+  </Players>
+  <Players>
+    <PlayerID>3</PlayerID>
+    <FirstName>George</FirstName>
+    <LastName>O'Malley</LastName>
+    <BattingAverage>0.344</BattingAverage>
+  </Players>
+</BaseballDataSet>

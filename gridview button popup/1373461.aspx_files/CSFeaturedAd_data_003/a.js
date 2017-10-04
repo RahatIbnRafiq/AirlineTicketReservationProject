@@ -1,0 +1,1 @@
+document.write('<a href=\"http://ads.asp.net/a.aspx?Task=Click&ZoneID=388&CampaignID=1239&AdvertiserID=15&BannerID=1837&SiteID=1&RandomNumber=132282941&Keywords=\" target=\"_Blank\"><img src=\"http://ads.asp.net/ads/SG728x90.gif\"  width=\"728\" height=\"90\" alt=\"SpreadsheetGear\" align=\"Center\" border=\"0\"></a><br>'); adcode=' '

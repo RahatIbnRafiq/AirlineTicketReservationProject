@@ -1,0 +1,3 @@
+bin\Release\DisplayTable.exe.config
+obj\Release\DisplayTable.exe
+obj\Release\DisplayTable.pdb

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingComboBoxes", "UsingComboBoxes.csproj", "{84AAB88C-97A3-4CD8-A8B9-50B7C0307916}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{84AAB88C-97A3-4CD8-A8B9-50B7C0307916}.Debug.ActiveCfg = Debug|.NET
+		{84AAB88C-97A3-4CD8-A8B9-50B7C0307916}.Debug.Build.0 = Debug|.NET
+		{84AAB88C-97A3-4CD8-A8B9-50B7C0307916}.Release.ActiveCfg = Release|.NET
+		{84AAB88C-97A3-4CD8-A8B9-50B7C0307916}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

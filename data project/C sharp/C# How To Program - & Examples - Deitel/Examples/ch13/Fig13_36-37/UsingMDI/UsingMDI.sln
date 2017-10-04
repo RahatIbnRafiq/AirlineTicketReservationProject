@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingMDI", "UsingMDI.csproj", "{D470C17D-9B24-4040-A292-488DC87E8AE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D470C17D-9B24-4040-A292-488DC87E8AE6}.Debug.ActiveCfg = Debug|.NET
+		{D470C17D-9B24-4040-A292-488DC87E8AE6}.Debug.Build.0 = Debug|.NET
+		{D470C17D-9B24-4040-A292-488DC87E8AE6}.Release.ActiveCfg = Release|.NET
+		{D470C17D-9B24-4040-A292-488DC87E8AE6}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

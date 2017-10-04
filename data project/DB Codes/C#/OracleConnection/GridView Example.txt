@@ -1,0 +1,4 @@
+OracleConnect oc = new OracleConnect("localhost", "orcl", "rifat", "0105037");
+DataTable table=oc.searchDB("select * from lib_book");
+this.gridView1.DataSource=table;
+this.gridView1.DataBind();

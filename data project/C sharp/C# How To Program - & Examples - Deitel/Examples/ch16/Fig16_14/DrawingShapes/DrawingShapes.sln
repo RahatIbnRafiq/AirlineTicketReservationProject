@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingShapes", "DrawingShapes.csproj", "{FC909CAC-934B-48A7-914B-F6C0751BD6CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FC909CAC-934B-48A7-914B-F6C0751BD6CA}.Debug.ActiveCfg = Debug|.NET
+		{FC909CAC-934B-48A7-914B-F6C0751BD6CA}.Debug.Build.0 = Debug|.NET
+		{FC909CAC-934B-48A7-914B-F6C0751BD6CA}.Release.ActiveCfg = Release|.NET
+		{FC909CAC-934B-48A7-914B-F6C0751BD6CA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

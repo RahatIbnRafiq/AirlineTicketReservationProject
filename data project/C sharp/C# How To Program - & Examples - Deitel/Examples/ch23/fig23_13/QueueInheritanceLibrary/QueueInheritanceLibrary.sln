@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueInheritanceLibrary", "QueueInheritanceLibrary.csproj", "{78D97933-EA53-4E6F-BD32-8C1966324C46}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{78D97933-EA53-4E6F-BD32-8C1966324C46}.Debug.ActiveCfg = Debug|.NET
+		{78D97933-EA53-4E6F-BD32-8C1966324C46}.Debug.Build.0 = Debug|.NET
+		{78D97933-EA53-4E6F-BD32-8C1966324C46}.Release.ActiveCfg = Release|.NET
+		{78D97933-EA53-4E6F-BD32-8C1966324C46}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

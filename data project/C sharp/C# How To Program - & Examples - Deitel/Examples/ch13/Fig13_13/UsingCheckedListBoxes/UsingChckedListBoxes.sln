@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingChckedListBoxes", "UsingChckedListBoxes.csproj", "{D951559A-3997-484A-9B63-55B88E5513BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D951559A-3997-484A-9B63-55B88E5513BB}.Debug.ActiveCfg = Debug|.NET
+		{D951559A-3997-484A-9B63-55B88E5513BB}.Debug.Build.0 = Debug|.NET
+		{D951559A-3997-484A-9B63-55B88E5513BB}.Release.ActiveCfg = Release|.NET
+		{D951559A-3997-484A-9B63-55B88E5513BB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

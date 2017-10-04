@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringConcatenation", "StringConcatenation.csproj", "{DD10619E-3CC1-4AC1-B8DF-394A91BE0078}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DD10619E-3CC1-4AC1-B8DF-394A91BE0078}.Debug.ActiveCfg = Debug|.NET
+		{DD10619E-3CC1-4AC1-B8DF-394A91BE0078}.Debug.Build.0 = Debug|.NET
+		{DD10619E-3CC1-4AC1-B8DF-394A91BE0078}.Release.ActiveCfg = Release|.NET
+		{DD10619E-3CC1-4AC1-B8DF-394A91BE0078}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

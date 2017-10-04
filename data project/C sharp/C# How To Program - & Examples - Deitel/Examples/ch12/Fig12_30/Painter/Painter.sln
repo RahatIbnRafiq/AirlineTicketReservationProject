@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painter", "Painter.csproj", "{9FBE2340-C7A5-4026-B7A2-3A94830AF239}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9FBE2340-C7A5-4026-B7A2-3A94830AF239}.Debug.ActiveCfg = Debug|.NET
+		{9FBE2340-C7A5-4026-B7A2-3A94830AF239}.Debug.Build.0 = Debug|.NET
+		{9FBE2340-C7A5-4026-B7A2-3A94830AF239}.Release.ActiveCfg = Release|.NET
+		{9FBE2340-C7A5-4026-B7A2-3A94830AF239}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

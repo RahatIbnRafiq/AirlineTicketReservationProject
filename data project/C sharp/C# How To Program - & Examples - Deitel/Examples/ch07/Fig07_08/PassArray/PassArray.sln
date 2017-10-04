@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassArray", "PassArray.csproj", "{D0F619E6-51A5-4342-B215-AFAD73A8D8C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D0F619E6-51A5-4342-B215-AFAD73A8D8C2}.Debug.ActiveCfg = Debug|.NET
+		{D0F619E6-51A5-4342-B215-AFAD73A8D8C2}.Debug.Build.0 = Debug|.NET
+		{D0F619E6-51A5-4342-B215-AFAD73A8D8C2}.Release.ActiveCfg = Release|.NET
+		{D0F619E6-51A5-4342-B215-AFAD73A8D8C2}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

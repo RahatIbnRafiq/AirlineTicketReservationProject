@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+
+<title>Calling Oracle stored procedure in C#???</title>
+<meta name="Author" content="taohuang.tamu_at_gmail.com (taohuang.tamu_at_gmail.com)">
+<meta name="Subject" content="Calling Oracle stored procedure in C#???">
+<meta name="Date" content="2006-07-17">
+<link rel="stylesheet" href="0958_files/hypermail-message-style.css" type="text/css">
+</head><body>
+<basefont face="Trebuchet MS, Arial, Helvetica" size="2">
+
+<!--NavBarTop-->
+<center>
+<table width="600" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td colspan="2" valign="TOP">
+<font face="ARIAL" size="+1">Oracle FAQ</font>
+</td>
+<td valign="BOTTOM" align="RIGHT"><font face="arial" size="-2"><b>
+  Your Portal to the Oracle Knowledge Grid
+</b></font></td></tr>
+</tbody></table>
+<table width="600" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td valign="TOP"><img src="0958_files/title2.gif" alt="" width="30" border="0" height="28"></td>
+<td colspan="3" valign="MIDDLE" width="600" background="0958_files/title3.gif"><center><font face="arial" size="-2"><b>
+  <a href="http://www.orafaq.com/" target="_top" accesskey="H">HOME</a> |
+  <a href="http://www.orafaq.com/forum" accesskey="Q">ASK QUESTION</a> |
+  <a href="http://www.orafaq.com/feedback" accesskey="A">ADD INFO</a> |
+  <a href="http://www.orafaq.com/search" accesskey="S">SEARCH</a> |
+  <a href="http://www.orafaq.com/feedback" accesskey="M">E-MAIL US</a></b></font></center></td>
+<td valign="TOP"><img src="0958_files/title4.gif" alt="" width="30" border="0" height="28"></td></tr>
+</tbody></table></center>
+<!--/NavBarTop-->
+
+<!--Ad--><center><font size="-2">&nbsp;<br>
+  <iframe src="0958_files/ads.htm" marginwidth="0" marginheight="0" hspace="0" vspace="0" width="468" frameborder="0" height="60" scrolling="NO">
+    &lt;SCRIPT LANGUAGE="JavaScript" SRC="http://www.orafaq.com/cgi-bin/ads/ads.pl?jscript"&gt;
+    &lt;/SCRIPT&gt;
+    &lt;NOSCRIPT&gt;
+       &lt;A HREF="http://www.orafaq.com/cgi-bin/ads/ads.pl?banner=NonSSI;page=01" TARGET="_blank"
+          onMouseOver="window.status='Click here! Support the Oracle FAQ by supporting our sponsors.';return true"
+          onMouseOut="window.status='';return true"&gt;
+       &lt;IMG SRC="http://www.orafaq.com/cgi-bin/ads/ads.pl?page=01"
+            HEIGHT=60 WIDTH=468 ALT="Support the Oracle FAQ by supporting our sponsors. Click here!" BORDER=0&gt;
+       &lt;/A&gt;
+    &lt;/NOSCRIPT&gt;
+  </iframe>
+</font></center><!--/Ad-->
+
+<a name="start"></a>
+<p>
+  <a href="http://www.orafaq.com/">Home</a> -&gt;
+  <a href="http://www.orafaq.com/navcommu.htm">Community</a> -&gt;
+  <a href="http://www.orafaq.net/usenet/index.htm">Usenet</a> -&gt;
+  <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/">c.d.o.server</a> -&gt;
+  Calling Oracle stored procedure in C#???
+</p>
+
+<div class="head">
+<h1>Calling Oracle stored procedure in C#???</h1>
+<!-- received="17 Jul 2006 09:52:08 -0700" -->
+<!-- isoreceived="20060717165208" -->
+<!-- sent="17 Jul 2006 09:52:08 -0700" -->
+<!-- isosent="20060717165208" -->
+<!-- name="taohuang.tamu_at_gmail.com" -->
+<!-- email="taohuang.tamu_at_gmail.com" -->
+<!-- subject="Calling Oracle stored procedure in C#???" -->
+<!-- id="1153155128.207016.322110_at_b28g2000cwb.googlegroups.com" -->
+<!-- charset="iso-8859-1" -->
+<!-- expires="-1" -->
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:taohuang.tamu_at_gmail.com?Subject=Re:%20Calling%20Oracle%20stored%20procedure%20in%20C#???">taohuang.tamu_at_gmail.com</a>&gt;
+</span><br>
+<span id="date"><dfn>Date</dfn>: 17 Jul 2006 09:52:08 -0700</span><br>
+<span id="message-id"><dfn>Message-ID</dfn>: &lt;1153155128.207016.322110@b28g2000cwb.<!--nospam-->googlegroups.com&gt;
+</span><br>
+</address>
+<pre></pre>
+<p>
+<br>
+I'm trying to call a parameterized stored procedure in C# using
+microsoft ODBC .NET. Could you please give me some help or hint? Thank
+you very much!
+
+</p><p>
+C# code:
+<br>
+... //connection code
+</p><pre>odbcCommand.CommandType = CommandType.StoredProcedure;
+odbcCommand.CommandText = "BEGIN myProc(?, ?); END;";
+odbcCommand.CommandTimeout = 0;
+
+</pre>
+<p>
+OdbcParameter paramA =
+<br>
+odbcCommand.Parameters.Add("@A_CNT", OdbcType.<!--nospam-->Int);
+paramA.Value = _a_cnt;
+<br>
+OdbcParameter paramB =
+<br>
+odbcCommand.Parameters.Add("@B_CNT", OdbcType.<!--nospam-->Int);
+paramB.Value = _b_cnt;
+
+</p><p>
+try
+<br>
+{
+<br>
+odbcCommand.ExecuteNonQuery();
+<br>
+}
+<br>
+catch (Exception ex)
+<br>
+{
+<br>
+Console.Error.WriteLine(DateTime.Now.ToString()
++ ex.Message);
+<br>
+throw ex;
+<br>
+}
+
+</p><p>
+The SP itself looks like:
+<br>
+CREATE OR REPLACE PROCEDURE myProc (
+<br>
+<strong>A_CNT IN BINARY_INTEGER,
+</strong>
+<br>
+<strong>B_CNT IN BINARY_INTEGER) AS
+</strong>
+<br>
+<strong>BEGIN
+</strong>
+<br>
+<strong>NULL;
+</strong>
+<br>
+<strong>COMMIT;
+</strong>
+<br>
+<strong>END;
+</strong>
+
+I tried to directly use
+<br>
+odbcCommand.CommandText = "BEGIN myProc(1, 2); END;";
+And that works! However, unfortunately I actually need to use the two
+variables _a_cnt and _b_cnt as input arguments for the SP. Then I got
+following error message which complains about the question mark in
+"BEGIN myProc(?, ?); END;"
+
+</p><p>
+<strong>ERROR [HY000]
+</strong>
+<br>
+[Oracle][ODBC][Ora]ORA-06550: line 1, column 14:PLS-00103: Encountered
+the symbol
+<br>
+"" when expecting one of the following: ( ) - + case mod new not null
+others
+<br>
+<i class="quotelev1">&lt;an identifier&gt;</i><br>
+<i class="quotelev1">&lt;a double-quoted delimited-identifier&gt; &lt;a bind variable&gt;</i><br>
+table avg count current exists max min prior sql stddev sum
+variance execute multiset the both leading trailing forall
+merge year month DAY_ hour minute second timezone_hour
+timezone_minute timezone_region timezone_abbr time timestamp
+interval date
+<br>
+<i class="quotelev1">&lt;a</i><br>
+
+</p><p>
+The suspicious symbol in the error message is a question mark upside
+down.
+
+</p><p>
+Oracle 10g release 2.
+<span id="received"><dfn>Received on</dfn> Mon Jul 17 2006 - 11:52:08 CDT</span>
+</p></div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/0959.htm" title="Next message in the list">Matthias Hoys: "Re: How long should statspack.snap take to run?"</a></li>
+<li><dfn>Previous message</dfn>: <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/0957.htm" title="Previous message in the list">Jining Han: "Re: How long should statspack.snap take to run?"</a></li>
+<!-- lnextthread="start" -->
+<li><dfn>Next in thread</dfn>: <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/0961.htm" title="Next message in this discussion thread">Steve Howard: "Re: Calling Oracle stored procedure in C#???"</a></li>
+<li><a name="replies" id="replies"></a><dfn>Reply</dfn>:  <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/0961.htm" title="Message sent in reply to this message">Steve Howard: "Re: Calling Oracle stored procedure in C#???"</a></li>
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/date.htm#958" title="Contemporary messages by date">by date</a> ] [ <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/index.htm#958" title="Contemporary discussion threads">by thread</a> ] [ <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/subject.htm#958" title="Contemporary messages by subject">by subject</a> ] [ <a href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/author.htm#958" title="Contemporary messages by author">by author</a> ]</li></ul>
+</map>
+</div>
+<p><a rel="nofollow" href="http://www.orafaq.com/usenet/comp.databases.oracle.server/2006/07/17/0958.raw">Original text of this message</a><!-- trailer="footer" -->
+
+
+
+
+
+<!--NavBarBottom-->
+</p><center><p>
+</p><table width="600" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td valign="TOP"><img src="0958_files/title5.gif"></td>
+<td valign="MIDDLE" width="600" background="0958_files/title6.gif"><center><font face="arial" size="-2"><b>
+  <a href="http://www.orafaq.com/" target="_top">HOME</a> |
+  <a href="http://www.orafaq.com/forum">ASK QUESTION</a> |
+  <a href="http://www.orafaq.com/feedback">ADD INFO</a> |
+  <a href="http://www.orafaq.com/search">SEARCH</a> |
+  <a href="http://www.orafaq.com/feedback">E-MAIL US</a></b></font></center></td>
+<td valign="TOP"><img src="0958_files/title7.gif"></td></tr>
+</tbody></table></center>
+<!--/NavBarBottom-->
+
+</body></html>

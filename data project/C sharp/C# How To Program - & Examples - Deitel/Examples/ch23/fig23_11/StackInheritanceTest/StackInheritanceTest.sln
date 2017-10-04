@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackInheritanceTest", "StackInheritanceTest.csproj", "{85A6F0A9-2A9C-4DD7-8A68-F4602C1EADE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{85A6F0A9-2A9C-4DD7-8A68-F4602C1EADE1}.Debug.ActiveCfg = Debug|.NET
+		{85A6F0A9-2A9C-4DD7-8A68-F4602C1EADE1}.Debug.Build.0 = Debug|.NET
+		{85A6F0A9-2A9C-4DD7-8A68-F4602C1EADE1}.Release.ActiveCfg = Release|.NET
+		{85A6F0A9-2A9C-4DD7-8A68-F4602C1EADE1}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

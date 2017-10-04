@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.deitel.com/csphtp1/ch21" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.deitel.com/csphtp1/ch21" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.deitel.com/csphtp1/ch21">
+      <s:element name="GenerateEquation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="operation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateEquationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateEquationResult" type="s0:Equation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Equation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LeftHandSide" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RightHandSide" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Left" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Right" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operation" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Equation" nillable="true" type="s0:Equation" />
+    </s:schema>
+  </types>
+  <message name="GenerateEquationSoapIn">
+    <part name="parameters" element="s0:GenerateEquation" />
+  </message>
+  <message name="GenerateEquationSoapOut">
+    <part name="parameters" element="s0:GenerateEquationResponse" />
+  </message>
+  <message name="GenerateEquationHttpGetIn">
+    <part name="operation" type="s:string" />
+    <part name="level" type="s:string" />
+  </message>
+  <message name="GenerateEquationHttpGetOut">
+    <part name="Body" element="s0:Equation" />
+  </message>
+  <message name="GenerateEquationHttpPostIn">
+    <part name="operation" type="s:string" />
+    <part name="level" type="s:string" />
+  </message>
+  <message name="GenerateEquationHttpPostOut">
+    <part name="Body" element="s0:Equation" />
+  </message>
+  <portType name="GeneratorSoap">
+    <operation name="GenerateEquation">
+      <documentation>Method that generates a random equation.</documentation>
+      <input message="s0:GenerateEquationSoapIn" />
+      <output message="s0:GenerateEquationSoapOut" />
+    </operation>
+  </portType>
+  <portType name="GeneratorHttpGet">
+    <operation name="GenerateEquation">
+      <documentation>Method that generates a random equation.</documentation>
+      <input message="s0:GenerateEquationHttpGetIn" />
+      <output message="s0:GenerateEquationHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="GeneratorHttpPost">
+    <operation name="GenerateEquation">
+      <documentation>Method that generates a random equation.</documentation>
+      <input message="s0:GenerateEquationHttpPostIn" />
+      <output message="s0:GenerateEquationHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="GeneratorSoap" type="s0:GeneratorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GenerateEquation">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/GenerateEquation" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="GeneratorHttpGet" type="s0:GeneratorHttpGet">
+    <http:binding verb="GET" />
+    <operation name="GenerateEquation">
+      <http:operation location="/GenerateEquation" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="GeneratorHttpPost" type="s0:GeneratorHttpPost">
+    <http:binding verb="POST" />
+    <operation name="GenerateEquation">
+      <http:operation location="/GenerateEquation" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Generator">
+    <documentation>A Web service that generates questions based on the specified mathematical operation and level of difficulty chosen.</documentation>
+    <port name="GeneratorSoap" binding="s0:GeneratorSoap">
+      <soap:address location="http://localhost/EquationGenerator/Generator.asmx" />
+    </port>
+    <port name="GeneratorHttpGet" binding="s0:GeneratorHttpGet">
+      <http:address location="http://localhost/EquationGenerator/Generator.asmx" />
+    </port>
+    <port name="GeneratorHttpPost" binding="s0:GeneratorHttpPost">
+      <http:address location="http://localhost/EquationGenerator/Generator.asmx" />
+    </port>
+  </service>
+</definitions>

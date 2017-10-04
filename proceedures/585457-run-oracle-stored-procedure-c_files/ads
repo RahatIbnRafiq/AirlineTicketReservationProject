@@ -1,0 +1,63 @@
+{ 
+ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BTSKRkgFfS73QOtyIsgaF3ZznDdG5h68B57LonA_AjbcB4L40EAEYASDB0vcBKAQ4AFCajZ3D-_____8BYDOyAQlieXRlcy5jb226AQozMDB4MjUwX2pzyAEB2gFLaHR0cDovL2J5dGVzLmNvbS90b3BpYy9jLXNoYXJwL2Fuc3dlcnMvNTg1NDU3LXJ1bi1vcmFjbGUtc3RvcmVkLXByb2NlZHVyZS1jgAIByAKnidkOqAMB6AMf6APXAugDIPUDAAAAhA&amp;num=1&amp;sig=AGiWqtyYc0UkoXcHvfj4QKO7t3tKM2Ekqw&amp;client=ca-pub-8550604525820387&amp;adurl=http://www.phaseforward.com/products/clinical/edc"; 
+google_ad.visible_url = "www.phaseforward.com"; 
+google_ad.line1 = "Phase Forward"; 
+google_ad.line2 = "Award-winning EDC solution"; 
+google_ad.line3 = "used in over 3,000 trials worldwide"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BC_OEkgFfS73QOtyIsgaF3ZznDbW_BMPyC8CNtwHQ9wcQAhgCIMHS9wEoBDgAUMeoydYGYDOyAQlieXRlcy5jb226AQozMDB4MjUwX2pzyAEB2gFLaHR0cDovL2J5dGVzLmNvbS90b3BpYy9jLXNoYXJwL2Fuc3dlcnMvNTg1NDU3LXJ1bi1vcmFjbGUtc3RvcmVkLXByb2NlZHVyZS1jgAIBqAMB6AMf6APXAugDIPUDAAAAhA&amp;num=2&amp;sig=AGiWqtyjAnxy-SalYEfntx0kvd7A7csz2g&amp;client=ca-pub-8550604525820387&amp;adurl=http://www.allroundautomations.com/plsqldev.html"; 
+google_ad.visible_url = "www.allroundautomations.com"; 
+google_ad.line1 = "PL/SQL Developer"; 
+google_ad.line2 = "Professional PL/SQL Development IDE"; 
+google_ad.line3 = "Trial version available"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=ByAzYkgFfS73QOtyIsgaF3ZznDYKIiKgBos6ihxDAjbcB8NccEAMYAyDB0vcBKAQ4AFCS4IWoAmAzoAG8nc38A7IBCWJ5dGVzLmNvbboBCjMwMHgyNTBfanPIAQHaAUtodHRwOi8vYnl0ZXMuY29tL3RvcGljL2Mtc2hhcnAvYW5zd2Vycy81ODU0NTctcnVuLW9yYWNsZS1zdG9yZWQtcHJvY2VkdXJlLWOAAgGoAwHoAx_oA9cC6AMg9QMAAACE&amp;num=3&amp;sig=AGiWqtwDKulMfJKgNpcV1h_ZkocYlTeRUw&amp;client=ca-pub-8550604525820387&amp;adurl=http://www.codechef.com"; 
+google_ad.visible_url = "www.CodeChef.com"; 
+google_ad.line1 = "Write Code, Win Stuff"; 
+google_ad.line2 = "Online Programming Contests"; 
+google_ad.line3 = "$2200 in Prizes. Register Now!"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 4; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BMKqnkgFfS73QOtyIsgaF3ZznDdCn0JQBrpqm4w7AjbcBgNMOEAQYBCDB0vcBKAQ4AFDz0qm5-P____8BYDOyAQlieXRlcy5jb226AQozMDB4MjUwX2pzyAEB2gFLaHR0cDovL2J5dGVzLmNvbS90b3BpYy9jLXNoYXJwL2Fuc3dlcnMvNTg1NDU3LXJ1bi1vcmFjbGUtc3RvcmVkLXByb2NlZHVyZS1jqQIzUPkVewi7PqgDAegDH-gD1wLoAyD1AwAAAIQ&amp;num=4&amp;sig=AGiWqtz65oZzg5nK8k4JnAJrnpwP_-WmpQ&amp;client=ca-pub-8550604525820387&amp;adurl=http://www.londonsightseeingruns.com"; 
+google_ad.visible_url = "www.londonsightseeingruns.com"; 
+google_ad.line1 = "Sightseeing Runs"; 
+google_ad.line2 = "Guided tour of London with personal"; 
+google_ad.line3 = "trainer. Explore, Exercise, Enjoy!"; 
+google_ad.regionname = ""; 
+google_ads[3] = google_ad; 
+google_info.feedback_url = "https://www.google.com/adsense/support/bin/request.py?contact\x3dabg_afc\x26url\x3dhttp://bytes.com/topic/c-sharp/answers/585457-run-oracle-stored-procedure-c\x26hl\x3den\x26client\x3dca-pub-8550604525820387\x26adU\x3dwww.phaseforward.com\x26adT\x3dPhase+Forward\x26adU\x3dwww.allroundautomations.com\x26adT\x3dPL/SQL+Developer\x26adU\x3dwww.CodeChef.com\x26adT\x3dWrite+Code,+Win+Stuff\x26adU\x3dwww.londonsightseeingruns.com\x26adT\x3dSightseeing+Runs\x26gl\x3dBD"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}

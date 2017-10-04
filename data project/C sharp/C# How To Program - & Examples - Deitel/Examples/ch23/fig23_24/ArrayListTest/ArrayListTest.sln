@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListTest", "ArrayListTest.csproj", "{C178D3EE-218A-4E67-B8FF-6D329312C67E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C178D3EE-218A-4E67-B8FF-6D329312C67E}.Debug.ActiveCfg = Debug|.NET
+		{C178D3EE-218A-4E67-B8FF-6D329312C67E}.Debug.Build.0 = Debug|.NET
+		{C178D3EE-218A-4E67-B8FF-6D329312C67E}.Release.ActiveCfg = Release|.NET
+		{C178D3EE-218A-4E67-B8FF-6D329312C67E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleTest4", "CircleTest4.csproj", "{FD77DC7A-E8E5-443C-AA83-55FA2E02E570}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FD77DC7A-E8E5-443C-AA83-55FA2E02E570}.Debug.ActiveCfg = Debug|.NET
+		{FD77DC7A-E8E5-443C-AA83-55FA2E02E570}.Debug.Build.0 = Debug|.NET
+		{FD77DC7A-E8E5-443C-AA83-55FA2E02E570}.Release.ActiveCfg = Release|.NET
+		{FD77DC7A-E8E5-443C-AA83-55FA2E02E570}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

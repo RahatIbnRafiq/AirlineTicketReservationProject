@@ -1,0 +1,90 @@
+<?xml version = "1.0"?>
+<BizTalk xmlns =
+   "urn:schemas-biztalk-org:BizTalk/biztalk-0.81.xml">
+
+<!-- Fig. 18.27: biztalkmarkup.xml      -->
+<!-- Example of standard BizTalk markup -->
+
+   <Route>
+      <From locationID = "8888888" locationType = "DUNS"
+         handle = "23" />
+     
+      <To locationID = "454545445" locationType = "DUNS"
+         handle = "45" />
+   </Route>
+
+   <Body>
+      <Offers xmlns =
+         "x-schema:http://schemas.biztalk.org/eshop_msn_com/t7ntoqnq.xml">
+         <Offer>
+            <Model>12-a-3411d</Model>
+            <Manufacturer>ExComp, Inc.</Manufacturer>
+            <ManufacturerModel>DCS-48403</ManufacturerModel>
+
+            <MerchantCategory>
+               Clothes | Sports wear
+            </MerchantCategory>
+
+            <MSNClassId></MSNClassId>
+
+            <StartDate>2001-06-05 T13:12:00</StartDate>
+            <EndDate>2001-12-05T13:12:00</EndDate>
+
+            <RegularPrice>89.99</RegularPrice>
+            <CurrentPrice>25.99</CurrentPrice>
+            <DisplayPrice value = "3" />
+            <InStock value = "15" />
+
+            <ReferenceImageURL>
+               http://www.Example.com/clothes/index.jpg
+            </ReferenceImageURL>
+
+            <OfferName>Clearance sale</OfferName>
+
+            <OfferDescription>
+               This is a clearance sale
+            </OfferDescription>
+
+            <PromotionalText>Free Shipping</PromotionalText>
+
+            <Comments>
+               Clothes that you would love to wear.
+            </Comments>
+
+            <IconType value = "BuyNow" />
+
+            <ActionURL>
+               http://www.example.com/action.htm
+            </ActionURL>
+
+            <AgeGroup1 value = "Infant" />
+            <AgeGroup2 value = "Adult" />
+
+            <Occasion1 value = "Birthday" />
+            <Occasion2 value = "Anniversary" />
+            <Occasion3 value = "Christmas" />
+
+         </Offer>
+      </Offers>
+   </Body>
+</BizTalk>
+
+
+
+
+<!-- 
+ ************************************************************************** 
+ * (C) Copyright 2002 by Deitel & Associates, Inc. and Prentice Hall.     *
+ * All Rights Reserved.                                                   *
+ *                                                                        *
+ * DISCLAIMER: The authors and publisher of this book have used their     *
+ * best efforts in preparing the book. These efforts include the          *
+ * development, research, and testing of the theories and programs        *
+ * to determine their effectiveness. The authors and publisher make       *
+ * no warranty of any kind, expressed or implied, with regard to these    *
+ * programs or to the documentation contained in these books. The authors *
+ * and publisher shall not be liable in any event for incidental or       *
+ * consequential damages in connection with, or arising out of, the       *
+ * furnishing, performance, or use of these programs.                     *
+ **************************************************************************
+-->

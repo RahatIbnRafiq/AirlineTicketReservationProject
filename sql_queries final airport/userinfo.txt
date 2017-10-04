@@ -1,0 +1,1 @@
+insert into user_info values('rahat','rahat rafiq','blah', 'B/47, Bashabo' , 'Dhaka', 'Bangladesh', '8009000', 'gaindha@hotmail.com' )

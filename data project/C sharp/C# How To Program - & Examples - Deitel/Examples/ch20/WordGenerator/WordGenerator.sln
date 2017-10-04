@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGenerator", "http://localhost/WordGenerator/WordGenerator.csproj", "{40AA4D45-0E5C-42B1-BB50-FE10A496F59D}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{40AA4D45-0E5C-42B1-BB50-FE10A496F59D}.Debug.ActiveCfg = Debug|.NET
+		{40AA4D45-0E5C-42B1-BB50-FE10A496F59D}.Debug.Build.0 = Debug|.NET
+		{40AA4D45-0E5C-42B1-BB50-FE10A496F59D}.Release.ActiveCfg = Release|.NET
+		{40AA4D45-0E5C-42B1-BB50-FE10A496F59D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

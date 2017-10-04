@@ -1,0 +1,1 @@
+document.write('\r\r<script type=\"text/javascript\">\r<!-- \rlqm_channel=1;\rlqm_publisher=168;\rlqm_zone=50;\rlqm_format=2;\rlqm_formatString=\"<p>{0}</p>\";\r//-->\r</script>\r<script type=\"text/javascript\" src=\"http://a.lakequincy.com/s.js\"></script>\r\r'); adcode=' '

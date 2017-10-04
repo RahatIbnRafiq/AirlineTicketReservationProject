@@ -1,0 +1,3 @@
+bin\Debug\XMLWriter.exe.config
+obj\Debug\XMLWriter.exe
+obj\Debug\XMLWriter.pdb

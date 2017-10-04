@@ -1,0 +1,54 @@
+insert into plane values(10,'foker-27',50,100,100);
+
+insert into plane values(11,'foker-28',70,100,100);
+
+
+insert into plane values(21,'Airbus-300',100,150,150);
+
+insert into plane values(22,'Airbus-320',60,150,150);
+
+insert into plane values(23,'Airbus-316',60,100,100);
+
+insert into plane values(24,'Airbus-319',100,150,150);
+
+insert into plane values(25,'Airbus-321',90,150,150);
+
+insert into plane values(26,'Airbus-330',90,150,150);
+
+insert into plane values(27,'Airbus-340',90,150,150);
+
+insert into plane values(28,'Airbus-350',90,150,150);
+
+insert into plane values(29,'Airbus-380',190,250,250);
+
+
+
+insert into plane values(31,'Boeing-707',100,150,150);
+
+insert into plane values(32,'Boeing-717',60,150,150);
+
+insert into plane values(33,'Boeing-727',100,100,100);
+
+insert into plane values(34,'Boeing-737',100,150,150);
+
+insert into plane values(35,'Boeing-747',100,180,180);
+
+insert into plane values(36,'Boeing-757',90,150,150);
+
+insert into plane values(37,'Boeing-767',90,150,150);
+
+insert into plane values(38,'Boeing-777',90,150,150);
+
+insert into plane values(39,'Boeing-787',190,250,250);
+
+
+insert into plane values(41,'DC-9',40,50,50);
+
+insert into plane values(42,'DC-8',80,100,100);
+
+insert into plane values(43,'DC-10',100,150,150);
+
+
+
+
+

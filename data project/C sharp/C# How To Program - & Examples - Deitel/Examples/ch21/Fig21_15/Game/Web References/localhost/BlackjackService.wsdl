@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.deitel.com/csphtp1/ch21/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.deitel.com/csphtp1/ch21/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.deitel.com/csphtp1/ch21/">
+      <s:element name="DealCard">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DealCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Shuffle">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShuffleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CountCards">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dealt" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CountCardsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CountCardsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </types>
+  <message name="DealCardSoapIn">
+    <part name="parameters" element="s0:DealCard" />
+  </message>
+  <message name="DealCardSoapOut">
+    <part name="parameters" element="s0:DealCardResponse" />
+  </message>
+  <message name="ShuffleSoapIn">
+    <part name="parameters" element="s0:Shuffle" />
+  </message>
+  <message name="ShuffleSoapOut">
+    <part name="parameters" element="s0:ShuffleResponse" />
+  </message>
+  <message name="CountCardsSoapIn">
+    <part name="parameters" element="s0:CountCards" />
+  </message>
+  <message name="CountCardsSoapOut">
+    <part name="parameters" element="s0:CountCardsResponse" />
+  </message>
+  <message name="DealCardHttpGetIn" />
+  <message name="DealCardHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="ShuffleHttpGetIn" />
+  <message name="ShuffleHttpGetOut" />
+  <message name="CountCardsHttpGetIn">
+    <part name="dealt" type="s:string" />
+  </message>
+  <message name="CountCardsHttpGetOut">
+    <part name="Body" element="s0:int" />
+  </message>
+  <message name="DealCardHttpPostIn" />
+  <message name="DealCardHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="ShuffleHttpPostIn" />
+  <message name="ShuffleHttpPostOut" />
+  <message name="CountCardsHttpPostIn">
+    <part name="dealt" type="s:string" />
+  </message>
+  <message name="CountCardsHttpPostOut">
+    <part name="Body" element="s0:int" />
+  </message>
+  <portType name="BlackjackServiceSoap">
+    <operation name="DealCard">
+      <documentation>Deal a new card from the deck.</documentation>
+      <input message="s0:DealCardSoapIn" />
+      <output message="s0:DealCardSoapOut" />
+    </operation>
+    <operation name="Shuffle">
+      <documentation>Create and shuffle a deck of cards.</documentation>
+      <input message="s0:ShuffleSoapIn" />
+      <output message="s0:ShuffleSoapOut" />
+    </operation>
+    <operation name="CountCards">
+      <documentation>Compute a numerical value for the current hand.</documentation>
+      <input message="s0:CountCardsSoapIn" />
+      <output message="s0:CountCardsSoapOut" />
+    </operation>
+  </portType>
+  <portType name="BlackjackServiceHttpGet">
+    <operation name="DealCard">
+      <documentation>Deal a new card from the deck.</documentation>
+      <input message="s0:DealCardHttpGetIn" />
+      <output message="s0:DealCardHttpGetOut" />
+    </operation>
+    <operation name="Shuffle">
+      <documentation>Create and shuffle a deck of cards.</documentation>
+      <input message="s0:ShuffleHttpGetIn" />
+      <output message="s0:ShuffleHttpGetOut" />
+    </operation>
+    <operation name="CountCards">
+      <documentation>Compute a numerical value for the current hand.</documentation>
+      <input message="s0:CountCardsHttpGetIn" />
+      <output message="s0:CountCardsHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="BlackjackServiceHttpPost">
+    <operation name="DealCard">
+      <documentation>Deal a new card from the deck.</documentation>
+      <input message="s0:DealCardHttpPostIn" />
+      <output message="s0:DealCardHttpPostOut" />
+    </operation>
+    <operation name="Shuffle">
+      <documentation>Create and shuffle a deck of cards.</documentation>
+      <input message="s0:ShuffleHttpPostIn" />
+      <output message="s0:ShuffleHttpPostOut" />
+    </operation>
+    <operation name="CountCards">
+      <documentation>Compute a numerical value for the current hand.</documentation>
+      <input message="s0:CountCardsHttpPostIn" />
+      <output message="s0:CountCardsHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="BlackjackServiceSoap" type="s0:BlackjackServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="DealCard">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/DealCard" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Shuffle">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Shuffle" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CountCards">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/CountCards" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="BlackjackServiceHttpGet" type="s0:BlackjackServiceHttpGet">
+    <http:binding verb="GET" />
+    <operation name="DealCard">
+      <http:operation location="/DealCard" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Shuffle">
+      <http:operation location="/Shuffle" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output />
+    </operation>
+    <operation name="CountCards">
+      <http:operation location="/CountCards" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="BlackjackServiceHttpPost" type="s0:BlackjackServiceHttpPost">
+    <http:binding verb="POST" />
+    <operation name="DealCard">
+      <http:operation location="/DealCard" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Shuffle">
+      <http:operation location="/Shuffle" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output />
+    </operation>
+    <operation name="CountCards">
+      <http:operation location="/CountCards" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BlackjackService">
+    <documentation>A Web service that provides methods to manipulate a deck of cards.</documentation>
+    <port name="BlackjackServiceSoap" binding="s0:BlackjackServiceSoap">
+      <soap:address location="http://localhost/BlackjackWebService/BlackjackService.asmx" />
+    </port>
+    <port name="BlackjackServiceHttpGet" binding="s0:BlackjackServiceHttpGet">
+      <http:address location="http://localhost/BlackjackWebService/BlackjackService.asmx" />
+    </port>
+    <port name="BlackjackServiceHttpPost" binding="s0:BlackjackServiceHttpPost">
+      <http:address location="http://localhost/BlackjackWebService/BlackjackService.asmx" />
+    </port>
+  </service>
+</definitions>

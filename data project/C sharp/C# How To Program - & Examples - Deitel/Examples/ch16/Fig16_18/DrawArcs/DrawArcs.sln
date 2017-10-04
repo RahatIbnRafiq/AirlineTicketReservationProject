@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawArcs", "DrawArcs.csproj", "{6035F788-2CB1-4F48-86A7-2EED264E62F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6035F788-2CB1-4F48-86A7-2EED264E62F3}.Debug.ActiveCfg = Debug|.NET
+		{6035F788-2CB1-4F48-86A7-2EED264E62F3}.Debug.Build.0 = Debug|.NET
+		{6035F788-2CB1-4F48-86A7-2EED264E62F3}.Release.ActiveCfg = Release|.NET
+		{6035F788-2CB1-4F48-86A7-2EED264E62F3}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

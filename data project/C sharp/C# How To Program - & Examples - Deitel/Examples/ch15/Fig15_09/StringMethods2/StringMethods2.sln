@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMethods2", "StringMethods2.csproj", "{8C661687-DDF4-4747-8002-17736D2C7467}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8C661687-DDF4-4747-8002-17736D2C7467}.Debug.ActiveCfg = Debug|.NET
+		{8C661687-DDF4-4747-8002-17736D2C7467}.Debug.Build.0 = Debug|.NET
+		{8C661687-DDF4-4747-8002-17736D2C7467}.Release.ActiveCfg = Release|.NET
+		{8C661687-DDF4-4747-8002-17736D2C7467}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

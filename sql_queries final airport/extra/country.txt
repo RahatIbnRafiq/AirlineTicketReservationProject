@@ -1,0 +1,21 @@
+insert into   country values('10','bangladesh',5);
+
+insert into   country values('11','United Kingdom',2);
+
+insert into   country values('12','saudi arabia',2);
+
+insert into   country values('13','australia',5);
+
+insert into   country values('14','malaysia',5);
+
+insert into   country values('15','greece',5);
+
+insert into   country values('16','iran',5);
+
+insert into   country values('17','japan',5);
+
+insert into   country values('18','netherland',5);
+
+insert into   country values('19','france',5);
+
+insert into   country values('20','belgium',5);

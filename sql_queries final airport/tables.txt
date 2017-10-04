@@ -1,0 +1,110 @@
+
+
+create table flight(
+	flight_id varchar(10) primary key,
+	source varchar(20),
+	destination varchar(20),
+	transit_name varchar(20),
+	first_fare int,
+	eco_fare int,
+	business_fare int,
+	range varchar(15),
+	time varchar(10),
+	first_av int,
+	eco_av int,
+	business_av int,
+	flight_date date,
+	airlineName varchar(30)
+	 );
+
+
+create table plane(
+	p_id int primary key ,
+	p_name varchar(30),
+	first_cap int,
+	eco_cap int,
+	business_cap int);
+
+create table flight_goes(
+	flight_id varchar(10),
+	p_id int );
+
+
+
+
+create table user_info(
+	user_email varchar(30) primary key not null,
+	fullname varchar(30) not null,
+	password varchar(15) not null,
+	address varchar(40),
+	city varchar(15),
+	country varchar(20),
+	teleponeNo varchar(20) );
+
+create table user_purchase(
+	pur_id int primary key not null,
+	user_email varchar(30) not null, 
+	flight_id varchar(10) not null,
+	amount_paid int not null,
+	tdate date not null,
+	newDate date,
+	newTime varchar(10) );
+
+create sequence pur_sqn start with 1 minvalue 1 increment by 1;
+
+insert into user_purchase values( pur_sqn.nextval, 'farhan', 'ek041', 1214, '08-DEC-09', null, null )
+
+create table user_refund(
+	flight_id varchar(10),
+	user_email varchar(30),
+	amount int,
+	tdate date
+);
+
+create table user_money(
+	name varchar(30) primary key,
+	credit_num int,
+	amount int );
+
+create table blacklist_user(
+	user_email varchar(30) primary key not null,
+	fullname varchar(30) not null,
+	password varchar(15) not null,
+	address varchar(40),
+	city varchar(15),
+	country varchar(20),
+	telephoneNo varchar(20) );
+
+
+create table admin_info(
+	email varchar(30) primary key,
+	fullname varchar(30),
+	password varchar(15),
+	airlineName varchar(30),
+	address varchar(40),
+	telephoneNo varchar(20) )
+);
+
+create table flight_entry (
+	flightId varchar(10) primary key not null,
+	email_name varchar(30)
+);
+
+
+//  WEB ADMIN
+
+create table web_admin(
+	email varchar(30) primary key,
+	password varchar(15),
+	full_name varchar(30)
+	);
+
+insert into web_admin values( 'a@atr.com', 'aa', 'Abdur Rahman');
+insert into web_admin values( 'b@atr.com', 'bb', 'Majid Mia');
+
+
+
+	
+
+	
+	

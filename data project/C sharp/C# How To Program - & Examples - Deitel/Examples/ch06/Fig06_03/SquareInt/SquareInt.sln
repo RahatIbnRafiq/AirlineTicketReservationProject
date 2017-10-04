@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareInt", "SquareInt.csproj", "{9CFB57D7-F073-4D9B-B9FB-0A6A5B392D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9CFB57D7-F073-4D9B-B9FB-0A6A5B392D43}.Debug.ActiveCfg = Debug|.NET
+		{9CFB57D7-F073-4D9B-B9FB-0A6A5B392D43}.Debug.Build.0 = Debug|.NET
+		{9CFB57D7-F073-4D9B-B9FB-0A6A5B392D43}.Release.ActiveCfg = Release|.NET
+		{9CFB57D7-F073-4D9B-B9FB-0A6A5B392D43}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

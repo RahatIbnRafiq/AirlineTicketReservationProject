@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Players>
+    <firstName>John</firstName>
+    <lastName>Doe</lastName>
+    <battingAverage>0.375</battingAverage>
+    <playerID>1</playerID>
+  </Players>
+  <Players>
+    <firstName>Jack</firstName>
+    <lastName>Smith</lastName>
+    <battingAverage>0.223</battingAverage>
+    <playerID>2</playerID>
+  </Players>
+  <Players>
+    <firstName>George</firstName>
+    <lastName>O'Malley</lastName>
+    <battingAverage>0.444</battingAverage>
+    <playerID>3</playerID>
+  </Players>
+</NewDataSet>

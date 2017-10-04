@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquationGenerator", "http://localhost/EquationGenerator/EquationGenerator.csproj", "{77828CFD-A6B4-414F-A221-60E266AB9FDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{77828CFD-A6B4-414F-A221-60E266AB9FDF}.Debug.ActiveCfg = Debug|.NET
+		{77828CFD-A6B4-414F-A221-60E266AB9FDF}.Debug.Build.0 = Debug|.NET
+		{77828CFD-A6B4-414F-A221-60E266AB9FDF}.Release.ActiveCfg = Release|.NET
+		{77828CFD-A6B4-414F-A221-60E266AB9FDF}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

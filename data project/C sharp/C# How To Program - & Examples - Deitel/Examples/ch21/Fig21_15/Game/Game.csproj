@@ -1,0 +1,366 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.0.9372"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{58FE8952-5A2E-4D6D-82A1-A9A4076A2C2D}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Game"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                RootNamespace = "Game"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Blackjack.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Blackjack.resx"
+                    DependentUpon = "Blackjack.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\10c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\10d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\10h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\10s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\11c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\11d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\11h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\11s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\12c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\12d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\12h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\12s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\13c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\13d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\13h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\13s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\1c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\1d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\1h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\1s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\2c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\2d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\2h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\2s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\3c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\3d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\3h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\3s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\4c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\4d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\4h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\4s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\5c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\5d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\5h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\5s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\6c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\6d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\6h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\6s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\7c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\7d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\7h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\7s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\8c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\8d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\8h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\8s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\9c.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\9d.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\9h.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\9s.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\blackjack.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\cardback.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\lose.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\tie.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\blackjack_images\win.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\localhost\BlackjackService.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\localhost\BlackjackService.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\localhost\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\localhost\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\localhost\"
+                    WebReferenceUrl = "http://localhost/BlackjackWebService/BlackjackService.asmx"
+                    UrlBehavior = "Static"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

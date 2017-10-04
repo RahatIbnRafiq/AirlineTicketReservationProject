@@ -1,0 +1,3 @@
+bin\Debug\DisplayQueryResult.exe.config
+obj\Debug\DisplayQueryResult.exe
+obj\Debug\DisplayQueryResult.pdb

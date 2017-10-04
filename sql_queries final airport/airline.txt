@@ -1,0 +1,7 @@
+insert into airline values('bg','Biamn Bangladesh',3);
+
+insert into airline values('ek','Emirates',5);
+
+insert into airline values('sq','Singapore Airlines',4.5);
+
+insert into airline values('ba','British Airways',4);

@@ -1,0 +1,16 @@
+create table city (
+	cityid varchar(15) primary key,
+	cityname varchar(15),
+	officenum int );
+
+create table incountry (
+	cid varchar(10),
+	cityid varchar(15) );
+
+create table office (
+	office_id varchar(15) primary key;
+	address varchar(30) );
+
+create table incity (
+	cityid varchar(15),
+	office_id varchar(15) );

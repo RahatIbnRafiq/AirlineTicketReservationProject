@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.deitel.com/csphtp1/ch21/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.deitel.com/csphtp1/ch21/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.deitel.com/csphtp1/ch21/">
+      <s:element name="UpdateWeatherConditions">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateWeatherConditionsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Cities">
+        <s:complexType />
+      </s:element>
+      <s:element name="CitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CitiesResult" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Descriptions">
+        <s:complexType />
+      </s:element>
+      <s:element name="DescriptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DescriptionsResult" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Temperatures">
+        <s:complexType />
+      </s:element>
+      <s:element name="TemperaturesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TemperaturesResult" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfString" nillable="true" type="s0:ArrayOfString" />
+    </s:schema>
+  </types>
+  <message name="UpdateWeatherConditionsSoapIn">
+    <part name="parameters" element="s0:UpdateWeatherConditions" />
+  </message>
+  <message name="UpdateWeatherConditionsSoapOut">
+    <part name="parameters" element="s0:UpdateWeatherConditionsResponse" />
+  </message>
+  <message name="CitiesSoapIn">
+    <part name="parameters" element="s0:Cities" />
+  </message>
+  <message name="CitiesSoapOut">
+    <part name="parameters" element="s0:CitiesResponse" />
+  </message>
+  <message name="DescriptionsSoapIn">
+    <part name="parameters" element="s0:Descriptions" />
+  </message>
+  <message name="DescriptionsSoapOut">
+    <part name="parameters" element="s0:DescriptionsResponse" />
+  </message>
+  <message name="TemperaturesSoapIn">
+    <part name="parameters" element="s0:Temperatures" />
+  </message>
+  <message name="TemperaturesSoapOut">
+    <part name="parameters" element="s0:TemperaturesResponse" />
+  </message>
+  <message name="UpdateWeatherConditionsHttpGetIn" />
+  <message name="UpdateWeatherConditionsHttpGetOut" />
+  <message name="CitiesHttpGetIn" />
+  <message name="CitiesHttpGetOut">
+    <part name="Body" element="s0:ArrayOfString" />
+  </message>
+  <message name="DescriptionsHttpGetIn" />
+  <message name="DescriptionsHttpGetOut">
+    <part name="Body" element="s0:ArrayOfString" />
+  </message>
+  <message name="TemperaturesHttpGetIn" />
+  <message name="TemperaturesHttpGetOut">
+    <part name="Body" element="s0:ArrayOfString" />
+  </message>
+  <message name="UpdateWeatherConditionsHttpPostIn" />
+  <message name="UpdateWeatherConditionsHttpPostOut" />
+  <message name="CitiesHttpPostIn" />
+  <message name="CitiesHttpPostOut">
+    <part name="Body" element="s0:ArrayOfString" />
+  </message>
+  <message name="DescriptionsHttpPostIn" />
+  <message name="DescriptionsHttpPostOut">
+    <part name="Body" element="s0:ArrayOfString" />
+  </message>
+  <message name="TemperaturesHttpPostIn" />
+  <message name="TemperaturesHttpPostOut">
+    <part name="Body" element="s0:ArrayOfString" />
+  </message>
+  <portType name="TemperatureServerSoap">
+    <operation name="UpdateWeatherConditions">
+      <documentation>Method to read information from the weather service.</documentation>
+      <input message="s0:UpdateWeatherConditionsSoapIn" />
+      <output message="s0:UpdateWeatherConditionsSoapOut" />
+    </operation>
+    <operation name="Cities">
+      <documentation>Method to retrieve a list of cities.</documentation>
+      <input message="s0:CitiesSoapIn" />
+      <output message="s0:CitiesSoapOut" />
+    </operation>
+    <operation name="Descriptions">
+      <documentation>Method to retrieve weather descriptions for a list of cities.</documentation>
+      <input message="s0:DescriptionsSoapIn" />
+      <output message="s0:DescriptionsSoapOut" />
+    </operation>
+    <operation name="Temperatures">
+      <documentation>Method to retrieve the temperature for a list of cities.</documentation>
+      <input message="s0:TemperaturesSoapIn" />
+      <output message="s0:TemperaturesSoapOut" />
+    </operation>
+  </portType>
+  <portType name="TemperatureServerHttpGet">
+    <operation name="UpdateWeatherConditions">
+      <documentation>Method to read information from the weather service.</documentation>
+      <input message="s0:UpdateWeatherConditionsHttpGetIn" />
+      <output message="s0:UpdateWeatherConditionsHttpGetOut" />
+    </operation>
+    <operation name="Cities">
+      <documentation>Method to retrieve a list of cities.</documentation>
+      <input message="s0:CitiesHttpGetIn" />
+      <output message="s0:CitiesHttpGetOut" />
+    </operation>
+    <operation name="Descriptions">
+      <documentation>Method to retrieve weather descriptions for a list of cities.</documentation>
+      <input message="s0:DescriptionsHttpGetIn" />
+      <output message="s0:DescriptionsHttpGetOut" />
+    </operation>
+    <operation name="Temperatures">
+      <documentation>Method to retrieve the temperature for a list of cities.</documentation>
+      <input message="s0:TemperaturesHttpGetIn" />
+      <output message="s0:TemperaturesHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="TemperatureServerHttpPost">
+    <operation name="UpdateWeatherConditions">
+      <documentation>Method to read information from the weather service.</documentation>
+      <input message="s0:UpdateWeatherConditionsHttpPostIn" />
+      <output message="s0:UpdateWeatherConditionsHttpPostOut" />
+    </operation>
+    <operation name="Cities">
+      <documentation>Method to retrieve a list of cities.</documentation>
+      <input message="s0:CitiesHttpPostIn" />
+      <output message="s0:CitiesHttpPostOut" />
+    </operation>
+    <operation name="Descriptions">
+      <documentation>Method to retrieve weather descriptions for a list of cities.</documentation>
+      <input message="s0:DescriptionsHttpPostIn" />
+      <output message="s0:DescriptionsHttpPostOut" />
+    </operation>
+    <operation name="Temperatures">
+      <documentation>Method to retrieve the temperature for a list of cities.</documentation>
+      <input message="s0:TemperaturesHttpPostIn" />
+      <output message="s0:TemperaturesHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="TemperatureServerSoap" type="s0:TemperatureServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="UpdateWeatherConditions">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/UpdateWeatherConditions" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Cities">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Cities" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Descriptions">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Descriptions" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Temperatures">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Temperatures" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="TemperatureServerHttpGet" type="s0:TemperatureServerHttpGet">
+    <http:binding verb="GET" />
+    <operation name="UpdateWeatherConditions">
+      <http:operation location="/UpdateWeatherConditions" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output />
+    </operation>
+    <operation name="Cities">
+      <http:operation location="/Cities" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Descriptions">
+      <http:operation location="/Descriptions" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Temperatures">
+      <http:operation location="/Temperatures" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="TemperatureServerHttpPost" type="s0:TemperatureServerHttpPost">
+    <http:binding verb="POST" />
+    <operation name="UpdateWeatherConditions">
+      <http:operation location="/UpdateWeatherConditions" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output />
+    </operation>
+    <operation name="Cities">
+      <http:operation location="/Cities" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Descriptions">
+      <http:operation location="/Descriptions" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Temperatures">
+      <http:operation location="/Temperatures" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TemperatureServer">
+    <documentation>A Web service that provides information from the National Weather Service.</documentation>
+    <port name="TemperatureServerSoap" binding="s0:TemperatureServerSoap">
+      <soap:address location="http://localhost/TemperatureServer/TemperatureServer.asmx" />
+    </port>
+    <port name="TemperatureServerHttpGet" binding="s0:TemperatureServerHttpGet">
+      <http:address location="http://localhost/TemperatureServer/TemperatureServer.asmx" />
+    </port>
+    <port name="TemperatureServerHttpPost" binding="s0:TemperatureServerHttpPost">
+      <http:address location="http://localhost/TemperatureServer/TemperatureServer.asmx" />
+    </port>
+  </service>
+</definitions>

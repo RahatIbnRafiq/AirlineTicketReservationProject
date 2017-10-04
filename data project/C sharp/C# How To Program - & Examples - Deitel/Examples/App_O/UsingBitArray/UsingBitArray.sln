@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingBitArray", "UsingBitArray.csproj", "{A5B275D7-C595-4BE7-9F68-99B0FEC42B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A5B275D7-C595-4BE7-9F68-99B0FEC42B09}.Debug.ActiveCfg = Debug|.NET
+		{A5B275D7-C595-4BE7-9F68-99B0FEC42B09}.Debug.Build.0 = Debug|.NET
+		{A5B275D7-C595-4BE7-9F68-99B0FEC42B09}.Release.ActiveCfg = Release|.NET
+		{A5B275D7-C595-4BE7-9F68-99B0FEC42B09}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureClient", "TemperatureClient.csproj", "{4B878AE7-0993-4204-81DC-C1FD3A093639}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4B878AE7-0993-4204-81DC-C1FD3A093639}.Debug.ActiveCfg = Debug|.NET
+		{4B878AE7-0993-4204-81DC-C1FD3A093639}.Debug.Build.0 = Debug|.NET
+		{4B878AE7-0993-4204-81DC-C1FD3A093639}.Release.ActiveCfg = Release|.NET
+		{4B878AE7-0993-4204-81DC-C1FD3A093639}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderFeatures", "StringBuilderFeatures.csproj", "{0DD3EB2D-93AB-40E5-9C08-19E8F98AD90A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0DD3EB2D-93AB-40E5-9C08-19E8F98AD90A}.Debug.ActiveCfg = Debug|.NET
+		{0DD3EB2D-93AB-40E5-9C08-19E8F98AD90A}.Debug.Build.0 = Debug|.NET
+		{0DD3EB2D-93AB-40E5-9C08-19E8F98AD90A}.Release.ActiveCfg = Release|.NET
+		{0DD3EB2D-93AB-40E5-9C08-19E8F98AD90A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

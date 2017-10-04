@@ -1,0 +1,39 @@
+insert into  operates values('ek',11);
+
+insert into  operates values('ek',12);
+
+insert into  operates values('ek',13);
+
+insert into  operates values('ek',14);
+
+insert into  operates values('ek',15);
+
+insert into  operates values('ek',16);
+
+insert into  operates values('ek',17);
+
+insert into  operates values('ek',18);
+
+insert into  operates values('ek',19);
+
+insert into  operates values('ek',20);
+
+insert into  operates values('ba',11);
+
+insert into  operates values('ba',12);
+
+insert into  operates values('ba',13);
+
+insert into  operates values('ba',14);
+
+insert into  operates values('sq',15);
+
+insert into  operates values('sq',16);
+
+insert into  operates values('sq',17);
+
+insert into  operates values('sq',18);
+
+insert into  operates values('sq',19);
+
+insert into  operates values('sq',20);

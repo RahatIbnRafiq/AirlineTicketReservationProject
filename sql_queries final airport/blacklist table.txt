@@ -1,0 +1,31 @@
+
+
+
+
+// uname will be used as email later 
+
+insert into user_money values( 'f@c.com', 11,  30000);
+insert into user_money values( 'rahat', 22, 30000);
+insert into user_money values( 'mahmud', 33, 30000);
+
+
+
+
+
+create table blacklist_user(
+	user_email varchar(30) primary key not null,
+	fullname varchar(30) not null,
+	password varchar(15) not null,
+	address varchar(40),
+	city varchar(15),
+	country varchar(20),
+	telephoneNo varchar(20),
+	expire_date date );
+
+
+
+
+
+
+
+

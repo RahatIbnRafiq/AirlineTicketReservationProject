@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Point-Circle</name>
+    </assembly>
+    <members>
+        <member name="T:CircleTest.Point">
+            <summary>
+            Class <c><b>Point</b></c> defines a point as a pair
+            of x- and y-coordinates.
+            </summary>
+        </member>
+        <member name="F:CircleTest.Point.x">
+            <summary>
+            This private member of <c><b>Point</b></c>  
+            represents the x-coordinate.
+            </summary>
+            <returns> The x-coordinate as an integer.</returns>
+        </member>
+        <member name="F:CircleTest.Point.y">
+            <summary>
+            This private member of <c><b>Point</b></c>  
+            represents the x-coordinate.
+            </summary>
+            <returns> The y-coordinate as an integer.</returns>
+        </member>
+        <member name="M:CircleTest.Point.#ctor">
+            <summary>
+            Default constructor for class <c><b>Point</b></c>.
+            </summary>
+            <remarks>
+            Sets properties <c><b>X</b></c> and <c><b>Y</b></c> to 0.
+            </remarks>
+        </member>
+        <member name="M:CircleTest.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor for <c><b>Point</b></c> that accepts two
+            integers that represent the x- and
+            y-coordinates of the point.
+            </summary>
+            <remarks>
+            Uses <c><b>X</b></c> and <c><b>Y</b></c> 
+            properties to set the coordinates of the point, 
+            <em>not</em> private members <c><b>xCoordinate</b></c> 
+            and <c><b>yCoordinate</b></c>.
+            </remarks>
+            <param name="xValue">
+            The x-coordinate of the circle
+            </param>
+            <param name="yValue">
+            The y-coordinate of the circle.
+            </param>
+        </member>
+        <member name="M:CircleTest.Point.ToString">
+            <summary>
+            Converts the <c><b>Point</b></c> to 
+            <b>string</b> format.
+            </summary>     
+            <returns>
+            Returns a point in format: 
+            [x-coordinate, y-coordinate].
+            </returns>
+        </member>
+        <member name="P:CircleTest.Point.X">
+            <summary>
+            Provides get and set access to member 
+            <c><b>xCoordinate</b></c>.
+            </summary>
+            <value>
+            <c><b>X</b></c> accesses the value of the 
+            <c><b>xCoordinate</b></c> data member.
+            </value>
+        </member>
+        <member name="P:CircleTest.Point.Y">
+            <summary>
+            Provides get and set access to member 
+            <c><b>yCoordinate</b></c>.
+            </summary>
+            <value>
+            <c><b>Y</b></c> accesses the value of the 
+            <c><b>yCoordinate</b></c> data member.
+            </value>
+        </member>
+        <member name="T:CircleTest.Circle">
+            <summary>
+            Class <c><b>Circle</b></c> inherits from class 
+            <c><b>Point</b></c>. It has an additional member to
+            represent the radius, a property that provides access 
+            to it and method <c><b>Area</b></c> to compute the area 
+            of the circle.
+            </summary>
+        </member>
+        <member name="F:CircleTest.Circle.radius">
+            <summary>
+            This private member of <c><b>Circle</b></c> 
+            represents the radius.
+            </summary>
+        </member>
+        <member name="M:CircleTest.Circle.#ctor">
+            <summary>
+            Default constructor for class <c><b>Circle</b></c>.
+            </summary>
+            <remarks>
+            Sets the radius to 0.0.
+            </remarks>
+        </member>
+        <member name="M:CircleTest.Circle.#ctor(System.Int32,System.Int32,System.Double)">
+            <summary>
+            Constructor for <c>Circle</c> that accepts two integers
+            that represent the x- and y-coordinates of the circle
+            and a <b>double</b> that represents the radius.
+            </summary>
+            <remarks>
+            Uses property <c><b>Radius</b></c> to set the radius 
+            of the circle, <em>not</em> private member 
+            <c><b>radius</b></c>.
+            </remarks>
+            <param name="xValue">
+            The x-coordinate of the circle
+            </param>
+            <param name="yValue">
+            The y-coordinate of the circle.
+            </param>
+            <param name="radiusValue">
+            The radius of the circle.
+            </param>
+        </member>
+        <member name="M:CircleTest.Circle.Diameter">
+            <summary>
+            Computes the diameter of the circle.
+            </summary>
+            <returns>
+            Returns the diameter of the circle.
+            </returns>
+        </member>
+        <member name="M:CircleTest.Circle.Circumference">
+            <summary>
+            Computes the circumference of the circle.
+            </summary>
+            <remarks>
+            Uses constant <c><b>Math.PI</b></c>
+            <see cref="F:System.Math.PI"/>
+            </remarks>
+            <returns>
+            Returns the circumference of the circle.
+            </returns>
+        </member>
+        <member name="M:CircleTest.Circle.Area">
+            <summary>
+            Computes the area of the circle.
+            </summary>
+            <remarks>
+            Uses constant <c><b>Math.PI</b></c>
+            <see cref="F:System.Math.PI"/>
+            </remarks>
+            <returns>
+            Returns the area of the circle.
+            </returns>
+        </member>
+        <member name="M:CircleTest.Circle.ToString">
+            <summary>
+            Converts the <c><b>Circle</b></c> to 
+            <b>string</b> format.
+            </summary>
+            <remarks>
+            Overrides <c><b>ToString</b></c> method of base class.
+            <see cref="!:CircleTest.Point.ToString"/>
+            </remarks>
+            <returns>
+            Returns a string that includes the center of the 
+            circle and its radius.
+            </returns>
+        </member>
+        <member name="P:CircleTest.Circle.Radius">
+            <summary>
+            Provides get and set access to member 
+            <c><b>radius</b></c>.
+            </summary>
+            <remarks>
+            The <c><b>set</b></c> method ensures that 
+            <c><b>radius</b></c> is <em>not</em> set to a negative 
+            number, and sets it to 0.0 if there is an attempt to 
+            set <c><b>radius</b>></c> to do so.
+            </remarks>
+            <value>
+            <c><b>Radius</b></c> accesses the value of the 
+            <c><b>radius</b></c> data member.
+            </value>
+        </member>
+        <member name="T:CircleTest.CircleTest">
+            <summary>
+            Class <c><b>CircleTest</b></c> test the
+            <c><b>Point</b></c> and <c><b>Point</b></c> classes.
+            </summary>
+        </member>
+        <member name="M:CircleTest.CircleTest.Main(System.String[])">
+            <summary>
+            Entry point of application.
+            </summary>
+            <remarks>
+            In this application all command-line arguments
+            are ignored.
+            </remarks>
+            <param name="args">
+            Optional arguments to Main.
+            </param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderAppendFormat", "StringBuilderAppendFormat.csproj", "{E2F2B663-3BEF-4E81-A752-930667EB73CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E2F2B663-3BEF-4E81-A752-930667EB73CE}.Debug.ActiveCfg = Debug|.NET
+		{E2F2B663-3BEF-4E81-A752-930667EB73CE}.Debug.Build.0 = Debug|.NET
+		{E2F2B663-3BEF-4E81-A752-930667EB73CE}.Release.ActiveCfg = Release|.NET
+		{E2F2B663-3BEF-4E81-A752-930667EB73CE}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

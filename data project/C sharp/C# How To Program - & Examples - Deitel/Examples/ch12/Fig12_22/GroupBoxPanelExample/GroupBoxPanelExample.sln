@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxPanelExample", "GroupBoxPanelExample.csproj", "{F1F14765-B1BD-4B9B-B02B-22956D76E28F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F1F14765-B1BD-4B9B-B02B-22956D76E28F}.Debug.ActiveCfg = Debug|.NET
+		{F1F14765-B1BD-4B9B-B02B-22956D76E28F}.Debug.Build.0 = Debug|.NET
+		{F1F14765-B1BD-4B9B-B02B-22956D76E28F}.Release.ActiveCfg = Release|.NET
+		{F1F14765-B1BD-4B9B-B02B-22956D76E28F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

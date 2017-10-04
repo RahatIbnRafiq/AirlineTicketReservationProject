@@ -1,0 +1,2413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="robots" content="all" scheme="http://www.robotstxt.org/">
+<meta name="generator" content="Oracle DARB XHTML converter - Version 4.1.3 Build 116">
+<meta name="Date" content="June 21, 2005 15:23:49">
+<meta name="doctitle" content="Oracle&#174; Data Provider for .NET Developer's Guide 10g Release 2 (10.2)">
+<meta name="partno" content="B14307-01">
+<meta name="docid" content="ODPNT">
+<link rel="Start" href="http://www.oracle.com/pls/db102/homepage" title="Home" type="text/html">
+<link rel="Copyright" href="http://download.oracle.com/docs/cd/B19306_01/dcommon/html/cpyr.htm" title="Copyright" type="text/html">
+<link rel="Stylesheet" href="OracleConnectionClass_files/blafdoc.css" title="Default" type="text/css">
+<script type="text/javascript" src="OracleConnectionClass_files/doccd_js.htm">
+</script>
+<link rel="Contents" href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/toc.htm" title="Contents" type="text/html">
+<link rel="Index" href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/index.htm" title="Index" type="text/html">
+<link rel="Glossary" href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/glossary.htm" title="Glossary" type="text/html">
+<link rel="Prev" href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleCommandBuilderClass.htm" title="Previous" type="text/html">
+<link rel="Next" href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleDataAdapterClass.htm" title="Next" type="text/html">
+<link rel="alternate" href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307.pdf" title="PDF version" type="application/pdf">
+<title>OracleConnection Class</title>
+</head><body>
+<div class="header">
+<div class="zz-skip-header"><a name="top" id="top" href="#BEGIN">Skip Headers</a></div>
+<table class="simple oac_no_warn" summary="" width="100%" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" align="left"><b>Oracle&#174; Data Provider for .NET Developer's Guide<br>
+10<i>g</i> Release 2 (10.2)</b><br>
+Part Number B14307-01</td>
+<td valign="bottom" align="right">
+<table class="icons oac_no_warn" summary="" width="294" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" align="center"><a href="http://www.oracle.com/pls/db102/homepage"><img src="OracleConnectionClass_files/doclib.gif" alt="Go to Documentation Home" width="24" height="24"><br>
+<span class="icon">Home</span></a></td>
+<td valign="top" align="center"><a href="http://www.oracle.com/pls/db102/portal.all_books"><img src="OracleConnectionClass_files/booklist.gif" alt="Go to Book List" width="24" height="24"><br>
+<span class="icon">Book List</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/toc.htm"><img src="OracleConnectionClass_files/toc.gif" alt="Go to Table of Contents" width="24" height="24"><br>
+<span class="icon">Contents</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/index.htm"><img src="OracleConnectionClass_files/index.gif" alt="Go to Index" width="24" height="24"><br>
+<span class="icon">Index</span></a></td>
+<td valign="top" align="center"><a href="http://www.oracle.com/pls/db102/show_mindex"><img src="OracleConnectionClass_files/masterix.gif" alt="Go to Master Index" width="24" height="24"><br>
+<span class="icon">Master Index</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/dcommon/html/feedback.htm"><img src="OracleConnectionClass_files/feedbck2.gif" alt="Go to Feedback page" width="24" height="24"><br>
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<hr>
+<table class="simple oac_no_warn" summary="" width="100%" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" align="left">
+<table class="simple oac_no_warn" summary="" width="98" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleCommandBuilderClass.htm"><img src="OracleConnectionClass_files/leftnav.gif" alt="Go to previous page" width="24" height="24"><br>
+<span class="icon">Previous</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleDataAdapterClass.htm"><img src="OracleConnectionClass_files/rightnav.gif" alt="Go to next page" width="24" height="24"><br>
+<span class="icon">Next</span></a></td>
+</tr>
+</tbody></table>
+</td>
+<td style="font-size: 90%;" valign="top" align="right"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307.pdf">View PDF</a></td>
+</tr>
+</tbody></table>
+<a name="BEGIN" id="BEGIN"></a></div>
+<div class="IND"><!-- End Header --><a id="i999634" name="i999634"></a>
+<hr>
+<div class="refsect1"><a id="sthref674" name="sthref674"></a>
+<h1>OracleConnection Class<a id="sthref675" name="sthref675"></a></h1>
+<p>An <code>OracleConnection</code> object represents a connection to an Oracle database.</p>
+<p class="subhead2">Class Inheritance</p>
+<p><code>Object</code></p>
+<p><code>&nbsp;&nbsp;MarshalByRefObject</code></p>
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;Component</code></p>
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OracleConnection</code></p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public sealed class OracleConnection : Component,
+   IDbConnection, ICloneable 
+</pre>
+<p class="subhead2">Thread Safety</p>
+<p>All public static methods are thread-safe, although instance methods do not guarantee thread safety.</p>
+<a id="BABEFIFI" name="BABEFIFI"></a>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using System.Data;
+using Oracle.DataAccess.Client; 
+ 
+class OracleConnectionSample
+{
+  static void Main()
+  {  
+    // Connect
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    // Execute a SQL SELECT
+    OracleCommand cmd = con.CreateCommand();
+    cmd.CommandText = "select * from emp";
+    OracleDataReader reader = cmd.ExecuteReader();
+ 
+    // Print all employee numbers
+    while (reader.Read())
+      Console.WriteLine(reader.GetInt32(0));
+ 
+    // Clean up
+    reader.Dispose();
+    cmd.Dispose();
+    con.Dispose();      
+  }
+}
+
+</pre>
+<p class="subhead2">Requirements</p>
+<p>Namespace: <code>Oracle.DataAccess.Client</code></p>
+<p>Assembly: <code>Oracle.DataAccess.dll</code></p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><a href="#i1000065">OracleConnection Constructors</a></p>
+</li>
+<li>
+<p><a href="#CHDIEDCC">OracleConnection Static Properties</a></p>
+</li>
+<li>
+<p><a href="#i1000164">OracleConnection Static Methods</a></p>
+</li>
+<li>
+<p><a href="#i1000208">OracleConnection Properties</a></p>
+</li>
+<li>
+<p><a href="#i1000689">OracleConnection Public Methods</a></p>
+</li>
+<li>
+<p><a href="#i1001298">OracleConnection Events</a></p>
+</li>
+</ul>
+</div>
+<a id="i999705" name="i999705"></a>
+<hr>
+<a id="sthref676" name="sthref676"></a>
+<h2>OracleConnection Members <a id="sthref677" name="sthref677"></a></h2>
+<p><code>OracleConnection</code> members are listed in the following tables:</p>
+<p class="subhead1">OracleConnection Constructors</p>
+<p><code>OracleConnection</code> constructors are listed in <a href="#g1100525">Table 5-17</a>.</p>
+<div class="tblRuleFormal"><a id="sthref678" name="sthref678"></a><a id="g1100525" name="g1100525"></a>
+<p class="titleintable">Table 5-17 OracleConnection Constructors</p>
+<table class="RuleFormal" title="OracleConnection Constructors" summary="Rows are constructors. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t76" valign="bottom" align="left">Constructor</th>
+<th id="r1c2-t76" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t76" headers="r1c1-t76" align="left"><a href="#i1000065">OracleConnection Constructors</a></td>
+<td headers="r2c1-t76 r1c2-t76" align="left">Instantiates a new instance of the <code>OracleConnection</code> class (Overloaded)</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<p class="subhead1">OracleConnection Static Properties</p>
+<p>The <code>OracleConnection</code> static property is listed in <a href="#g1100535">Table 5-19</a>.</p>
+<div class="tblRuleFormal"><a id="sthref679" name="sthref679"></a><a id="sthref680" name="sthref680"></a>
+<p class="titleintable">Table 5-18 OracleConnection Static Property</p>
+<table class="RuleFormal" title="OracleConnection Static Property" summary="Rows are static methods. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t77" valign="bottom" align="left">Property</th>
+<th id="r1c2-t77" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t77" headers="r1c1-t77" align="left"><a href="#BABEIJAB">IsAvailable</a></td>
+<td headers="r2c1-t77 r1c2-t77" align="left">Indicates whether or not the implicit database connection is available for use</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<p class="subhead1">OracleConnection Static Methods</p>
+<p>The <code>OracleConnection</code> static method is listed in <a href="#g1100535">Table 5-19</a>.</p>
+<div class="tblRuleFormal"><a id="sthref681" name="sthref681"></a><a id="g1100535" name="g1100535"></a>
+<p class="titleintable">Table 5-19 OracleConnection Static Method</p>
+<table class="RuleFormal" title="OracleConnection Static Method" summary="Rows are static methods. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t78" valign="bottom" align="left">Method</th>
+<th id="r1c2-t78" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t78" headers="r1c1-t78" align="left"><code>Equals</code></td>
+<td headers="r2c1-t78 r1c2-t78" align="left">Inherited from <code>Object</code> (Overloaded)</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<p class="subhead1">OracleConnection Properties</p>
+<p><code>OracleConnection</code> properties are listed in <a href="#BABGJHEG">Table 5-20</a></p>
+<div class="tblRuleFormal"><a id="sthref682" name="sthref682"></a><a id="BABGJHEG" name="BABGJHEG"></a>
+<p class="titleintable">Table 5-20 OracleConnection Properties</p>
+<table class="RuleFormal" title="OracleConnection Properties " summary="Rows are properties. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t79" valign="bottom" align="left">Name</th>
+<th id="r1c2-t79" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t79" headers="r1c1-t79" align="left"><a href="#DAFCFAHF">ClientId</a></td>
+<td headers="r2c1-t79 r1c2-t79" align="left">Specifies the client identifier for the connection</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t79" headers="r1c1-t79" align="left"><a href="#i1000291">ConnectionString</a></td>
+<td headers="r3c1-t79 r1c2-t79" align="left">Specifies connection information used to connect to an Oracle database</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t79" headers="r1c1-t79" align="left"><a href="#i1000566">ConnectionTimeout</a></td>
+<td headers="r4c1-t79 r1c2-t79" align="left">Specifies the maximum amount of time that the <code>Open</code> method can take to obtain a pooled connection before the request is terminated</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t79" headers="r1c1-t79" align="left"><code>Container</code></td>
+<td headers="r5c1-t79 r1c2-t79" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r6c1-t79" headers="r1c1-t79" align="left"><a href="#BABHDAIA">Database</a></td>
+<td headers="r6c1-t79 r1c2-t79" align="left"><span class="italic">Not Supported</span></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r7c1-t79" headers="r1c1-t79" align="left"><a href="#i1000598">DataSource</a></td>
+<td headers="r7c1-t79 r1c2-t79" align="left">Specifies the Oracle Net
+Services Name, Connect Descriptor, or an easy connect naming that
+identifies the database to which to connect</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r8c1-t79" headers="r1c1-t79" align="left"><a href="#BABEIJAB">IsAvailable</a></td>
+<td headers="r8c1-t79 r1c2-t79" align="left">Indicates whether or not the implicit database connection is available for use.</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r9c1-t79" headers="r1c1-t79" align="left"><a href="#i1000626">ServerVersion</a></td>
+<td headers="r9c1-t79 r1c2-t79" align="left">Specifies the version number of the Oracle database to which the <code>OracleConnection</code> has established a connection</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r10c1-t79" headers="r1c1-t79" align="left"><code>Site</code></td>
+<td headers="r10c1-t79 r1c2-t79" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r11c1-t79" headers="r1c1-t79" align="left"><a href="#i1000656">State</a></td>
+<td headers="r11c1-t79 r1c2-t79" align="left">Specifies the current state of the connection</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<p class="subhead1">OracleConnection Public Methods</p>
+<p><code>OracleConnection</code> public methods are listed in <a href="#BABDJEHF">Table 5-21</a>.</p>
+<div class="tblRuleFormal"><a id="sthref683" name="sthref683"></a><a id="BABDJEHF" name="BABDJEHF"></a>
+<p class="titleintable">Table 5-21 OracleConnection Public Methods</p>
+<table class="RuleFormal" title="OracleConnection Public Methods " summary="Rows are public methods. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t80" valign="bottom" align="left">Public Method</th>
+<th id="r1c2-t80" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t80" headers="r1c1-t80" align="left"><a href="#i1000820">BeginTransaction</a></td>
+<td headers="r2c1-t80 r1c2-t80" align="left">Begins a local transaction (Overloaded)
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t80" headers="r1c1-t80" align="left"><a href="#BABDHCEE">ChangeDatabase</a></td>
+<td headers="r3c1-t80 r1c2-t80" align="left"><span class="italic">Not Supported</span></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t80" headers="r1c1-t80" align="left"><a href="#i1000938">Clone</a></td>
+<td headers="r4c1-t80 r1c2-t80" align="left">Creates a copy of an <code>OracleConnection</code> object
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t80" headers="r1c1-t80" align="left"><a href="#i1000979">Close</a></td>
+<td headers="r5c1-t80 r1c2-t80" align="left">Closes the database connection</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r6c1-t80" headers="r1c1-t80" align="left"><a href="#i1001011">CreateCommand</a></td>
+<td headers="r6c1-t80 r1c2-t80" align="left">Creates and returns an <code>OracleCommand</code> object associated with the <code>OracleConnection</code> object</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r7c1-t80" headers="r1c1-t80" align="left"><code>CreateObjRef</code></td>
+<td headers="r7c1-t80 r1c2-t80" align="left">Inherited from <code>MarshalByRefObject</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r8c1-t80" headers="r1c1-t80" align="left"><code>Dispose</code></td>
+<td headers="r8c1-t80 r1c2-t80" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r9c1-t80" headers="r1c1-t80" align="left"><a href="#DAFJHFFC">EnlistDistributedTransaction</a></td>
+<td headers="r9c1-t80 r1c2-t80" align="left">Enables applications to explicitly enlist in a specified distributed transaction
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r10c1-t80" headers="r1c1-t80" align="left"><code>Equals</code></td>
+<td headers="r10c1-t80 r1c2-t80" align="left">Inherited from <code>Object</code> (Overloaded)</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r11c1-t80" headers="r1c1-t80" align="left"><code>GetHashCode</code></td>
+<td headers="r11c1-t80 r1c2-t80" align="left">Inherited from <code>Object</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r12c1-t80" headers="r1c1-t80" align="left"><code>GetLifetimeService</code></td>
+<td headers="r12c1-t80 r1c2-t80" align="left">Inherited from <code>MarshalByRefObject</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r13c1-t80" headers="r1c1-t80" align="left"><a href="#i1001056">GetSessionInfo</a></td>
+<td headers="r13c1-t80 r1c2-t80" align="left">Returns or refreshes the property values of the <code>OracleGlobalization</code> object that represents the globalization settings of the session (Overloaded)</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r14c1-t80" headers="r1c1-t80" align="left"><code>GetType</code></td>
+<td headers="r14c1-t80 r1c2-t80" align="left">Inherited from <code>Object</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r15c1-t80" headers="r1c1-t80" align="left"><code>InitializeLifetimeService</code></td>
+<td headers="r15c1-t80 r1c2-t80" align="left">Inherited from <code>MarshalByRefObject</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r16c1-t80" headers="r1c1-t80" align="left"><a href="#i1001169">Open</a></td>
+<td headers="r16c1-t80 r1c2-t80" align="left">Opens a database connection with the property settings specified by the <code>ConnectionString</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r17c1-t80" headers="r1c1-t80" align="left"><a href="#i1001202">OpenWithNewPassword</a></td>
+<td headers="r17c1-t80 r1c2-t80" align="left">Opens a new connection with the new password
+<p><span class="italic">Not supported with an implicit database connection</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r18c1-t80" headers="r1c1-t80" align="left"><a href="#DAFJGDFF">PurgeStatementCache</a></td>
+<td headers="r18c1-t80 r1c2-t80" align="left">Flushes the Statement Cache by closing all open cursors on the database, when statement caching is enabled</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r19c1-t80" headers="r1c1-t80" align="left"><a href="#i1001239">SetSessionInfo</a></td>
+<td headers="r19c1-t80 r1c2-t80" align="left">Alters the session's globalization settings with the property values provided by the <code>OracleGlobalization</code> object</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r20c1-t80" headers="r1c1-t80" align="left"><code>ToString</code></td>
+<td headers="r20c1-t80 r1c2-t80" align="left">Inherited from <code>Object</code></td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<p class="subhead1">OracleConnection Events</p>
+<p><code>OracleConnection</code> events are listed in <a href="#BABBFDHC">Table 5-22</a>.</p>
+<div class="tblRuleFormal"><a id="sthref684" name="sthref684"></a><a id="BABBFDHC" name="BABBFDHC"></a>
+<p class="titleintable">Table 5-22 OracleConnection Events</p>
+<table class="RuleFormal" title="OracleConnection Events " summary="Rows are events. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t81" valign="bottom" align="left">Event Name</th>
+<th id="r1c2-t81" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t81" headers="r1c1-t81" align="left"><code>Disposed</code></td>
+<td headers="r2c1-t81 r1c2-t81" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t81" headers="r1c1-t81" align="left"><a href="#i1001362">Failover</a></td>
+<td headers="r3c1-t81 r1c2-t81" align="left">An event that is triggered when an Oracle failover occurs
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t81" headers="r1c1-t81" align="left"><a href="#i1001398">InfoMessage</a></td>
+<td headers="r4c1-t81 r1c2-t81" align="left">An event that is triggered for any message or warning sent by the database</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t81" headers="r1c1-t81" align="left"><a href="#i1001439">StateChange</a></td>
+<td headers="r5c1-t81 r1c2-t81" align="left">An event that is triggered when the connection state changes</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000065" name="i1000065"></a>
+<hr>
+<a id="sthref685" name="sthref685"></a>
+<h2>OracleConnection Constructors <a id="sthref686" name="sthref686"></a></h2>
+<p><code>OracleConnection</code> constructors instantiate new instances of the <code>OracleConnection</code> class.</p>
+<p class="subhead2">Overload List:</p>
+<ul>
+<li>
+<p><a href="#i1000099">OracleConnection()</a></p>
+<p>This constructor instantiates a new instance of the <code>OracleConnection</code> class using default property values.</p>
+</li>
+<li>
+<p><a href="#i1000130">OracleConnection(String)</a></p>
+<p>This constructor instantiates a new instance of the <code>OracleConnection</code> class with the provided connection string.</p>
+</li>
+</ul>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDBFGGI" name="CHDBFGGI"></a><a id="i1000099" name="i1000099"></a>
+<h3>OracleConnection()</h3>
+<p>This constructor instantiates a new instance of the <code>OracleConnection</code> class using default property values.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public OracleConnection();
+</pre>
+<p class="subhead2">Remarks</p>
+<p>The properties for <code>OracleConnection</code> are set to the following default values:</p>
+<ul>
+<li>
+<p><code>ConnectionString</code> = empty string</p>
+</li>
+<li>
+<p><code>ConnectionTimeout</code> = <code>15</code> (default value of <code>0</code> is used for the implicit database connection)</p>
+</li>
+<li>
+<p><code>DataSource</code> = empty string</p>
+</li>
+<li>
+<p><code>ServerVersion</code> = empty string</p>
+</li>
+</ul>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDDCDJA" name="CHDDCDJA"></a><a id="i1000130" name="i1000130"></a>
+<h3>OracleConnection(String)</h3>
+<p>This constructor instantiates a new instance of the <code>OracleConnection</code> class with the provided connection string.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public OracleConnection(String <span class="italic">connectionString</span>);
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">connectionString</span></code></p>
+<p>The connection information used to connect to the Oracle database.</p>
+</li>
+</ul>
+<p class="subhead2">Remarks</p>
+<p>The <code>ConnectionString</code> property is set to the supplied <code><span class="codeinlineitalic">connectionString</span></code>. The <code>ConnectionString</code> property is parsed and an exception is thrown if it contains invalid connection string attributes or attribute values.</p>
+<p>The properties of the <code>OracleConnection</code> object default to the following values unless they are set by the connection string:</p>
+<ul>
+<li>
+<p><code>ConnectionString</code> = empty string</p>
+</li>
+<li>
+<p><code>ConnectionTimeout</code> = <code>15</code> (default value of <code>0</code> is used for the implicit database connection)</p>
+</li>
+<li>
+<p><code>DataSource</code> = empty string</p>
+</li>
+<li>
+<p><code>ServerVersion</code> = empty string</p>
+</li>
+</ul>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDIEDCC" name="CHDIEDCC"></a>
+<hr>
+<a id="sthref687" name="sthref687"></a>
+<h2>OracleConnection Static Properties</h2>
+<p>The <code>OracleConnection</code> static property is listed in <a href="#BABHGGEJ">Table 5-23</a>.</p>
+<div class="tblRuleFormal"><a id="sthref688" name="sthref688"></a><a id="BABHGGEJ" name="BABHGGEJ"></a>
+<p class="titleintable">Table 5-23 OracleConnection Static Property</p>
+<table class="RuleFormal" title="OracleConnection Static Property" summary="Rows are static methods. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t86" valign="bottom" align="left">Property</th>
+<th id="r1c2-t86" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t86" headers="r1c1-t86" align="left"><a href="#BABEIJAB">IsAvailable</a></td>
+<td headers="r2c1-t86 r1c2-t86" align="left">Indicates whether or not the implicit database connection is available for use</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="BABEIJAB" name="BABEIJAB"></a><a id="sthref689" name="sthref689"></a>
+<h3>IsAvailable</h3>
+<p>This property indicates whether or the implicit database connection is available for use.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public static bool IsAvailable {get;
+</pre>
+<p class="subhead2">Property Value</p>
+<p>Returns <code>true</code> if the implicit database connection is available for use.</p>
+<p class="subhead2">Remarks</p>
+<p>The availability of the implicit database connection can be checked
+at runtime through this static property. When Oracle Data Provider for
+.NET is used within a .NET stored procedure, this property always
+returns <code>true</code>. Otherwise, <code>false</code> is returned.</p>
+<p>To obtain an <code>OracleConnection</code> object in a .NET stored procedure that represents the implicit database connection, set the <code>ConnectionString</code> property of the <code>OracleConnection</code> object to <code>"context</code> <code>connection=true"</code> and invoke the <code>Open</code> method.</p>
+<p>Note that not all features that are available for an explicit user
+connection are available for an implicit database connection. See <a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/extenRest.htm#CHDFEDHC">"Implicit Database Connection"</a> for details.</p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C# (Library/DLL)
+using System;
+using Oracle.DataAccess.Client;
+ 
+public class IsAvailableSample
+{
+  static void MyStoredProcedure()
+  {
+    OracleConnection con = new OracleConnection();
+    if (OracleConnection.IsAvailable)
+    {
+      // This function is invoked as a stored procedure
+      // Obtain the implicit database connection by setting
+      //   "context connection=true" in the connection string
+      con.ConnectionString = "context connection=true";
+    }
+    else
+    {
+      // This function is not invoked as a stored procedure
+      // Set the connection string for a normal client connection
+      con.ConnectionString = "user id=scott;password=tiger;data source=oracle";
+    }
+ 
+    con.Open();
+    Console.WriteLine("connected!");
+  }
+}
+
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000164" name="i1000164"></a>
+<hr>
+<a id="sthref690" name="sthref690"></a>
+<h2>OracleConnection Static Methods<a id="sthref691" name="sthref691"></a></h2>
+<p>The <code>OracleConnection</code> static method is listed in <a href="#g1100698">Table 5-24</a>.</p>
+<div class="tblRuleFormal"><a id="sthref692" name="sthref692"></a><a id="g1100698" name="g1100698"></a>
+<p class="titleintable">Table 5-24 OracleConnection Static Method</p>
+<table class="RuleFormal" title="OracleConnection Static Method" summary="Rows are static methods. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t89" valign="bottom" align="left">Method</th>
+<th id="r1c2-t89" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t89" headers="r1c1-t89" align="left"><code>Equals</code></td>
+<td headers="r2c1-t89 r1c2-t89" align="left">Inherited from <code>Object</code> (Overloaded)</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000208" name="i1000208"></a>
+<hr>
+<a id="sthref693" name="sthref693"></a>
+<h2>OracleConnection Properties<a id="sthref694" name="sthref694"></a></h2>
+<p><code>OracleConnection</code> properties are listed in <a href="#g1100712">Table 5-25</a></p>
+<div class="tblRuleFormal"><a id="sthref695" name="sthref695"></a><a id="g1100712" name="g1100712"></a>
+<p class="titleintable">Table 5-25 OracleConnection Properties</p>
+<table class="RuleFormal" title="OracleConnection Properties " summary="Rows are properties. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t91" valign="bottom" align="left">Name</th>
+<th id="r1c2-t91" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t91" headers="r1c1-t91" align="left"><a href="#DAFCFAHF">ClientId</a></td>
+<td headers="r2c1-t91 r1c2-t91" align="left">Specifies the client identifier for the connection</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t91" headers="r1c1-t91" align="left"><a href="#DAFFIIFH">ConnectionString</a></td>
+<td headers="r3c1-t91 r1c2-t91" align="left">Specifies connection information used to connect to an Oracle database</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t91" headers="r1c1-t91" align="left"><a href="#i1000566">ConnectionTimeout</a></td>
+<td headers="r4c1-t91 r1c2-t91" align="left">Specifies the maximum amount of time that the <code>Open</code> method can take to obtain a pooled connection before the request is terminated</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t91" headers="r1c1-t91" align="left"><code>Container</code></td>
+<td headers="r5c1-t91 r1c2-t91" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r6c1-t91" headers="r1c1-t91" align="left"><a href="#BABHDAIA">Database</a></td>
+<td headers="r6c1-t91 r1c2-t91" align="left"><span class="italic">Not Supported</span></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r7c1-t91" headers="r1c1-t91" align="left"><a href="#i1000598">DataSource</a></td>
+<td headers="r7c1-t91 r1c2-t91" align="left">Specifies the Oracle Net
+Services Name, Connect Descriptor, or an easy connect naming that
+identifies the database to which to connect</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r8c1-t91" headers="r1c1-t91" align="left"><a href="#i1000626">ServerVersion</a></td>
+<td headers="r8c1-t91 r1c2-t91" align="left">Specifies the version number of the Oracle database to which the <code>OracleConnection</code> has established a connection</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r9c1-t91" headers="r1c1-t91" align="left"><code>Site</code></td>
+<td headers="r9c1-t91 r1c2-t91" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r10c1-t91" headers="r1c1-t91" align="left"><a href="#i1000656">State</a></td>
+<td headers="r10c1-t91 r1c2-t91" align="left">Specifies the current state of the connection</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="DAFCFAHF" name="DAFCFAHF"></a><a id="DAFGGBIA" name="DAFGGBIA"></a>
+<h3>ClientId</h3>
+<p>This property specifies the client identifier for the connection.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public string ClientId {set;}
+
+</pre>
+<p class="subhead2">Property Value</p>
+<p>The string to be used as the client identifier.</p>
+<p class="subhead2">Remarks</p>
+<p>The default value is <code>null</code>.</p>
+<p>Setting <code>ClientId</code> to <code>null</code> resets the client identifier for the connection. Setting <code>ClientId</code> to an empty string sets the client identifier for the connection to an empty string. <code>ClientId</code> is set to <code>null</code> when the <code>Close</code> method is called on the <code>OracleConnection</code> object.</p>
+<p>Using the <code>ClientId</code> property allows the application to
+set the client identifier in the application context for every database
+session using ODP.NET. This enables ODP.NET developers to configure the
+Oracle Virtual Private Database (VPD) more easily.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/featConnecting.htm#CIHIFBJI">"Client Identifier"</a></p>
+</li>
+<li>
+<p><span class="italic"><a class="olink DBSEG13000" href="http://download.oracle.com/docs/cd/B19306_01/network.102/b14266/apdvpoli.htm#DBSEG13000">Oracle Database Security Guide</a></span></p>
+</li>
+</ul>
+</div>
+<a id="DAFFIIFH" name="DAFFIIFH"></a><a id="i1000291" name="i1000291"></a>
+<h3>ConnectionString<a id="sthref696" name="sthref696"></a></h3>
+<p>This property specifies connection information used to connect to an Oracle database.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public string ConnectionString{get; set;}
+ 
+</pre>
+<p class="subhead2">Property Value</p>
+<p>If the connection string is supplied through the constructor, this property is set to that string.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Exceptions</p>
+<p><code>ArgumentException</code> - An invalid syntax is specified for the connection string.</p>
+<p><code>InvalidOperationException</code> - <code>ConnectionString</code> is being set while the connection is open.</p>
+<p class="subhead2">Remarks</p>
+<p>The default value is an empty string.</p>
+<p><code>ConnectionString</code> must be a string of attribute name and value pairings, separated by a semi-colon, for example:</p>
+<pre xml:space="preserve" class="oac_no_warn">"User Id=scott;password=tiger;data source=oracle"
+
+</pre>
+<p>If the <code>ConnectionString</code> is not in a proper format, an exception is thrown. All spaces are ignored unless they are within double quotes.</p>
+<p>When the <code>ConnectionString</code> property is set, the <code>OracleConnection</code> object immediately parses the string for errors. An <code>ArgumentException</code> is thrown if the <code>ConnectionString</code> contains invalid attributes or invalid values. Attribute values for <code>User</code> <code>Id</code>, <code>Password</code>, <code>Proxy</code> <code>User</code> <code>Id</code>, <code>Proxy</code> <code>Password</code>, and <code>Data</code> <code>Source</code> (if provided) are not validated until the <code>Open</code> method is called.</p>
+<p>The connection must be closed to set the <code>ConnectionString</code> property. When the <code>ConnectionString</code> property is reset, all previously set values are reinitialized to their default values before the new values are applied.</p>
+<p>Oracle database supports case-sensitive user names. To connect as a user whose name is of mixed case, for example, "<code>MySchema</code>", the <code>User</code> <code>Id</code> attribute value must be surrounded by double quotes, as follows:</p>
+<pre xml:space="preserve" class="oac_no_warn">"User Id=\"MySchema\";Password=MYPASSWORD;Data Source=oracle"
+
+</pre>
+<p>However, if the Oracle user name is all upper case, the <code>User</code> <code>Id</code> connection string attribute can be set to that user name without the use of the double quotes since <code>User</code> <code>Id</code>s that are not doubled-quoted are converted to all upper case when connecting. Single quotes are not supported.</p>
+<p>For a complete example, see <a href="#BABHDDGG">"Example"</a>.</p>
+<p>If a connection string attribute is set more than once, the last setting takes effect and no exceptions are thrown.</p>
+<p>Boolean connection string attributes can be set to either <code>true</code>, <code>false</code>, <code>yes</code>, or <code>no</code>.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>To obtain an <code>OracleConnection</code> object in a .NET stored procedure that represents the implicit database connection, set the <code>ConnectionString</code> property of the <code>OracleConnection</code> object to <code>"context</code> <code>connection=true"</code> and invoke the <code>Open</code> method. Other connection string attributes cannot be used in conjunction with <code>"context</code> <code>connection"</code> when it is set to true.</p>
+<a id="BABCGIAD" name="BABCGIAD"></a>
+<p class="subhead2">Supported Connection String Attributes</p>
+<p><a href="#BABBAGJJ">Table 5-26</a> lists the supported connection string attributes.</p>
+<div class="tblFormal"><a id="sthref697" name="sthref697"></a><a id="BABBAGJJ" name="BABBAGJJ"></a>
+<p class="titleintable">Table 5-26 Supported Connection String Attributes</p>
+<table class="Formal" title="Supported Connection String Attributes " summary="Rows are attributes. first column is name, second column default value, third column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="hsides" rules="groups">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t94" valign="bottom" align="left">Connection String Attribute</th>
+<th id="r1c2-t94" valign="bottom" align="left">Default Value</th>
+<th id="r1c3-t94" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t94" headers="r1c1-t94" align="left"><code>Connection Lifetime</code></td>
+<td headers="r2c1-t94 r1c2-t94" align="left"><code>0</code></td>
+<td headers="r2c1-t94 r1c3-t94" align="left">Maximum life time (in seconds) of the connection.
+<p>This attribute specifies the lifetime of the connection in seconds. Before the <code>Connection</code>
+is placed back into the pool, the lifetime of the connection is
+checked. If the lifetime of the connection exceeds this property value,
+the connection is closed and disposed of. If this property value is <code>0</code>,
+the connection lifetime is never checked. Connections that have
+exceeded their lifetimes are not closed and disposed of, if doing so
+brings the number of connections in the pool below the <code>Min</code> <code>Pool</code> <code>Size</code>.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t94" headers="r1c1-t94" align="left"><code>Connection Timeout</code></td>
+<td headers="r3c1-t94 r1c2-t94" align="left"><code>15</code></td>
+<td headers="r3c1-t94 r1c3-t94" align="left">Maximum time (in seconds) to wait for a free connection from the pool.
+<p>This attribute specifies the maximum amount of time (in seconds) that the <code>Open()</code>
+method can take to obtain a pooled connection before it terminates the
+request. This value comes into effect only if no free connection is
+available from the connection pool and the <code>Max</code> <code>Pool</code> <code>Size</code> is reached. If a free connection is not available within the specified time, an exception is thrown. <code>Connection</code> <code>Timeout</code> does not limit the time required to open new connections.</p>
+<p>This attribute value takes effect for pooled connection requests and not for new connection requests.</p>
+<p>(The default value is 0 for the implicit database connection in a .NET stored procedure)</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t94" headers="r1c1-t94" align="left"><code>Context</code> <code>Connection</code></td>
+<td headers="r4c1-t94 r1c2-t94" align="left"><code>false</code></td>
+<td headers="r4c1-t94 r1c3-t94" align="left">Returns an implicit database connection if set to <code>true</code>.
+<p>An implicit database connection can only be obtained from within a
+.NET stored procedure. Other connection string attributes cannot be
+used in conjunction with <code>"context</code> <code>connection"</code> when it is set to <code>true</code>.</p>
+<p><span class="italic">Supported in a .NET stored procedure only</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t94" headers="r1c1-t94" align="left"><code>Data Source</code></td>
+<td headers="r5c1-t94 r1c2-t94" align="left">empty string</td>
+<td headers="r5c1-t94 r1c3-t94" align="left">Oracle Net Services Name, Connect Descriptor, or an easy connect naming that identifies the database to which to connect.</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r6c1-t94" headers="r1c1-t94" align="left"><a id="BABIFJIB" name="BABIFJIB"></a><code>DBA Privilege</code></td>
+<td headers="r6c1-t94 r1c2-t94" align="left">empty string</td>
+<td headers="r6c1-t94 r1c3-t94" align="left">Administrative privileges <code>SYSDBA</code> or <code>SYSOPER</code>.
+<p>This connection string attribute only accepts <code>SYSDBA</code> or <code>SYSOPER</code> as the attribute value. It is case insensitive.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r7c1-t94" headers="r1c1-t94" align="left"><code>Decr Pool Size</code></td>
+<td headers="r7c1-t94 r1c2-t94" align="left"><code>1</code></td>
+<td headers="r7c1-t94 r1c3-t94" align="left">Number of connections that are closed when an excessive amount of established connections are unused.</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r8c1-t94" headers="r1c1-t94" align="left">&nbsp;</td>
+<td headers="r8c1-t94 r1c2-t94" align="left">&nbsp;</td>
+<td headers="r8c1-t94 r1c3-t94" align="left">This connection string
+attribute controls the maximum number of unused connections that are
+closed when the pool regulator makes periodic checks. The regulator
+thread is spawned every 3 minutes and closes up to <code>Decr</code> <code>Pool</code> <code>Size</code> amount of pooled connections if they are not used. The pool regulator never takes the total number of connections below the <code>Min</code> <code>Pool</code> <code>Size</code> by closing pooled connections.</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r9c1-t94" headers="r1c1-t94" align="left"><code>Enlist</code></td>
+<td headers="r9c1-t94 r1c2-t94" align="left"><code>true</code></td>
+<td headers="r9c1-t94 r1c3-t94" align="left">Serviced components automatically enlist in distributed transactions.
+<p>If this attribute is set to <code>true</code>, the connection is automatically enlisted in the thread's transaction context. If this attribute is <code>false</code>, no enlistments are made. This attribute can be set to either <code>true</code>, <code>false</code>, <code>yes</code>, or <code>no</code>.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r10c1-t94" headers="r1c1-t94" align="left"><code>HA</code> <code>Events</code></td>
+<td headers="r10c1-t94 r1c2-t94" align="left"><code>false</code></td>
+<td headers="r10c1-t94 r1c3-t94" align="left">Enables ODP.NET
+connection pool to proactively remove connections from the pool when a
+RAC service, service member, or node goes down.
+<p>This feature can only used against a RAC database and only if <code>"pooling=true"</code>.</p>
+<p>This attribute can be set to <code>true</code>, <code>false</code>, <code>yes</code>, or <code>no</code>.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r11c1-t94" headers="r1c1-t94" align="left"><code>Load</code> <code>Balancing</code></td>
+<td headers="r11c1-t94 r1c2-t94" align="left"><code>false</code></td>
+<td headers="r11c1-t94 r1c3-t94" align="left">Enables ODP.NET
+connection pool to balance work requests across RAC instances based on
+the load balancing advisory and service goal.
+<p>This feature can only used against a RAC database and only if <code>"pooling=true"</code>.</p>
+<p>This attribute can be set to <code>true</code>, <code>false</code>, <code>yes</code>, or <code>no</code>.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r12c1-t94" headers="r1c1-t94" align="left"><code>Incr Pool Size</code></td>
+<td headers="r12c1-t94 r1c2-t94" align="left"><code>5</code></td>
+<td headers="r12c1-t94 r1c3-t94" align="left">Number of new connections to be created when all connections in the pool are in use.
+<p>This connection string attribute determines the number of new
+connections that are established when a pooled connection is requested,
+but no unused connections are available and <code>Max</code> <code>Pool</code> <code>Size</code>
+is not reached. If new connections have been created for a pool, the
+regulator thread skips a cycle and does not have an opportunity to
+close any connections for 6 minutes. Note, however, that some
+connections can be still be closed during this time if their lifetime
+has been exceeded.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r13c1-t94" headers="r1c1-t94" align="left"><code>Max Pool Size</code></td>
+<td headers="r13c1-t94 r1c2-t94" align="left"><code>100</code></td>
+<td headers="r13c1-t94 r1c3-t94" align="left">Maximum number of connections in a pool.
+<p>This attribute specifies the maximum number of connections allowed in the particular pool used by that <code>OracleConnection</code>. Simply changing this attribute in the connection string does not change the <code>Max</code> <code>Pool</code> <code>Size</code> restriction on a currently existing pool. Doing so simply creates a new pool with a different <code>Max</code> <code>Pool</code> <code>Size</code> restriction. This attribute must be set to a value greater than the <code>Min</code> <code>Pool</code> <code>Size</code>. This value is ignored unless <code>Pooling</code> is turned on.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r14c1-t94" headers="r1c1-t94" align="left"><code>Min Pool Size</code></td>
+<td headers="r14c1-t94 r1c2-t94" align="left"><code>1</code></td>
+<td headers="r14c1-t94 r1c3-t94" align="left">Minimum number of connections in a pool.
+<p>This attribute specifies the minimum number of connections to be
+maintained by the pool during its entire lifetime. Simply changing this
+attribute in the connection string does not change the <code>Min</code> <code>Pool</code> <code>Size</code> restriction on a currently existing pool. Doing so simply creates a new pool with a different <code>Min</code> <code>Pool</code> <code>Size</code> restriction. This value is ignored unless <code>Pooling</code> is turned on.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r15c1-t94" headers="r1c1-t94" align="left"><code>Password</code></td>
+<td headers="r15c1-t94 r1c2-t94" align="left">empty string</td>
+<td headers="r15c1-t94 r1c3-t94" align="left">Password for the user specified by <code>User</code> <code>Id</code>.
+<p>This attribute specifies an Oracle user's password. Password is case insensitive.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r16c1-t94" headers="r1c1-t94" align="left"><code>Persist Security Info</code></td>
+<td headers="r16c1-t94 r1c2-t94" align="left"><code>false</code></td>
+<td headers="r16c1-t94 r1c3-t94" align="left">Retrieval of the password in the connection string.
+<p>If this attribute is set to <code>false</code>, the <code>Password</code> value setting is not returned when the application requests the <code>ConnectionString</code> after the connection is successfully opened by the <code>Open()</code> method. This attribute can be set to either <code>true</code>, <code>false</code>, <code>yes</code>, or <code>no</code>.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r17c1-t94" headers="r1c1-t94" align="left"><code>Pooling</code></td>
+<td headers="r17c1-t94 r1c2-t94" align="left"><code>true</code></td>
+<td headers="r17c1-t94 r1c3-t94" align="left">Connection pooling.
+<p>This attribute specifies whether or not connection pooling is to be
+used. Pools are created using an attribute value matching algorithm.
+This means that connection strings which only differ in the number of
+spaces in the connection string use the same pool. If two connection
+strings are identical except that one sets an attribute to a default
+value while the other does not set that attribute, both requests obtain
+connections from the same pool. This attribute can be set to either <code>true</code>, <code>false</code>, <code>yes</code>, or <code>no</code>.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r18c1-t94" headers="r1c1-t94" align="left"><code>Proxy User Id</code></td>
+<td headers="r18c1-t94 r1c2-t94" align="left">empty string</td>
+<td headers="r18c1-t94 r1c3-t94" align="left">User name of the proxy user.
+<p>This connection string attribute specifies the middle-tier user, or
+the proxy user, who establishes a connection on behalf of a client user
+specified by the <code>User</code> <code>Id</code> attribute. ODP.NET attempts to establish a proxy connection if either the <code>Proxy</code> <code>User</code> <code>Id</code> or the <code>Proxy</code> <code>Password</code> attribute is set to a non-empty string.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r19c1-t94" headers="r1c1-t94" align="left">&nbsp;</td>
+<td headers="r19c1-t94 r1c2-t94" align="left">&nbsp;</td>
+<td headers="r19c1-t94 r1c3-t94" align="left">For the proxy user to connect to an Oracle database using operating system authentication, the <code>Proxy</code> <code>User</code> <code>Id</code> must be set to "<code>/</code>". The <code>Proxy</code> <code>Password</code> is ignored in this case. The <code>User</code> <code>Id</code> cannot be set to "<code>/</code>" when establishing proxy connections. The case of this attribute value is preserved if it is surrounded by double quotes.</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r20c1-t94" headers="r1c1-t94" align="left"><code>Proxy</code> <code>Password</code></td>
+<td headers="r20c1-t94 r1c2-t94" align="left">empty string</td>
+<td headers="r20c1-t94 r1c3-t94" align="left">Password of the proxy user.
+<p>This connection string attribute specifies the password of the
+middle-tier user or the proxy user. This user establishes a connection
+on behalf of a client user specified by the <code>User</code> <code>Id</code> attribute. ODP.NET attempts to establish a proxy connection if either the <code>Proxy</code> <code>User</code> <code>Id</code> or the <code>Proxy</code> <code>Password</code> attribute is set to a non-empty string.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r21c1-t94" headers="r1c1-t94" align="left"><code>Statement</code> <code>Cache</code> <code>Purge</code></td>
+<td headers="r21c1-t94 r1c2-t94" align="left"><code>false</code></td>
+<td headers="r21c1-t94 r1c3-t94" align="left">Statement cache purged when the connection goes back to the pool.
+<p>If statement caching is enabled, setting this attribute to <code>true</code> purges the Statement Cache when the connection goes back to the pool.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r22c1-t94" headers="r1c1-t94" align="left"><code>Statement</code> <code>Cache</code> <code>Size</code></td>
+<td headers="r22c1-t94 r1c2-t94" align="left">0</td>
+<td headers="r22c1-t94 r1c3-t94" align="left">Statement cache enabled and cache size set size, that is, the maximum number of statements that can be cached.
+<p>A value greater than zero enables statement caching and sets the
+cache size to itself. This value should not be greater than the value
+of the <code>OPEN_CURSORS</code> parameter set in the <code>init.ora</code> database configuration file.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r23c1-t94" headers="r1c1-t94" align="left"><code>User</code> <code>Id</code></td>
+<td headers="r23c1-t94 r1c2-t94" align="left">empty string</td>
+<td headers="r23c1-t94 r1c3-t94" align="left">Oracle user name.
+<p>This attribute specifies the Oracle user name. The case of this
+attribute value is preserved if it is surrounded by double quotes. For
+the user to connect to an Oracle database using operating system
+authentication, set the <code>User</code> <code>Id</code> to "<code>/</code>". Any <code>Password</code> attribute setting is ignored in this case.</p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r24c1-t94" headers="r1c1-t94" align="left"><code>Validate</code> <code>Connection</code></td>
+<td headers="r24c1-t94 r1c2-t94" align="left"><code>false</code></td>
+<td headers="r24c1-t94 r1c3-t94" align="left">Validation of connections coming from the pool.
+<p>Validation causes a round-trip to the database for each connection. Therefore, it should only be used when necessary.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblFormal" -->
+<a id="BABHDDGG" name="BABHDDGG"></a>
+<p class="subhead2">Example</p>
+<p>This code example shows that the case of the <code>User</code> <code>Id</code>
+attribute value is not preserved unless it is surrounded by double
+quotes. The example also demonstrates when connection pools are created
+and when connections are drawn from the connection pool.</p>
+<pre xml:space="preserve" class="oac_no_warn">/* Database Setup: Log on as SYS or SYSTEM that has CREATE USER privilege.
+grant connect, resource to "MYSCHEMA" identified by MYPWD;
+grant connect, resource to "MySchema" identified by MYPWD;
+*/
+ 
+// C#
+ 
+using System;
+using Oracle.DataAccess.Client; 
+ 
+class ConnectionStringSample
+{
+  static long GetSID(OracleConnection con)
+  {
+    OracleCommand cmd = new OracleCommand();
+    cmd.Connection = con;
+    cmd.CommandText = "select SYS_CONTEXT('USERENV','SID') from dual";
+    object sid = cmd.ExecuteScalar();
+    return Convert.ToInt32(sid);
+  }
+ 
+  static void Main()
+  {
+    // To demonstrate whether a connection is obtained from the same 
+    // connection pool or not, we check the SID (session id).  If the 
+    // session IDs of two connections are the same, that would indicate
+    // that the connection is the same and hence the connection was 
+    // obtained from the same connection pool.  
+    // If the session IDs are different, it could potentially mean that a
+    // different connection was obtained from the same connection pool or
+    // a different connection is obtained from a different connection pool. 
+    // However, since the sample always places the connection
+    // back into the pool by disposing it before requesting another
+    // connection, a connection with the same ID will be obtained again
+    // if a connection is requested from the same connection pool.
+ 
+    string constr1 = "User Id=myschema;Password=mypwd;Data Source=oracle";
+    string constr2 = "User Id=MySchema;Password=MyPwd;Data Source=oracle";
+    string constr3 = "User Id=\"MYSCHEMA\";Password=MYPWD;Data Source=oracle";
+    string constr4 = "User Id=\"MySchema\";Password=MYPWD;Data Source=oracle";
+    string constr5 = " User Id=myschema;Password=mypwd;Data Source=oracle; ";
+    string constr6 = 
+      "User Id=myschema;Password=mypwd;Data Source=oracle;pooling=true";
+    long sid0, sid1;
+ 
+    // Connect as "MYSCHEMA/MYPWD"
+    // NOTE: the password is case insensitive
+    // A new connection and a new connection pool X is created
+    OracleConnection con1 = new OracleConnection(constr1);
+    con1.Open(); 
+    sid0 = GetSID(con1); 
+ 
+    // Place connection back into connection pool X
+    con1.Dispose(); 
+ 
+    // Connect as "MYSCHEMA/MYPWD"
+    // The connection from pool X is obtained.  No new connection created.
+    OracleConnection con2 = new OracleConnection(constr2);
+    con2.Open(); 
+    sid1 = GetSID(con2);
+    if (sid1 == sid0)
+      Console.WriteLine("con1 and con2 are from the same connection pool");
+    else
+      Console.WriteLine("con1 and con2 are from different connection pools");
+        
+    // Place connection back into connection pool X
+    con2.Dispose();
+ 
+    // Connect as "MYSCHEMA/MYPWD"
+    // The connection from pool X is obtained.  No new connection created.
+    OracleConnection con3 = new OracleConnection(constr3);
+    con3.Open();
+    sid1 = GetSID(con3); 
+    if (sid1 == sid0)
+      Console.WriteLine("con1 and con3 are from the same connection pool");
+    else
+      Console.WriteLine("con1 and con3 are from different connection pools");
+        
+    // Place connection back into connection pool X
+    con3.Dispose();
+ 
+    // Connect as "MySchema/MYPWD"
+    // A new connection and connection pool Y is created
+    OracleConnection con4 = new OracleConnection(constr4);
+    con4.Open(); 
+    sid1 = GetSID(con4); 
+    if (sid1 == sid0)
+      Console.WriteLine("con1 and con4 are from the same connection pool");
+    else
+      Console.WriteLine("con1 and con4 are from different connection pools");
+    
+    // Place connection back into connection pool Y
+    con4.Dispose();
+ 
+    // Connect as "MYSCHEMA/MYPWD"
+    // The connection from pool X is obtained
+    // Extra spaces or semi-colons in the connection string do not force 
+    //   new pools to be created
+    OracleConnection con5 = new OracleConnection(constr5);
+    con5.Open();
+    sid1 = GetSID(con5); 
+    if (sid1 == sid0)
+      Console.WriteLine("con1 and con5 are from the same connection pool");
+    else
+      Console.WriteLine("con1 and con5 are from different connection pools");   
+          
+    // Place connection back into connection pool X
+    con5.Dispose();
+ 
+    // Connect as "MYSCHEMA/MYPWD"
+    // A connection is obtained from Connection Pool X. 
+    // It's important to note that different connection strings do
+    // not necessarily mean that ODP.NET will create different 
+    // connection pools for them.  In other words, ODP.NET does not
+    // use exact string matching algorithm to determine whether 
+    // a new connection pool needs to be created or not.
+    // Instead, it creates connection pools based on the uniqueness
+    // of attribute values settings in the connection string.
+    OracleConnection con6 = new OracleConnection(constr6);
+    con6.Open();
+    sid1 = GetSID(con6); 
+    if (sid1 == sid0)
+      Console.WriteLine("con1 and con6 are from the same connection pool");
+    else
+      Console.WriteLine("con1 and con6 are from different connection pools");   
+          
+    // Place connection back into connection pool X
+    con6.Dispose();
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDHFIIA" name="CHDHFIIA"></a><a id="i1000566" name="i1000566"></a>
+<h3>ConnectionTimeout</h3>
+<p>This property specifies the maximum amount of time that the <code>Open</code> method can take to obtain a pooled connection before the request is terminated.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public int ConnectionTimeout {get;}
+</pre>
+<p class="subhead2">Property Value</p>
+<p>The maximum time allowed for a pooled connection request, in seconds.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Remarks</p>
+<p>The default value is <code>15</code>.</p>
+<p>Setting this property to <code>0</code> allows the pooled connection
+request to wait for a free connection without a time limit. The timeout
+takes effect only for pooled connection requests and not for new
+connection requests.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>There is no connection string specified by the application and a connection on the <a id="sthref698" name="sthref698"></a>implicit database is always available, therefore, this property is set to <code>0</code>.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="BABHDAIA" name="BABHDAIA"></a><a id="sthref699" name="sthref699"></a>
+<h3>Database</h3>
+<p>This property is not supported.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public string Database {get;}
+
+</pre>
+<p class="subhead2">Property Value</p>
+<p>A string.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection.Database</code></p>
+<p class="subhead2">Remarks</p>
+<p>This property is not supported. It always returns an empty string.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDHCFII" name="CHDHCFII"></a><a id="i1000598" name="i1000598"></a>
+<h3>DataSource</h3>
+<p>This property specifies the Oracle Net Services Name, Connect
+Descriptor, or an easy connect naming that identifies the database to
+which to connect</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public string DataSource {get;}
+</pre>
+<p class="subhead2">Property Value</p>
+<p>Oracle Net Services Name, Connect Descriptor, or an easy connect naming that identifies the database to which to connect.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>The value of this property is always an empty string for the implicit database connection.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000626" name="i1000626"></a>
+<h3>ServerVersion</h3>
+<p>This property specifies the version number of the Oracle database to which the <code>OracleConnection</code> has established a connection.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public string ServerVersion {get;}
+</pre>
+<p class="subhead2">Property Value</p>
+<p>The version of the Oracle database.</p>
+<p class="subhead2">Exceptions</p>
+<p><code>InvalidOperationException</code> - The connection is closed.</p>
+<p class="subhead2">Remarks</p>
+<p>The default is an empty string.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000656" name="i1000656"></a>
+<h3>State</h3>
+<p>This property specifies the current state of the connection.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public ConnectionState State {get;}
+</pre>
+<p class="subhead2">Property Value</p>
+<p>The <code>ConnectionState</code> of the connection.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Remarks</p>
+<p>ODP.NET supports <code>ConnectionState.Closed</code> and <code>ConnectionState.Open</code> for this property. The default value is <code>ConnectionState.Closed</code>.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000689" name="i1000689"></a>
+<hr>
+<a id="sthref700" name="sthref700"></a>
+<h2>OracleConnection Public Methods</h2>
+<p><code><a id="sthref701" name="sthref701"></a>OracleConnection</code> public methods are listed in <a href="#g1100848">Table 5-27</a>.</p>
+<div class="tblRuleFormal"><a id="sthref702" name="sthref702"></a><a id="g1100848" name="g1100848"></a>
+<p class="titleintable">Table 5-27 OracleConnection Public Methods</p>
+<table class="RuleFormal" title="OracleConnection Public Methods " summary="Rows are public methods. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t101" valign="bottom" align="left">Public Method</th>
+<th id="r1c2-t101" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t101" headers="r1c1-t101" align="left"><a href="#i1000820">BeginTransaction</a></td>
+<td headers="r2c1-t101 r1c2-t101" align="left">Begins a local transaction (Overloaded)
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t101" headers="r1c1-t101" align="left"><a href="#BABDHCEE">ChangeDatabase</a></td>
+<td headers="r3c1-t101 r1c2-t101" align="left"><span class="italic">Not Supported</span></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t101" headers="r1c1-t101" align="left"><a href="#i1000938">Clone</a></td>
+<td headers="r4c1-t101 r1c2-t101" align="left">Creates a copy of an <code>OracleConnection</code> object
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t101" headers="r1c1-t101" align="left"><a href="#i1000979">Close</a></td>
+<td headers="r5c1-t101 r1c2-t101" align="left">Closes the database connection</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r6c1-t101" headers="r1c1-t101" align="left"><a href="#i1001011">CreateCommand</a></td>
+<td headers="r6c1-t101 r1c2-t101" align="left">Creates and returns an <code>OracleCommand</code> object associated with the <code>OracleConnection</code> object</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r7c1-t101" headers="r1c1-t101" align="left"><code>CreateObjRef</code></td>
+<td headers="r7c1-t101 r1c2-t101" align="left">Inherited from <code>MarshalByRefObject</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r8c1-t101" headers="r1c1-t101" align="left"><code>Dispose</code></td>
+<td headers="r8c1-t101 r1c2-t101" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r9c1-t101" headers="r1c1-t101" align="left"><a href="#DAFJHFFC">EnlistDistributedTransaction</a></td>
+<td headers="r9c1-t101 r1c2-t101" align="left">Enables applications to explicitly enlist in a specified distributed transaction
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r10c1-t101" headers="r1c1-t101" align="left"><code>Equals</code></td>
+<td headers="r10c1-t101 r1c2-t101" align="left">Inherited from <code>Object</code> (Overloaded)</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r11c1-t101" headers="r1c1-t101" align="left"><code>GetHashCode</code></td>
+<td headers="r11c1-t101 r1c2-t101" align="left">Inherited from <code>Object</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r12c1-t101" headers="r1c1-t101" align="left"><code>GetLifetimeService</code></td>
+<td headers="r12c1-t101 r1c2-t101" align="left">Inherited from <code>MarshalByRefObject</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r13c1-t101" headers="r1c1-t101" align="left"><a href="#i1001056">GetSessionInfo</a></td>
+<td headers="r13c1-t101 r1c2-t101" align="left">Returns or refreshes the property values of the <code>OracleGlobalization</code> object that represents the globalization settings of the session (Overloaded)</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r14c1-t101" headers="r1c1-t101" align="left"><code>GetType</code></td>
+<td headers="r14c1-t101 r1c2-t101" align="left">Inherited from <code>Object</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r15c1-t101" headers="r1c1-t101" align="left"><code>InitializeLifetimeService</code></td>
+<td headers="r15c1-t101 r1c2-t101" align="left">Inherited from <code>MarshalByRefObject</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r16c1-t101" headers="r1c1-t101" align="left"><a href="#i1001169">Open</a></td>
+<td headers="r16c1-t101 r1c2-t101" align="left">Opens a database connection with the property settings specified by the <code>ConnectionString</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r17c1-t101" headers="r1c1-t101" align="left"><a href="#i1001202">OpenWithNewPassword</a></td>
+<td headers="r17c1-t101 r1c2-t101" align="left">Opens a new connection with the new password
+<p><span class="italic">Not supported with implicit database connection in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r18c1-t101" headers="r1c1-t101" align="left"><a href="#DAFJGDFF">PurgeStatementCache</a></td>
+<td headers="r18c1-t101 r1c2-t101" align="left">Flushes the Statement Cache by closing all open cursors on the database, when statement caching is enabled</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r19c1-t101" headers="r1c1-t101" align="left"><a href="#i1001239">SetSessionInfo</a></td>
+<td headers="r19c1-t101 r1c2-t101" align="left">Alters the session's globalization settings with the property values provided by the <code>OracleGlobalization</code> object</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r20c1-t101" headers="r1c1-t101" align="left"><code>ToString</code></td>
+<td headers="r20c1-t101 r1c2-t101" align="left">Inherited from <code>Object</code></td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000820" name="i1000820"></a><a id="sthref703" name="sthref703"></a>
+<h3>BeginTransaction</h3>
+<p><code>BeginTransaction</code> methods begin local transactions.</p>
+<p class="subhead2">Overload List</p>
+<ul>
+<li>
+<p><a href="#i1000835">BeginTransaction()</a></p>
+<p>This method begins a local transaction.</p>
+</li>
+<li>
+<p><a href="#i1000867">BeginTransaction(IsolationLevel)</a></p>
+<p>This method begins a local transaction with the specified isolation level.</p>
+</li>
+</ul>
+<a id="i1000835" name="i1000835"></a>
+<h3>BeginTransaction()</h3>
+<p>This method begins a local transaction.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public OracleTransaction BeginTransaction();
+</pre>
+<p class="subhead2">Return Value</p>
+<p>An <code>OracleTransaction</code> object representing the new transaction.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Exceptions</p>
+<p><code>InvalidOperationException</code> - A transaction has already been started.</p>
+<p class="subhead2">Remarks</p>
+<p>The transaction is created with its isolation level set to its default value of <code>IsolationLevel.ReadCommitted</code>. All further operations related to the transaction must be performed on the returned <code>OracleTransaction</code> object.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>Using this method causes a Not Supported exception.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1000867" name="i1000867"></a>
+<h3>BeginTransaction(IsolationLevel)</h3>
+<p>This method begins a local transaction with the specified isolation level.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public OracleTransaction BeginTransaction(IsolationLevel <span class="italic">isolationLevel</span>);
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">isolationLevel</span></code></p>
+<p>The isolation level for the new transaction.</p>
+</li>
+</ul>
+<p class="subhead2">Return Value</p>
+<p>An <code>OracleTransaction</code> object representing the new transaction.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Exceptions</p>
+<p><code>InvalidOperationException</code> - A transaction has already been started.</p>
+<p><code>ArgumentException</code> - The <code>isolationLevel</code> specified is invalid.</p>
+<p class="subhead2">Remarks</p>
+<p>The following two isolation levels are supported:</p>
+<ul>
+<li>
+<p><code>IsolationLevel.ReadCommitted</code></p>
+</li>
+<li>
+<p><code>IsolationLevel.Serializable</code></p>
+</li>
+</ul>
+<p>Requesting other isolation levels causes an exception.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>Using this method causes a Not Supported exception.</p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using System.Data;
+using Oracle.DataAccess.Client; 
+ 
+class BeginTransactionSample
+{
+  static void Main()
+  {
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    // Create an OracleCommand object using the connection object
+    OracleCommand cmd = con.CreateCommand();
+ 
+    // Start a transaction
+    OracleTransaction txn = con.BeginTransaction(IsolationLevel.ReadCommitted);
+ 
+    // Update EMP table
+    cmd.CommandText = "update emp set sal = sal + 100";
+    cmd.ExecuteNonQuery();
+ 
+    // Rollback transaction
+    txn.Rollback();
+    Console.WriteLine("Transaction rolledback");
+ 
+    // Clean up
+    txn.Dispose();
+    cmd.Dispose();
+    con.Dispose();      
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="BABDHCEE" name="BABDHCEE"></a><a id="sthref704" name="sthref704"></a>
+<h3>ChangeDatabase</h3>
+<p>This method is not supported.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void ChangeDatabase(string <span class="italic">databaseName</span>);
+
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">databaseName</span></code></p>
+<p>The name of the database that replaces the current database name.</p>
+</li>
+</ul>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection.ChangeDatabase</code></p>
+<p class="subhead2">Exceptions</p>
+<p><code>NotSupportedException</code> - Method not supported.</p>
+<p class="subhead2">Remarks</p>
+<p>This method is not supported and throws a <code>NotSupportedException</code> if invoked.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDHHJAF" name="CHDHHJAF"></a><a id="i1000938" name="i1000938"></a>
+<h3>Clone</h3>
+<p>This method creates a copy of an <code>OracleConnection</code> object.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public object Clone();
+</pre>
+<p class="subhead2">Return Value</p>
+<p>An <code>OracleConnection</code> object.</p>
+<p class="subhead2">Implements</p>
+<p><code>ICloneable</code></p>
+<p class="subhead2">Remarks</p>
+<p>The cloned object has the same property values as that of the object being cloned.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>This method is not supported for an implicit database connection.</p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using Oracle.DataAccess.Client; 
+ 
+class CloneSample
+{
+  static void Main()
+  {
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    // Need a proper casting for the return value when cloned
+    OracleConnection clonedCon = (OracleConnection)con.Clone();
+ 
+    // Cloned connection is always closed, regardless of its source,
+    //   But the connection string should be identical
+    clonedCon.Open();
+    if (clonedCon.ConnectionString.Equals(con.ConnectionString)) 
+      Console.WriteLine("The connection strings are the same.");
+    else
+      Console.WriteLine("The connection strings are different.");
+ 
+    // Close and Dispose OracleConnection object
+    clonedCon.Dispose();
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDJBDEC" name="CHDJBDEC"></a><a id="i1000979" name="i1000979"></a>
+<h3>Close</h3>
+<p>This method closes the connection to the database.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void Close();
+</pre>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Remarks</p>
+<p>Performs the following:</p>
+<ul>
+<li>
+<p>Rolls back any pending transactions.</p>
+</li>
+<li>
+<p>Places the connection to the connection pool if connection pooling
+is enabled. Even if connection pooling is enabled, the connection can
+be closed if it exceeds the connection lifetime specified in the
+connection string. If connection pooling is disabled, the connection is
+closed.</p>
+</li>
+<li>
+<p>Closes the connection to the database.</p>
+</li>
+</ul>
+<p>The connection can be reopened using <code>Open()</code>.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1001011" name="i1001011"></a>
+<h3>CreateCommand</h3>
+<p>This method creates and returns an <code>OracleCommand</code> object associated with the <code>OracleConnection</code> object.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public OracleCommand CreateCommand();
+</pre>
+<p class="subhead2">Return Value</p>
+<p>The <code>OracleCommand</code> object.</p>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using System.Data;
+using Oracle.DataAccess.Client; 
+ 
+class CreateCommandSample
+{
+  static void Main()
+  {  
+    // Connect
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    // Execute a SQL SELECT
+    OracleCommand cmd = con.CreateCommand();
+    cmd.CommandText = "select * from emp";
+    OracleDataReader reader = cmd.ExecuteReader();
+ 
+    // Print all employee numbers
+    while (reader.Read())
+      Console.WriteLine(reader.GetInt32(0));
+ 
+    // Clean up
+    reader.Dispose();
+    cmd.Dispose();
+    con.Dispose();      
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="DAFJHFFC" name="DAFJHFFC"></a><a id="sthref705" name="sthref705"></a>
+<h3>EnlistDistributedTransaction</h3>
+<p>This method enables applications to explicitly enlist in a specific distributed transaction after a connection has been opened.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void EnlistDistributedTransaction(ITransaction <span class="italic">transaction</span>);
+
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">transaction</span></code></p>
+<p>An <code>ITransaction</code> interface.</p>
+</li>
+</ul>
+<p class="subhead2">Exceptions</p>
+<p><code>InvalidOperationException</code> - The connection is part of a local transaction or the connection is closed.</p>
+<p class="subhead2">Remarks</p>
+<p><code>EnlistDistributedTransaction</code> enables objects to enlist in a specific transaction that is passed to the method. The <code>ITransaction</code> interface can be obtained by applying an (<code>ITransaction</code>) cast to the <code>ContexUtil.Transaction</code> property within the component that started the distributed transaction.</p>
+<p>The connection must be open before calling this method or an <code>InvalidOperationException</code> is thrown.</p>
+<p>If a connection is part of a local transaction that was started
+implicitly or explicitly while attempting to enlist in a distributed
+transaction, the local transaction is rolled back and an exception is
+thrown.</p>
+<p>By default, distributed transactions roll back, unless the method-level <code>AutoComplete</code> declaration is set.</p>
+<p>Invoking the commit on the <code>ITranasction</code> raises an exception.</p>
+<p>Invoking the rollback on the <code>ITransaction</code> method and calling <code>ContextUtil.SetComplete</code> on the same distributed transaction raises an exception.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>Using this method causes a Not Supported exception.</p>
+<p class="subhead2">Example</p>
+<p><span class="bold">Application:</span></p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+/* This is the class that will utilize the Enterprise Services 
+   component.  This module needs to be built as an executable.
+   
+   The Enterprise Services Component DLL must be built first 
+   before building this module. 
+   In addition, the DLL needs to be referenced appropriately 
+   when building this application. 
+*/
+ 
+using System;
+using System.EnterpriseServices;
+using DistribTxnSample;
+ 
+class DistribTxnSample_App
+{
+  static void Main()
+  {
+    DistribTxnSample_Comp comp = new DistribTxnSample_Comp();
+    comp.DoWork();
+  }
+}
+
+</pre>
+<p><span class="bold">Component:</span></p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+/* This module needs to be
+   1) built as a component DLL/Library
+   2) built with a strong name
+   
+  This library must be built first before the application is built.
+*/ 
+ 
+using System;
+using System.Data;
+using Oracle.DataAccess.Client; 
+using System.EnterpriseServices;
+ 
+namespace DistribTxnSample
+{
+  [Transaction(TransactionOption.RequiresNew)]
+  public class DistribTxnSample_Comp : ServicedComponent
+  {
+    public void DoWork()
+    {   
+      string constr = 
+        "User Id=scott;Password=tiger;Data Source=oracle;enlist=false";
+      OracleConnection con = new OracleConnection(constr);
+      con.Open();
+ 
+      // Enlist in a distrubuted transaction
+      con.EnlistDistributedTransaction((ITransaction)ContextUtil.Transaction);
+ 
+      // Update EMP table
+      OracleCommand cmd = con.CreateCommand();
+      cmd.CommandText = "UPDATE emp set sal = sal + .01";
+      cmd.ExecuteNonQuery();
+ 
+      // Commit
+      ContextUtil.SetComplete();
+ 
+      // Dispose OracleConnection object
+      con.Dispose();    
+    }
+  }
+}
+
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><code><a href="http://msdn.microsoft.com/library">http://msdn.microsoft.com/library</a></code> for detailed information about this Microsoft .NET Framework 1.1 feature</p>
+</li>
+</ul>
+</div>
+<a id="i1001056" name="i1001056"></a><a id="sthref706" name="sthref706"></a>
+<h3>GetSessionInfo</h3>
+<p><code>GetSessionInfo</code> returns or refreshes an <code>OracleGlobalization</code> object that represents the globalization settings of the session.</p>
+<p class="subhead2">Overload List:</p>
+<ul>
+<li>
+<p><a href="#i1001088">GetSessionInfo()</a></p>
+<p>This method returns a new instance of the <code>OracleGlobalization</code> object that represents the globalization settings of the session.</p>
+</li>
+<li>
+<p><a href="#i1001142">GetSessionInfo(OracleGlobalization)</a></p>
+<p>This method refreshes the provided <code>OracleGlobalization</code> object with the globalization settings of the session.</p>
+</li>
+</ul>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1001088" name="i1001088"></a>
+<h3>GetSessionInfo()</h3>
+<p>This method returns a new instance of the <code>OracleGlobalization</code> object that represents the globalization settings of the session.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public OracleGlobalization GetSessionInfo();
+</pre>
+<p class="subhead2">Return Value</p>
+<p>The newly created <code>OracleGlobalization</code> object.</p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using Oracle.DataAccess.Client; 
+ 
+class GetSessionInfoSample
+{
+  static void Main()
+  {
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    // Get session info from connection object
+    OracleGlobalization info = con.GetSessionInfo();
+ 
+    // Execute SQL SELECT
+    OracleCommand cmd = con.CreateCommand();
+    cmd.CommandText = "select TO_CHAR(hiredate) from emp";
+    Console.WriteLine("Hire Date ({0}): {1}", 
+      info.DateFormat, cmd.ExecuteScalar());
+ 
+    // Update session info
+    info.DateFormat = "YYYY-MM-DD";
+    con.SetSessionInfo(info);
+ 
+    // Execute SQL SELECT again
+    Console.WriteLine("Hire Date ({0}): {1}", 
+      info.DateFormat, cmd.ExecuteScalar());
+ 
+    // Clean up
+    cmd.Dispose();
+    con.Dispose();      
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1001142" name="i1001142"></a>
+<h3>GetSessionInfo(OracleGlobalization)</h3>
+<p>This method refreshes the provided <code>OracleGlobalization</code> object with the globalization settings of the session.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void GetSessionInfo(OracleGlobalization <span class="italic">oraGlob</span>);
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">oraGlob</span></code></p>
+<p>The <code>OracleGlobalization</code> object to be updated.</p>
+</li>
+</ul>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDJFGHG" name="CHDJFGHG"></a><a id="i1001169" name="i1001169"></a>
+<h3>Open</h3>
+<p>This method opens a connection to an Oracle database.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void Open();
+</pre>
+<p class="subhead2">Implements</p>
+<p><code>IDbConnection</code></p>
+<p class="subhead2">Exceptions</p>
+<p><code>ObjectDisposedException</code> - The object is already disposed.</p>
+<p><code>InvalidOperationException</code> - The connection is already opened or the connection string is null or empty.</p>
+<p class="subhead2">Remarks</p>
+<p>The connection is obtained from the pool if connection pooling is enabled. Otherwise, a new connection is established.</p>
+<p>It is possible that the pool does not contain any unused connections when the <code>Open()</code> method is invoked. In this case, a new connection is established.</p>
+<p>If no connections are available within the specified connection timeout value, when the <code>Max</code> <code>Pool</code> <code>Size</code> is reached, an <code>OracleException</code> is thrown.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDHEJEE" name="CHDHEJEE"></a><a id="i1001202" name="i1001202"></a>
+<h3>OpenWithNewPassword</h3>
+<p>This method opens a new connection with the new password.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void OpenWithNewPassword(string <span class="italic">newPassword</span>);
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">newPassword</span></code></p>
+<p>A string that contains the new password.</p>
+</li>
+</ul>
+<p class="subhead2">Remarks</p>
+<p>This method uses the <code>ConnectionString</code> property settings to establish a new connection. The old password must be provided in the connection string as the <code>Password</code> attribute value.</p>
+<p>This method can only be called on an <code>OracleConnection</code> in the <span class="italic">closed</span> state.</p>
+<p class="subhead2">Remarks (.NET Stored Procedure)</p>
+<p>This method is not supported with an implicit database connection.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/featConnecting.htm#i1006478">"Password Expiration"</a></p>
+</li>
+</ul>
+</div>
+<a id="DAFJGDFF" name="DAFJGDFF"></a><a id="sthref707" name="sthref707"></a>
+<h3>PurgeStatementCache</h3>
+<p>This method flushes the statement cache by closing all open cursors on the database, when statement caching is enabled.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void PurgeStatementCache();
+
+</pre>
+<p class="subhead2">Remarks</p>
+<p>Flushing the statement cache repetitively results in decreased
+performance and may negate the performance benefit gained by enabling
+the statement cache.</p>
+<p>Statement caching remains enabled after the call to <code>PurgeStatementCache</code>.</p>
+<p>Invocation of this method purges the cached cursors that are associated with the <code>OracleConnection</code>. It does not purge all the cached cursors in the database.</p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using System.Data;
+using Oracle.DataAccess.Client; 
+ 
+class PurgeStatementCacheSample
+{
+  static void Main()
+  {
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle;" +
+      "Statement Cache Size=20";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    OracleCommand cmd = new OracleCommand("select * from emp", con);
+    cmd.CommandType = CommandType.Text;
+    OracleDataReader reader = cmd.ExecuteReader();
+ 
+    // Purge Statement Cache
+    con.PurgeStatementCache();  
+ 
+    // Close and Dispose OracleConnection object
+    Console.WriteLine("Statement Cache Flushed");
+    con.Close();
+    con.Dispose();      
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/featOraCommand.htm#CIHCAFIG">"Statement Caching"</a></p>
+</li>
+<li>
+<p><a href="#DAFFIIFH">ConnectionString</a></p>
+</li>
+</ul>
+</div>
+<a id="i1001239" name="i1001239"></a>
+<h3>SetSessionInfo</h3>
+<p>This method alters the session's globalization settings with all the property values specified in the provided <code>OracleGlobalization</code> object.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public void SetSessionInfo(OracleGlobalization <span class="italic">oraGlob</span>);
+</pre>
+<p class="subhead2">Parameters</p>
+<ul>
+<li>
+<p><code><span class="codeinlineitalic">oraGlob</span></code></p>
+</li>
+</ul>
+<p>An <code>OracleGlobalization</code> object.</p>
+<p class="subhead2">Remarks</p>
+<p>Calling this method is equivalent to calling an <code>ALTER</code> <code>SESSION</code> <code>SQL</code> on the session.</p>
+<p class="subhead2">Example</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+ 
+using System;
+using Oracle.DataAccess.Client; 
+ 
+class SetSessionInfoSample
+{
+  static void Main()
+  {
+    string constr = "User Id=scott;Password=tiger;Data Source=oracle";
+    OracleConnection con = new OracleConnection(constr);
+    con.Open();
+ 
+    // Get session info from connection object
+    OracleGlobalization info = con.GetSessionInfo();
+ 
+    // Execute SQL SELECT
+    OracleCommand cmd = con.CreateCommand();
+    cmd.CommandText = "select TO_CHAR(hiredate) from emp";
+    Console.WriteLine("Hire Date ({0}): {1}", 
+      info.DateFormat, cmd.ExecuteScalar());
+ 
+    // Update session info
+    info.DateFormat = "YYYY-MM-DD";
+    con.SetSessionInfo(info);
+ 
+    // Execute SQL SELECT again
+    Console.WriteLine("Hire Date ({0}): {1}", 
+      info.DateFormat, cmd.ExecuteScalar());
+ 
+    // Clean up
+    cmd.Dispose();
+    con.Dispose();      
+  }
+}
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="i1001298" name="i1001298"></a>
+<hr>
+<a id="sthref708" name="sthref708"></a>
+<h2>OracleConnection Events<a id="sthref709" name="sthref709"></a></h2>
+<p><code>OracleConnection</code> events are listed in <a href="#g1100954">Table 5-28</a>.</p>
+<div class="tblRuleFormal"><a id="sthref710" name="sthref710"></a><a id="g1100954" name="g1100954"></a>
+<p class="titleintable">Table 5-28 OracleConnection Events</p>
+<table class="RuleFormal" title="OracleConnection Events " summary="Rows are events. first column is name, second column is description" dir="ltr" width="100%" border="1" cellpadding="3" cellspacing="0" frame="border" rules="all">
+<thead>
+<tr valign="top" align="left">
+<th id="r1c1-t117" valign="bottom" align="left">Event Name</th>
+<th id="r1c2-t117" valign="bottom" align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top" align="left">
+<td id="r2c1-t117" headers="r1c1-t117" align="left"><code>Disposed</code></td>
+<td headers="r2c1-t117 r1c2-t117" align="left">Inherited from <code>Component</code></td>
+</tr>
+<tr valign="top" align="left">
+<td id="r3c1-t117" headers="r1c1-t117" align="left"><a href="#i1001362">Failover</a></td>
+<td headers="r3c1-t117 r1c2-t117" align="left">An event that is triggered when an Oracle failover occurs
+<p><span class="italic">Not supported in a .NET stored procedure</span></p>
+</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r4c1-t117" headers="r1c1-t117" align="left"><a href="#i1001398">InfoMessage</a></td>
+<td headers="r4c1-t117 r1c2-t117" align="left">An event that is triggered for any message or warning sent by the database</td>
+</tr>
+<tr valign="top" align="left">
+<td id="r5c1-t117" headers="r1c1-t117" align="left"><a href="#i1001439">StateChange</a></td>
+<td headers="r5c1-t117 r1c2-t117" align="left">An event that is triggered when the connection state changes</td>
+</tr>
+</tbody>
+</table>
+<br></div>
+<!-- class="tblRuleFormal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+</ul>
+</div>
+<a id="CHDHEIIG" name="CHDHEIIG"></a><a id="i1001362" name="i1001362"></a>
+<h3>Failover</h3>
+<p>This event is triggered when an Oracle failover occurs.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public event OracleFailoverEventHandler Failover;
+</pre>
+<p class="subhead2">Event Data</p>
+<p>The event handler receives an <code>OracleFailoverEventArgs</code> object which exposes the following properties containing information about the event.</p>
+<ul>
+<li>
+<p><code>FailoverType</code></p>
+<p>Indicates the type of the failover.</p>
+</li>
+<li>
+<p><code>FailoverEvent</code></p>
+<p>Indicates the state of the failover.</p>
+</li>
+</ul>
+<p class="subhead2">Remarks</p>
+<p>The <code>Failover</code> event is raised when a connection to an Oracle instance is unexpectedly severed. The client should create an <code>OracleFailoverEventHandler</code> delegate to listen to this event.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleFailoverEventArgsClass.htm#i1008604">"OracleFailoverEventArgs Properties"</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleFailoverEventHandlerDelegate.htm#i1008778">"OracleFailoverEventHandler Delegate"</a></p>
+</li>
+</ul>
+</div>
+<a id="BABHEHHH" name="BABHEHHH"></a><a id="i1001398" name="i1001398"></a>
+<h3>InfoMessage</h3>
+<p>This event is triggered for any message or warning sent by the database.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public event OracleInfoMessageEventHandler InfoMessage;
+</pre>
+<p class="subhead2">Event Data</p>
+<p>The event handler receives an <code>OracleInfoMessageEventArgs</code> object which exposes the following properties containing information about the event.</p>
+<ul>
+<li>
+<p><code>Errors</code></p>
+<p>The collection of errors generated by the data source.</p>
+</li>
+<li>
+<p><code>Message</code></p>
+<p>The error text generated by the data source.</p>
+</li>
+<li>
+<p><code>Source</code></p>
+<p>The name of the object that generated the error.</p>
+</li>
+</ul>
+<p class="subhead2">Remarks</p>
+<p>In order to respond to warnings and messages from the database, the client should create an <code>OracleInfoMessageEventHandler</code> delegate to listen to this event.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleInfoMessageEventArgsClass.htm#i1010586">"OracleInfoMessageEventArgs Properties"</a></p>
+</li>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleInfoMessageEventHandlerDelegate.htm#i1010781">"OracleInfoMessageEventHandler Delegate"</a></p>
+</li>
+</ul>
+</div>
+<a id="i1001439" name="i1001439"></a>
+<h3>StateChange</h3>
+<p>This event is triggered when the connection state changes.</p>
+<p class="subhead2">Declaration</p>
+<pre xml:space="preserve" class="oac_no_warn">// C#
+public event StateChangeEventHandler StateChange;
+</pre>
+<p class="subhead2">Event Data</p>
+<p>The event handler receives a <code>StateChangeEventArgs</code> object which exposes the following properties containing information about the event.</p>
+<ul>
+<li>
+<p><code>CurrentState</code></p>
+<p>The new state of the connection.</p>
+</li>
+<li>
+<p><code>OriginalState</code></p>
+<p>The original state of the connection.</p>
+</li>
+</ul>
+<p class="subhead2">Remarks</p>
+<p>The <code>StateChange</code> event is raised after a connection changes state, whenever an explicit call is made to <code>Open</code>, <code>Close</code> or <code>Dispose</code>.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/intro003.htm#BHCJFIAJ">"Oracle.DataAccess.Client Namespace"</a></p>
+</li>
+<li>
+<p><a href="#i999634">OracleConnection Class</a></p>
+</li>
+<li>
+<p><a href="#i999705">OracleConnection Members</a></p>
+</li>
+<li>
+<p>Microsoft ADO.NET documentation for a description of <code>StateChangeEventHandler</code></p>
+</li>
+</ul>
+</div>
+</div>
+<!-- class="refsect1" --></div>
+<div class="footer">
+<hr>
+<table class="simple oac_no_warn" summary="" width="100%" cellpadding="0" cellspacing="0">
+<col width="33%">
+<col width="*">
+<col width="33%">
+<tbody><tr>
+<td align="left">
+<table class="simple oac_no_warn" summary="" width="98" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleCommandBuilderClass.htm"><img src="OracleConnectionClass_files/leftnav.gif" alt="Go to previous page" width="24" height="24"><br>
+<span class="icon">Previous</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleDataAdapterClass.htm"><img src="OracleConnectionClass_files/rightnav.gif" alt="Go to next page" width="24" height="24"><br>
+<span class="icon">Next</span></a></td>
+</tr>
+</tbody></table>
+</td>
+<td style="font-size: 90%;" class="copyrightlogo" align="center"><img src="OracleConnectionClass_files/oracle.gif" alt="Oracle" width="144" height="18"><br>
+Copyright&nbsp;&#169;&nbsp;2002, 2005,&nbsp;Oracle.&nbsp;All&nbsp;rights&nbsp;reserved.<br>
+<a href="http://download.oracle.com/docs/cd/B19306_01/dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td align="right">
+<table class="icons oac_no_warn" summary="" width="294" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="top" align="center"><a href="http://www.oracle.com/pls/db102/homepage"><img src="OracleConnectionClass_files/doclib.gif" alt="Go to Documentation Home" width="24" height="24"><br>
+<span class="icon">Home</span></a></td>
+<td valign="top" align="center"><a href="http://www.oracle.com/pls/db102/portal.all_books"><img src="OracleConnectionClass_files/booklist.gif" alt="Go to Book List" width="24" height="24"><br>
+<span class="icon">Book List</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/toc.htm"><img src="OracleConnectionClass_files/toc.gif" alt="Go to Table of Contents" width="24" height="24"><br>
+<span class="icon">Contents</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/win.102/b14307/index.htm"><img src="OracleConnectionClass_files/index.gif" alt="Go to Index" width="24" height="24"><br>
+<span class="icon">Index</span></a></td>
+<td valign="top" align="center"><a href="http://www.oracle.com/pls/db102/show_mindex"><img src="OracleConnectionClass_files/masterix.gif" alt="Go to Master Index" width="24" height="24"><br>
+<span class="icon">Master Index</span></a></td>
+<td valign="top" align="center"><a href="http://download.oracle.com/docs/cd/B19306_01/dcommon/html/feedback.htm"><img src="OracleConnectionClass_files/feedbck2.gif" alt="Go to Feedback page" width="24" height="24"><br>
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body></html>

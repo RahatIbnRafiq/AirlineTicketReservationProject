@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackjackWebService", "http://localhost/BlackjackWebService/BlackjackWebService.csproj", "{D6DF7EB1-D35E-4270-8CAE-24E972E236AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D6DF7EB1-D35E-4270-8CAE-24E972E236AA}.Debug.ActiveCfg = Debug|.NET
+		{D6DF7EB1-D35E-4270-8CAE-24E972E236AA}.Debug.Build.0 = Debug|.NET
+		{D6DF7EB1-D35E-4270-8CAE-24E972E236AA}.Release.ActiveCfg = Release|.NET
+		{D6DF7EB1-D35E-4270-8CAE-24E972E236AA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

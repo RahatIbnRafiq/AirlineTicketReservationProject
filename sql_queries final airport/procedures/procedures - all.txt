@@ -1,0 +1,113 @@
+****************************************ADMIN PROCEDURES**************************************************************************************************
+
+1.
+****************procedure new_flight insert into flight table and_flight_entry table in AdminWorks.aspx.cs  **************************************************************
+
+create or replace procedure new_flight(flightid in varchar2, source_name in varchar2, destination_name in varchar2, transit in varchar2, 
+firstfare in number, ecofare in number, businessfare in number, range_name in varchar2, time_dep in varchar2, first_avl in number, eco_avl in number,
+business_avl in number, dep_date in date, airline in varchar2, email in varchar2,plane_id in number) is
+
+begin
+	insert into flight (flight_id,source,destination,transit_name,first_fare,eco_fare,business_fare,range,time,first_av,eco_av,business_av,flight_date,airlinename)
+	values(flightid,source_name,destination_name,transit,firstfare,ecofare,businessfare,range_name,time_dep,first_avl,eco_avl,business_avl,dep_date,airline);
+	
+	insert into flight_entry (flightid,email_name)
+	values(flightid,email);
+	
+	insert into flight_goes (flight_id,p_id)
+	values(flightid,plane_id);
+end;
+/
+
+2.
+****************insert into plane table**************************************************************
+create or replace procedure new_plane(id in number, plane_name in varchar2, first_cp in number, eco in number, business in number) is
+
+begin
+	insert into plane (p_id,p_name,first_cap,eco_cap,business_cap)
+	values(id,plane_name,first_cp,eco,business);
+end;
+/
+
+3.
+**************** insert into admin_info table used in AdminRegister.aspx.cs **************************************************************
+create or replace procedure new_admin_insert(email_name in varchar2,full_name in varchar2,password_name in varchar2,airline_name in varchar2,address_name in varchar2,telephone_no in varchar2) is
+
+begin
+	insert into admin_info (email,fullname,password,airlinename,address,telephoneno)
+	values(email_name,full_name,password_name,airline_name,address_name,telephone_no);
+end;
+/
+
+4.
+**************** update admin_info table used in AdminProfile.aspx.cs **************************************************************
+create or replace procedure update_admin_info( full_name in varchar2,address_name in varchar2,airline_name in varchar2,telephone_no in number,email_name in varchar2) is
+
+begin
+	update admin_info set fullname=full_name,address=address_name,airlinename=airline_name,telephoneno=telephone_no where email=email_name;
+
+end;
+/
+****************************************************************************************************************************************************************
+
+5.
+**********************update flight seat available when a user books ticket(s)in book.aspx.cs********************************************************************
+create or replace procedure update_flight_available(class_name in varchar2, seat in number,flightid in varchar2) is
+begin
+	if class_name = 'first_av'  
+		then 
+			update flight set first_av=first_av-seat where flight_id =flightid;
+			end if;
+	if  class_name = 'business_av'  
+		then
+			update flight set business_av=business_av-seat where flight_id =flightid;
+	end if;
+	if class_name ='eco_av'
+		then 
+			update flight set eco_av=eco_av-seat where flight_id =flightid;
+	end if;
+end;
+
+6.
+*************************************INSERT INTO USER_PURCHASE TABLE WHEN USER BOOKS A TABLE in book.aspx **********************************************
+
+create or replace procedure insert_user_purchase(flightid in varchar2,useremail in varchar2,fare in number,cur_date in date) is
+begin
+	insert into user_purchase (pur_id, user_email, flight_id,amount_paid,tdate,newdate,newtime) values (pur_sqn.nextval,useremail,flightid,fare,cur_date,null,null);
+	update user_money set amount=amount-fare where name=useremail;
+end;
+
+
+7
+******************************* UPDATE USER_PURCHASE TABLE AFTER USER CHANGES HIS TICKET in CHANGE.aspx ******************************************************************
+
+create or replace procedure update_user_purchase(class_name in number,pid in number,flightid in varchar2) is
+
+begin
+	if class_name = 1  
+		then 
+			update user_purchase set amount_paid=(select first_fare from flight where flight_id=flightid) where pur_id=pid;
+	end if;
+	if  class_name = 2  
+		then
+			update user_purchase set amount_paid=(select business_fare from flight where flight_id=flightid) where pur_id=pid;
+	end if;
+	if class_name =3 
+		then 
+			update user_purchase set amount_paid=(select eco_fare from flight where flight_id=flightid) where pur_id=pid;
+	end if;
+end;
+
+8.
+************************************************insert into user_info table in Register.aspx******************************************************************
+
+create or replace procedure new_user_insert(email_name in varchar2,full_name in varchar2,password_name in varchar2, address_name in varchar2, city_name in varchar2,country_name in varchar2, tel in varchar2) is
+
+begin
+	insert into user_info (user_email, fullname, password, address, city, country,teleponeno)
+	values(email_name,full_name,password_name,address_name,city_name,country_name,tel);
+end;
+/
+
+
+

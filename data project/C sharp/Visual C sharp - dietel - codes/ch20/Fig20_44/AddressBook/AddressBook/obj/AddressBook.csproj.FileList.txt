@@ -1,0 +1,3 @@
+bin\Release\AddressBook.exe.config
+obj\Release\AddressBook.exe
+obj\Release\AddressBook.pdb

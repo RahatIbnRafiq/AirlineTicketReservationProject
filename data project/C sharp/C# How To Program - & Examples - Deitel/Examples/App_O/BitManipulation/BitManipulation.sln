@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitManipulation", "BitManipulation.csproj", "{4D91D453-C1F1-4BD5-9253-D9D5A13872AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4D91D453-C1F1-4BD5-9253-D9D5A13872AD}.Debug.ActiveCfg = Debug|.NET
+		{4D91D453-C1F1-4BD5-9253-D9D5A13872AD}.Debug.Build.0 = Debug|.NET
+		{4D91D453-C1F1-4BD5-9253-D9D5A13872AD}.Release.ActiveCfg = Release|.NET
+		{4D91D453-C1F1-4BD5-9253-D9D5A13872AD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

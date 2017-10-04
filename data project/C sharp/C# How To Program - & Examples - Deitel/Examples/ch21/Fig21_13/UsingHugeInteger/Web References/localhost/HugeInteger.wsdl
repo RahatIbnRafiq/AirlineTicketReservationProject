@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.deitel.com/csphtp1/ch21/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.deitel.com/csphtp1/ch21/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.deitel.com/csphtp1/ch21/">
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="first" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="second" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Subtract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="first" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="second" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubtractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubtractResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Bigger">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="first" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="second" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BiggerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BiggerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Smaller">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="first" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="second" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SmallerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SmallerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EqualTo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="first" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="second" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EqualToResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EqualToResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </types>
+  <message name="AddSoapIn">
+    <part name="parameters" element="s0:Add" />
+  </message>
+  <message name="AddSoapOut">
+    <part name="parameters" element="s0:AddResponse" />
+  </message>
+  <message name="SubtractSoapIn">
+    <part name="parameters" element="s0:Subtract" />
+  </message>
+  <message name="SubtractSoapOut">
+    <part name="parameters" element="s0:SubtractResponse" />
+  </message>
+  <message name="BiggerSoapIn">
+    <part name="parameters" element="s0:Bigger" />
+  </message>
+  <message name="BiggerSoapOut">
+    <part name="parameters" element="s0:BiggerResponse" />
+  </message>
+  <message name="SmallerSoapIn">
+    <part name="parameters" element="s0:Smaller" />
+  </message>
+  <message name="SmallerSoapOut">
+    <part name="parameters" element="s0:SmallerResponse" />
+  </message>
+  <message name="EqualToSoapIn">
+    <part name="parameters" element="s0:EqualTo" />
+  </message>
+  <message name="EqualToSoapOut">
+    <part name="parameters" element="s0:EqualToResponse" />
+  </message>
+  <message name="AddHttpGetIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="AddHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="SubtractHttpGetIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="SubtractHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="BiggerHttpGetIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="BiggerHttpGetOut">
+    <part name="Body" element="s0:boolean" />
+  </message>
+  <message name="SmallerHttpGetIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="SmallerHttpGetOut">
+    <part name="Body" element="s0:boolean" />
+  </message>
+  <message name="EqualToHttpGetIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="EqualToHttpGetOut">
+    <part name="Body" element="s0:boolean" />
+  </message>
+  <message name="AddHttpPostIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="AddHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="SubtractHttpPostIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="SubtractHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="BiggerHttpPostIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="BiggerHttpPostOut">
+    <part name="Body" element="s0:boolean" />
+  </message>
+  <message name="SmallerHttpPostIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="SmallerHttpPostOut">
+    <part name="Body" element="s0:boolean" />
+  </message>
+  <message name="EqualToHttpPostIn">
+    <part name="first" type="s:string" />
+    <part name="second" type="s:string" />
+  </message>
+  <message name="EqualToHttpPostOut">
+    <part name="Body" element="s0:boolean" />
+  </message>
+  <portType name="HugeIntegerSoap">
+    <operation name="Add">
+      <documentation>Adds two huge integers.</documentation>
+      <input message="s0:AddSoapIn" />
+      <output message="s0:AddSoapOut" />
+    </operation>
+    <operation name="Subtract">
+      <documentation>Subtracts two huge integers.</documentation>
+      <input message="s0:SubtractSoapIn" />
+      <output message="s0:SubtractSoapOut" />
+    </operation>
+    <operation name="Bigger">
+      <documentation>Determines whether the first integer is larger than the second integer.</documentation>
+      <input message="s0:BiggerSoapIn" />
+      <output message="s0:BiggerSoapOut" />
+    </operation>
+    <operation name="Smaller">
+      <documentation>Determines whether the first integer is smaller than the second integer.</documentation>
+      <input message="s0:SmallerSoapIn" />
+      <output message="s0:SmallerSoapOut" />
+    </operation>
+    <operation name="EqualTo">
+      <documentation>Determines whether the first integer is equal to the second integer.</documentation>
+      <input message="s0:EqualToSoapIn" />
+      <output message="s0:EqualToSoapOut" />
+    </operation>
+  </portType>
+  <portType name="HugeIntegerHttpGet">
+    <operation name="Add">
+      <documentation>Adds two huge integers.</documentation>
+      <input message="s0:AddHttpGetIn" />
+      <output message="s0:AddHttpGetOut" />
+    </operation>
+    <operation name="Subtract">
+      <documentation>Subtracts two huge integers.</documentation>
+      <input message="s0:SubtractHttpGetIn" />
+      <output message="s0:SubtractHttpGetOut" />
+    </operation>
+    <operation name="Bigger">
+      <documentation>Determines whether the first integer is larger than the second integer.</documentation>
+      <input message="s0:BiggerHttpGetIn" />
+      <output message="s0:BiggerHttpGetOut" />
+    </operation>
+    <operation name="Smaller">
+      <documentation>Determines whether the first integer is smaller than the second integer.</documentation>
+      <input message="s0:SmallerHttpGetIn" />
+      <output message="s0:SmallerHttpGetOut" />
+    </operation>
+    <operation name="EqualTo">
+      <documentation>Determines whether the first integer is equal to the second integer.</documentation>
+      <input message="s0:EqualToHttpGetIn" />
+      <output message="s0:EqualToHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="HugeIntegerHttpPost">
+    <operation name="Add">
+      <documentation>Adds two huge integers.</documentation>
+      <input message="s0:AddHttpPostIn" />
+      <output message="s0:AddHttpPostOut" />
+    </operation>
+    <operation name="Subtract">
+      <documentation>Subtracts two huge integers.</documentation>
+      <input message="s0:SubtractHttpPostIn" />
+      <output message="s0:SubtractHttpPostOut" />
+    </operation>
+    <operation name="Bigger">
+      <documentation>Determines whether the first integer is larger than the second integer.</documentation>
+      <input message="s0:BiggerHttpPostIn" />
+      <output message="s0:BiggerHttpPostOut" />
+    </operation>
+    <operation name="Smaller">
+      <documentation>Determines whether the first integer is smaller than the second integer.</documentation>
+      <input message="s0:SmallerHttpPostIn" />
+      <output message="s0:SmallerHttpPostOut" />
+    </operation>
+    <operation name="EqualTo">
+      <documentation>Determines whether the first integer is equal to the second integer.</documentation>
+      <input message="s0:EqualToHttpPostIn" />
+      <output message="s0:EqualToHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="HugeIntegerSoap" type="s0:HugeIntegerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="Add">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Add" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Subtract">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Subtract" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Bigger">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Bigger" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Smaller">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/Smaller" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EqualTo">
+      <soap:operation soapAction="http://www.deitel.com/csphtp1/ch21/EqualTo" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="HugeIntegerHttpGet" type="s0:HugeIntegerHttpGet">
+    <http:binding verb="GET" />
+    <operation name="Add">
+      <http:operation location="/Add" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Subtract">
+      <http:operation location="/Subtract" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Bigger">
+      <http:operation location="/Bigger" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Smaller">
+      <http:operation location="/Smaller" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="EqualTo">
+      <http:operation location="/EqualTo" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="HugeIntegerHttpPost" type="s0:HugeIntegerHttpPost">
+    <http:binding verb="POST" />
+    <operation name="Add">
+      <http:operation location="/Add" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Subtract">
+      <http:operation location="/Subtract" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Bigger">
+      <http:operation location="/Bigger" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="Smaller">
+      <http:operation location="/Smaller" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="EqualTo">
+      <http:operation location="/EqualTo" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="HugeInteger">
+    <documentation>A Web service that provides methods that can manipulate large integer values.</documentation>
+    <port name="HugeIntegerSoap" binding="s0:HugeIntegerSoap">
+      <soap:address location="http://localhost/HugeInteger/HugeInteger.asmx" />
+    </port>
+    <port name="HugeIntegerHttpGet" binding="s0:HugeIntegerHttpGet">
+      <http:address location="http://localhost/HugeInteger/HugeInteger.asmx" />
+    </port>
+    <port name="HugeIntegerHttpPost" binding="s0:HugeIntegerHttpPost">
+      <http:address location="http://localhost/HugeInteger/HugeInteger.asmx" />
+    </port>
+  </service>
+</definitions>

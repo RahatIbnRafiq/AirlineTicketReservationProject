@@ -1,0 +1,10 @@
+E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection\bin\Release\OracleConnection.exe
+E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection\bin\Release\OracleConnection.pdb
+E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection\obj\Release\ResolveAssemblyReference.cache
+E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection\obj\Release\OracleConnection.exe
+E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection\obj\Release\OracleConnection.pdb
+E:\level 3 term 1\airport_project\data project\DB Codes\C#\OracleConnection\obj\Release\OracleConnection.exe
+E:\level 3 term 1\airport_project\data project\DB Codes\C#\OracleConnection\obj\Release\OracleConnection.pdb
+E:\level 3 term 1\airport_project\data project\DB Codes\C#\OracleConnection\bin\Release\OracleConnection.exe
+E:\level 3 term 1\airport_project\data project\DB Codes\C#\OracleConnection\bin\Release\OracleConnection.pdb
+E:\level 3 term 1\airport_project\data project\DB Codes\C#\OracleConnection\obj\Release\ResolveAssemblyReference.cache

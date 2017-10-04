@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="OracleConnection">
+</Property><Property Name="Solution File" Value="E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection.sln">
+</Property><Property Name="User Options File" Value="E:\Class Buet\DataBase 303 304\DB Codes\C#\OracleConnection.suo">
+</Property><Property Name="Date" Value="Friday, November 20, 2009">
+</Property><Property Name="Time" Value="10:55 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="OracleConnection.sln" Description="File successfully backed up as E:\Class Buet\DataBase 303 304\DB Codes\C#\Backup\OracleConnection.sln">
+</Event><Event ErrorLevel="0" Project="" Source="OracleConnection.suo" Description="File successfully backed up as E:\Class Buet\DataBase 303 304\DB Codes\C#\Backup\OracleConnection.suo">
+</Event><Event ErrorLevel="0" Project="OracleConnection" Source="OracleConnection\OracleConnection.csproj" Description="Project file successfully backed up as E:\Class Buet\DataBase 303 304\DB Codes\C#\Backup\OracleConnection\OracleConnection.csproj">
+</Event><Event ErrorLevel="0" Project="OracleConnection" Source="OracleConnection\MainClass.cs" Description="File successfully backed up as E:\Class Buet\DataBase 303 304\DB Codes\C#\Backup\OracleConnection\MainClass.cs">
+</Event><Event ErrorLevel="0" Project="OracleConnection" Source="OracleConnection\OracleConnect.cs" Description="File successfully backed up as E:\Class Buet\DataBase 303 304\DB Codes\C#\Backup\OracleConnection\OracleConnect.cs">
+</Event><Event ErrorLevel="0" Project="OracleConnection" Source="OracleConnection\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\Class Buet\DataBase 303 304\DB Codes\C#\Backup\OracleConnection\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="OracleConnection" Source="OracleConnection\OracleConnection.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="OracleConnection" Source="OracleConnection\OracleConnection.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="OracleConnection.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="OracleConnection.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="OracleConnection" Source="OracleConnection\OracleConnection.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

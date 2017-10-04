@@ -1,0 +1,88 @@
+
+1.
+// TRIGGER "update_user_money" used in change.aspx.cs line 289 and book.aspx.cs 197
+
+create or replace trigger update_user_money
+after insert on user_purchase for each row
+begin
+		update user_money set amount=user_money.amount-:new.amount_paid where user_money.name= :new.user_email;
+		
+end;
+
+2.
+/* used in AirlineWorks2.aspx.cs line 65
+
+
+create or replace trigger flight_delete 
+before delete on flight
+for each row
+begin
+        delete from user_purchase where user_purchase.flight_id=:old.flight_id;
+end;
+
+//  flight_delete trigger CALLS insert_user_refund
+
+create or replace trigger insert_user_refund
+before delete on user_purchase
+for each row
+begin
+	insert into user_refund values(:old.flight_id,:old.user_email,:old.amount_paid,:old.tdate);		
+end; */
+
+3. 
+//  TRIGGER to notify and change newDate in user_purchase when admin changes date in Airlineworks2.aspx.cs  
+
+create or replace trigger update_flight_date
+after update of flight_date on flight
+for each row
+begin
+	if :new.flight_date <> :old.flight_date
+		then
+		update user_purchase set newDate=:new.flight_date, tdate=:new.flight_date  where user_purchase.flight_id=:new.flight_id;
+	end if;
+		
+end;
+
+4. 
+// when web admin delete an user TRIGGER user_delete copies data to blacklist_user  in file Web_Admin_Works.aspx.cs
+
+create or replace trigger user_delete 
+before delete on user_info
+for each row
+begin
+	insert into blacklist_user values( :old.user_email, :old.fullname, :old.password, :old.address, :old.city,:old.country,:old.teleponeNo,null);
+	update blacklist_user set expire_date=(select max(tdate) from user_purchase where user_purchase.user_email=:old.user_email);  
+end;
+/
+
+
+5.
+
+/*create or replace trigger insert_user_refund
+before delete on user_purchase
+for each row
+declare
+    cnt number;
+begin
+	select count(*) into cnt from flight where flight_id=:old.flight_id;
+	if cnt > 0 then
+		insert into user_refund values(:old.flight_id,:old.user_email,:old.amount_paid * 0.6,:old.tdate) ;
+	end if;
+	if cnt = 0 then
+		insert into user_refund values(:old.flight_id,:old.user_email,:old.amount_paid,:old.tdate) ;		
+	end if;
+end;    */
+
+create or replace trigger insert_user_refund
+before delete on user_purchase
+for each row
+declare
+    cnt number;
+begin
+	select count(*) into cnt from flight where flight_id=:old.flight_id;
+	if cnt > 0 then
+		insert into user_refund values(:old.flight_id,:old.user_email,:old.amount_paid * 0.6,:old.tdate) ;
+	else
+		insert into user_refund values(:old.flight_id,:old.user_email,:old.amount_paid,:old.tdate) ;		
+	end if;
+end;

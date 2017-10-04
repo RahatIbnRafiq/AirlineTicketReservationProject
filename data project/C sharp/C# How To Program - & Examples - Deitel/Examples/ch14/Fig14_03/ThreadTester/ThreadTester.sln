@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTester", "ThreadTester.csproj", "{770886D8-D46D-4F12-AD27-069412D2326F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{770886D8-D46D-4F12-AD27-069412D2326F}.Debug.ActiveCfg = Debug|.NET
+		{770886D8-D46D-4F12-AD27-069412D2326F}.Debug.Build.0 = Debug|.NET
+		{770886D8-D46D-4F12-AD27-069412D2326F}.Release.ActiveCfg = Release|.NET
+		{770886D8-D46D-4F12-AD27-069412D2326F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingBitOperators", "UsingBitOperators.csproj", "{EF9524CB-9595-4BF1-B43B-D6BE2AD34F23}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EF9524CB-9595-4BF1-B43B-D6BE2AD34F23}.Debug.ActiveCfg = Debug|.NET
+		{EF9524CB-9595-4BF1-B43B-D6BE2AD34F23}.Debug.Build.0 = Debug|.NET
+		{EF9524CB-9595-4BF1-B43B-D6BE2AD34F23}.Release.ActiveCfg = Release|.NET
+		{EF9524CB-9595-4BF1-B43B-D6BE2AD34F23}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringHashCode", "StringHashCode.csproj", "{E9122247-ADED-4AA3-B6D0-940BE84274BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E9122247-ADED-4AA3-B6D0-940BE84274BA}.Debug.ActiveCfg = Debug|.NET
+		{E9122247-ADED-4AA3-B6D0-940BE84274BA}.Debug.Build.0 = Debug|.NET
+		{E9122247-ADED-4AA3-B6D0-940BE84274BA}.Release.ActiveCfg = Release|.NET
+		{E9122247-ADED-4AA3-B6D0-940BE84274BA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

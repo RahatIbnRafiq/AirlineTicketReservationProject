@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guestbook", "http://localhost/Guestbook/Guestbook.csproj", "{D06DF8C9-82AA-4D7D-A097-2E278E8B8195}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D06DF8C9-82AA-4D7D-A097-2E278E8B8195}.Debug.ActiveCfg = Debug|.NET
+		{D06DF8C9-82AA-4D7D-A097-2E278E8B8195}.Debug.Build.0 = Debug|.NET
+		{D06DF8C9-82AA-4D7D-A097-2E278E8B8195}.Release.ActiveCfg = Release|.NET
+		{D06DF8C9-82AA-4D7D-A097-2E278E8B8195}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
