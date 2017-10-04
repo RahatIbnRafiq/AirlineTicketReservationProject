@@ -1,1 +1,0 @@
-document.write('<script type=\"text/javascript\" src=\"http://context3.kanoodle.com/cgi-bin/context.cgi?id=87274554&first=1&amp;db=context&amp;format=plain&amp;cgroup=asp_home&amp;newtarget=1&amp;signup=1&amp;numresults=1&amp;showtitle=0&amp;linkcolor=034efa&amp;textcolor=666666\"></script>\r'); adcode=' '
